@@ -1,10 +1,9 @@
-#OSjunkfiles
-images/
 
-#VisualStudiofiles
+#files
 *.zip
+scratchpad.txt
 
-#(use"gitadd<file>..."toincludeinwhatwillbecommitted)
+#Directories
 
 *installation/
 apcalculus_temp_files/
