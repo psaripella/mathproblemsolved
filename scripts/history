@@ -1,0 +1,3 @@
+perl -p -e 's/\r$//' win.txt unix.txt
+ mysql -u majordomo -p calculus_math
+

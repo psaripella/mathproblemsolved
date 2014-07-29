@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="2.5"
+	  client="site"
+	  method="upgrade">
+	<name>horizonal tab dynamic joomla</name> 
+	<author>Templates81.com</author> 
+	<creationDate>2013-12-05</creationDate> 
+	<copyright>All rights reserved by Templates81.com</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+	<authorEmail>admin@templates81.com</authorEmail> 
+	<authorUrl>http://www.Templates81.com</authorUrl> 
+	<version>1.1</version> 
+	<description>horizonal tab dynamic joomla - Free module from Templates81.com</description>
+
+	<files>
+		<filename module="mod_horizontal_tab_dynamic">mod_horizontal_tab_dynamic.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_horizontal_tab_dynamic.xml</filename>
+		<folder>language</folder>
+		<folder>elements</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_horizontal_tab_dynamic.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_horizontal_tab_dynamic/elements">
+			<fieldset name="TABs" label="LABEL TAB PROPERTIES">
+			<field type="loader" />
+				<field name="TabWidth" type="text" default="750" label="LABEL TAB WIDTH" description="DESC TAB WIDTH" />
+				<field name="TabHeight" type="text" default="400" label="LABEL TAB HEIGHT" description="DESC TAB HEIGHT" />
+				<field name="colorContent" type="hotcolor" default="#ffffe0" label="LABEL TAB COLOR CONTENT" description="DESC TAB COLOR CONTENT" />
+				<field name="colorTab" type="hotcolor" default="#5ba4a4" label="LABEL TAB COLOR" description="DESC TAB COLOR" />
+			</fieldset>
+			<fieldset name="TAB1" label="LABEL TAB1">
+				<field name="title1" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="TabContent1" type="Editor" default="" label="LABEL TAB CONTENT" description="DESC TAB CONTENT" filter="safehtml" />
+			</fieldset>
+			<fieldset name="TAB2" label="LABEL TAB2">
+				<field name="title2" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="TabContent2" type="editor" default="" label="LABEL TAB CONTENT" description="DESC TAB CONTENT" filter="safehtml" />
+			</fieldset>
+			<fieldset name="TAB3" label="LABEL TAB3">
+				<field name="title3" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="TabContent3" type="editor" default="" label="LABEL TAB CONTENT" description="DESC TAB CONTENT" filter="safehtml"/>
+			</fieldset>
+			<fieldset name="TAB4" label="LABEL TAB4">
+				<field name="title4" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="TabContent4" type="editor" default="" label="LABEL TAB CONTENT" description="DESC TAB CONTENT" filter="safehtml"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

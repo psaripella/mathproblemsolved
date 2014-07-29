@@ -1,0 +1,15 @@
+product=apcalculus
+root_directory=/home/calculus/www/www/images/apcalculus/problems/
+logical_root_directory=images/apcalculus/problems/
+question_directory=
+answer_directory=
+hints_directory=
+logical_hints_directory=
+problem_string=
+sql_id=70000
+asset_id=120
+catid=17
+access=1
+start_problems=1
+end_problems=30
+purchase_message=0

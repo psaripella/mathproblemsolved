@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="update">
+    <name>System - Google Analytics</name>
+    <author>Peter Bui</author>
+    <creationDate>19th April 2010</creationDate>
+    <authorEmail>peter@pbwebdev.com.au</authorEmail>
+    <authorUrl>http://pbwebdev.com</authorUrl>
+    <version>3.0</version>
+    <copyright>Copyright (c) 2012 PB Web Development. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <description>
+        Asynchronous Google Analytics allows for a faster loading Google Analytics code and tracking.
+        Read the documentation at: http://pbwebdev.com/blog/asynchronous-google-analytics-plugin-for-joomla for more information
+    </description>
+    <updateservers>
+        <server type="extension" priority="1" name="Google Analytics Update">http://pbwebdev.com/extensions/google-analytics/update.xml</server>
+    </updateservers>
+    <files>
+        <filename plugin="GoogleAnalytics">GoogleAnalytics.php</filename>
+    </files>
+    <config>
+        <fields name="params" >
+            <fieldset name="Basic">
+                <field name="code" type="text" default="UA-XXXXX-X" label="Google Analytics Web Property ID." description=" e.g. UA-12345-67. This code can be found in your Google Analytics account. Your site will not be tracked unless this code is entered."></field>
+                <field name="domain" type="text" default="domain.com" label="Domain" description="Please enter in the domain name that you are tracking. e.g pbwebdev.com"></field>
+                <field name="verify" type="text" default="Google webmaster tools verification" label="Webmaster tools verification" description="Please enter the verification code from Google webmaster tools."></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

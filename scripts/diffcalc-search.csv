@@ -1,0 +1,149 @@
+differential(x/(e^x)),\[\left( {\frac{x}{{{e^x}}}} \right)\],3,Derivative;Exponential;Product Rule
+differential(((x^3)+2x)(e^x)),\[\left( {\left( {{x^3} + 2x} \right){e^x}} \right)\],3,Derivative;Exponential;Product Rule
+differential((e^x)/(1-(e^x))),\[\left( {\frac{{{e^x}}}{{1 - {e^x}}}} \right)\],3,Derivative;Exponential;Quotient Rule
+differential((1+2x)/(3-4x)),\[\left( {\frac{{1 + 2x}}{{3 - 4x}}} \right)\],3,Derivative;Quotient Rule; Sum Rule
+differential((((1)/(x^2))-(3/(x^4)))(x+(5*x^3))),\[\left( {\left( {\frac{1}{{{x^2}}} - \frac{3}{{{x^4}}}} \right)(x + 5{x^3})} \right)\],3,Derivative;Power Rule
+differential((3*x^2)-(2cosx)),\[\left( {3{x^2} - 2\cos x} \right)\],3,Derivative;Power Rule;Sum Rule;Sin
+differential((sqrtx)(sinx)),\[\left( {\sqrt x {\mathop{\rm sinx}\nolimits} } \right)\],4,Derivative;Power Rule;Sum Rule;Sin;Product Rule
+differential((sinx)+((1/2)cotx)),\[\left( {\sin x + \frac{1}{2}\cot x} \right)\],3,Derivative;Sum Rule;Sin;Cot
+differential(2secx-cscx),\[\left( {2\sec x - \csc x} \right)\],3,Derivative;Sum Rule;Sin;Cosec
+differential(secxtanx),\[\left( {\sec x\tan x} \right)\],4,Derivative;Sum Rule;Product Rule;Secant;Tan
+differential((e^x)(tanx-x)),\[\left( {{e^x}(\tan x - x)} \right)\],4,Derivative;Sum Rule;Product Rule;Secant;Tangent;Exponent
+differential((acosx)+((x^2)*sinx)),\[\left( {a\cos x + {x^2}\sin x} \right)\],3,Derivative;Power Rule;Sum Rule;Sin;Product Rule;Sin;Cos
+differential((cosx)/(e^x)),\[\left( {\frac{{\cos x}}{{{e^x}}}} \right)\],4,Derivative;Sum Rule;Product Rule;Cosine;Exponent
+differential(x/(2-tanx)),\[\left( {\frac{x}{{2 - \tan x}}} \right)\],4,Derivative;Quotient Rule;Tan
+differential(sinxcosx),\[\left( {\sin x\cos x} \right)\],4,Derivative;Sin
+differential((secx)/(1+secx)),\[\left( {\frac{{\sec x}}{{1 + \sec x}}} \right)\],4,Derivative;Quotient Rule;Secant
+differential((cosx)/(1-sinx)),\[\left( {\frac{{\cos x}}{{1 - \sin x}}} \right)\],4,Derivative;Quotient Rule;Sin;Cos
+differential((xsinx)/(1+x)),\[\left( {\frac{{x\sin x}}{{1 + x}}} \right)\],4,Derivative;Sum Rule;Product Rule;Quotient Rule;Sin
+differential((1-secx)/(tanx)),\[\left( {\frac{{1 - \sec x}}{{\tan x}}} \right)\],4,Derivative;Sum Rule;Quotient Rule;Secant;Tan
+differential((1+4x)^(1/3)),\[\left( {\sqrt[3]{{1 + 4x}}} \right)\],3,Derivative;Power Rule;Chain Rule;Function of Function Rule
+differential((2(x^3)+5)^4),\[\left( {{{(2{x^3} + 5)}^4}} \right)\],4,Derivative;Power Rule;Chain Rule;Function of Function Rule
+differential(sin(cotx)),\[\left( {\sin (\cot x)} \right)\],4,Derivative;Sin;Cot;Chain Rule;Function of Function Rule
+differential(e^(sqrt(x))),\[\left( {{e^{\sqrt x }}} \right)\],4,Derivative;Power Rule;Chain Rule;Function of Function Rule;Exponent
+differential((sqrt(2-(e^x))),\[\left( {\sqrt {2 - {e^x}} } \right)\],4,Derivative;Power Rule;Chain Rule;Function of Function Rule;Exponent
+differential(1/((1+secx)^2)),\[\left( {\frac{1}{{{{\left( {1 + \sec x} \right)}^2}}}} \right)\],4,Derivative;Power Rule;Sum Rule;Quotient Rule;Secant;Tan
+differential((sqrt(x+sqrt(x+sqrtx))))),\[\left( {\sqrt {x + \sqrt {x + \sqrt x } } } \right)\],4,Derivative;Power Rule;Sum Rule;Chain Rule;Function of Function Rule
+differential(sin^(-1)*x),\[\left( {{{\sin }^{ - 1}}x} \right)\],3,Derivative;Sin Rule
+differential(cos^(-1)*x),\[\left( {{{\cos }^{ - 1}}x} \right)\],3,Derivative;Cosine Rule
+differential(tan^(-1)*x),\[\left( {{{\tan }^{ - 1}}x} \right)\],3,Derivative;Tan Rule
+differential(sec^(-1)*x),\[\left( {{{\sec }^{ - 1}}x} \right)\],3,Derivative;Secant Rule
+differential(csc^(-1)*x),\[\left( {{{\csc }^{ - 1}}x} \right)\],3,Derivative;Cosecant Rule
+differential(cot^(-1)*x),\[\left( {{{\cot }^{ - 1}}x} \right)\],3,Derivative;Cotangent Rule
+differential(modulus(x^2 - 5*x+6)),"\[{\rm{If }}y(x) = \left| {{x^2}} \right. - 5x + \left. 6 \right|,{\rm{than }}f'(x) = ?\]",3,Derivative;Power Rule;Sum Rule
+differential(((arctan)((log(e/x^2))/(log(e*x^2))))+(arctan((3+2logx)/(1-6logx)))),\[{\tan ^{ - 1}}\left( {\frac{{\log (\frac{e}{{{x^2}}})}}{{\log (e{x^2})}}} \right) + {\tan ^{ - 1}}\left( {\frac{{3 + 2\log x}}{{1 - 6\log x}}} \right)\],5,Derivative;Sum Rule;Inverse Trigonometric;Tangent;Logarithmic;Chain Rule;Function of Function Rule;Quotient Rule
+differential((a(x^(n+1)))+(b(x^(-n)))),\[a{x^{n + 1}} + b{x^{ - n}}\],4,Derivative;Power Rule;Sum Rule;Second Order Differential
+differential(1+x+((x^2)/2!)+((x^3)/3!)+?+(x^n/n!)),\[1 + x + \frac{{{x^2}}}{{2!}} + \frac{{{x^3}}}{{3!}} + ... + \frac{{{x^n}}}{{n!}}\],5,Derivative;Power Rule;Sum Rule;Multi Order Differential
+differential((asinx)+(bcosx)),\[a\sin x + b\cos x\],3,Derivative;Power Rule;Sum Rule;Sin;Cosine
+differential((d/dx)(sqrt((1-sin2x)/(1+sin2x)))),\[\frac{d}{{dx}}\left( {\sqrt {\frac{{1 - \sin 2x}}{{1 + \sin 2x}}} } \right)\],5,Derivative;Quotient Rule; Power Rule; Chain Rule; Function of Function Rule;Sin;Cos
+differential((d/dx)((x+(sqrt((x^2)+(a^2))))^n)),\[{\left( {x + \sqrt {{x^2} + {a^2}} } \right)^n}\],5,Derivative; Power Rule
+differential((f(x))(sqrt(1+((cos^2)(x^2))))),\[f(x) = \sqrt {1 + {{\cos }^2}({x^2})} \],4,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cosine;Trigonometric
+differential(d/dx)((cos^(-1))(sqrt(cosx)))),\[\frac{d}{{dx}}{\cos ^{ - 1}}\sqrt {\cos x} \],5,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cosine; Trigonometric; Inverse
+differential((log(sinx)(tanx))),\[{\rm{lo}}{{\rm{g}}_{\sin x}}\left( {\tan x} \right)\],5,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cosine; Trigonometric;Logarithmic;Quotient Rule;
+differential(((sin^(-1))*x)/(sqrt(1-(x^2)))),\[\frac{{{{\sin }^{ - 1}}x}}{{\sqrt {1 - {x^2}} }}\],5,Derivative; Power Rule; Product Rule;Chain Rule; Function of Function Rule;Sin; Trigonometric; Inverse
+differential((cot^(-1))(((sqrt(1+sinx))+(sqrt(1-sinx)))/((sqrt(1+sinx))-(sqrt(1-sinx))))),\[{\cot ^{ - 1}}\left[ {\frac{{\sqrt {1 + \sin x}  + \sqrt {1 - \sin x} }}{{\sqrt {1 + \sin x}  - \sqrt {1 - \sin x} }}} \right]\],4,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cotangent;Cot;Trigonometric; Inverse
+differential(((x)^x)^x),\[{x^{\left( {{x^x}} \right)}}\],4,Derivative; Power Rule; Product Rule; Exponent;Logarithmic
+differential((sin^2)(cot(-1))(sqrt((1-x)/(1+x)))),\[\left[ {{\rm{si}}{{\rm{n}}^2}{{\cot }^{ - 1}}\left\{ {\sqrt {\frac{{1 - x}}{{1 + x}}} } \right\}} \right]\],5,Derivative; Power Rule; Product Rule; Trigonometric;Sin;Cotangent;Inverse;Quotient Rule
+differential(ae^mx)+(be^(-mx)),\[a{e^{mx}} + b{e^{ - mx}}\],4,Derivative;Power Rule;Sum Rule;Second Order Differential;Exponent Rule
+differential((d^n)/(dx^n))(logx),\[\frac{{{d^n}}}{{d{x^n}}}\left( {\log x} \right)\],5,Derivative;Power Rule;Sum Rule;Multi Order Differential;Logarithmic;Proof by Induction
+differential(sqrt(logx+(sqrt(logx)+sqrt(logx)+?infinity))),\[\sqrt {\log x + \sqrt {\log x + \sqrt {\log x + ...\infty } } } \],4,Derivative; Exponent;Logarithmic
+differential(sec(arctan*x)),\[\sec \left( {{{\tan }^{ - 1}}x} \right)\],5,Derivative;Chain Rule; Function of Function Rule;Inverse;Secant;Tangent
+differential(sqrt((2*x^2)-1)),\[\sqrt {2{x^2} - 1} {\rm{ }}\],4,Derivative;Chain Rule; Function of Function Rule;Power Rule
+"differentialx(x^3),(x^2),cosx,sinx",\[f'(x) = \cos x\],5,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cosine;Trigonometric
+"differentialx=t+cost,y=t+sint","\[x = t + \cos t,y = t + \sin t\]",5,Derivative; Power Rule; Chain Rule; Function of Function Rule;Cosine;sin;Trigonometric;Second Order Differential
+differential(sqrt(1-sin2x)),\[\sqrt {1 - \sin 2x} \],4,Derivative; Power Rule; Chain Rule; Function of Function Rule
+differential(y=x-(x^2)),\[y = x - {x^2}\],4,Derivative;Chain Rule; Function of Function Rule;Power Rule
+differential(y=(((a-x)(sqrt(a-x)))-((b-x)(sqrt(x-b))))/((sqrt(a-x)+(sqrt(x-b)))),\[\frac{{\left( {a - x} \right)\sqrt {a - x}  - \left( {b - x} \right)\sqrt {x - b} }}{{\sqrt {a - x}  + \sqrt {x - b} }}\],,
+differential(y=((arctan)(2x/(1+(2^(2x+1)))))),\[{\tan ^{ - 1}}\left( {\frac{{2x}}{{1 + {2^{2x + 1}}}}} \right)\],5,Derivative; Power Rule; Chain Rule; Function of Function Rule;;Trigonometric;Exponential;Tangent
+differential(y=(x^5)tanx),\[{x^5}\tan x\],3,Derivative; Power Rule;Product Rule;Trigonometric;Tangent
+differential(y=(2-x)/(3x+1)),\[\frac{{2 - x}}{{3x + 1}}\],2,Derivative; Quotient Rule
+differential(y=(sqrt(3-2x))),\[\sqrt {3 - 2x} \],2,Derivative; Power Rule
+differential(y=((2)/((5x+1)^3))),\[\frac{2}{{{{\left( {5x + 1} \right)}^3}}}\],1,Derivative; Power Rule
+differential(y=(3x^(2/3))-(4x^(1/2))-2)),\[3{x^{2/3}} - 4{x^{1/2}} - 2\],1,Derivative;Sum Rule; Power Rule
+differential(y=(2sqrt(x))-(1/2sqrt(x))),\[2\sqrt x  - \frac{1}{{2\sqrt x }}\],1,Derivative;Sum Rule; Power Rule
+differential(y=(sqrt((x^2)+2x-1)),\[\sqrt {{x^2} + 2x - 1} \],1,Derivative;Sum Rule; Power Rule;Chain Rule;Function of Function Rule
+differential(y=x/(sqrt(1-(x^2))),\[\frac{x}{{\sqrt {1 - {x^2}} }}\],1,Derivative;Sum Rule; Power Rule;Product Rule
+differential(y=ln((e^x)/((e^2)-1))),\[\ln \frac{{{e^x}}}{{{e^2} - 1}}\],,
+differential(y=arctan(x/2)),\[{\tan ^{ - 1}}\frac{x}{2}\],,
+differential(y=ln(secx+tanx)),\[\ln (\sec x + \tan x)\],,
+differential(y=((e^x)-(e^(-x)))/((e^x)+(e^(-x)))),\[\frac{{{e^x} - {e^{ - x}}}}{{{e^x} + {e^{ - x}}}}\],,
+differential(y=ln(x(sqrt((x^2)+1)))),\[\ln \left( {x\sqrt {{x^2} + 1} } \right)\],,
+differential(y=(x^2)sin(1/x))),\[{x^2}\sin \frac{1}{x}\],,
+differential(y=1/(2sin2x))),\[\frac{1}{{2\sin 2x}}\],,
+differential(y=(e^(-x))(cos2x))),\[{e^{ - x}}\cos 2x\],,
+differential(y=(sec^2)(sqrtx))),\[{\sec ^2}\sqrt x \],,
+differential(y=(x(ln^3)x)),\[x{\ln ^3}x\],,
+differential(y=(1+(x^2))/(1-(x^2))),\[\frac{{1 + {x^2}}}{{1 - {x^2}}}\],,
+differential(1=((x^3)-xy+(y^3))),\[{x^3} - xy + {y^3} = 1\],,
+differential(25=((x^2)+(y^2))),\[{x^2} + {y^2} = 25\],,
+differential(0=(x+cos(x+y))),\[x + \cos (x + y) = 0\],,
+differential(0=(subx-cosy-2)),\[\sin x - \cos y - 2 = 0\],,
+differential(1=(3(x^2))-2xy+(5(y^2))),\[3{x^2} - 2xy + 5{y^2} = 1\],,
+"differential(t^2)-1,((t^4-2(t^3)))","\[{\rm{ }}t = 1,{\rm{ if }}{t^2} - 1{\rm{ and }}y = {t^4} - 2{t^3}\]",,
+"differential (f(x)=16(sqrtx),f""(4)","\[f(x) = 16\sqrt x {\rm{, then }}f''(4)\]",,
+"differential (f(x)=ln(x^3),f""(3)","\[f(x) = \ln {x^3}{\rm{, then }}f''(3)\]",,
+differential (e^x)(x-1),"\[y = {e^x}{\rm{(}}x - 1){\rm{, then }}y''(0)\]",,
+"differential x=(e^t)cost,y=(e^t)sint","\[x = {e^t}\cos t,y = {e^t}\sin t\]",,
+"differential x=cost,y=cos2t","\[x = \cos t,y = \cos 2t\]",,
+differential cosxcox3x,\[(\cos xcox3x)\],,
+differential (y=(sqrt((1-x)/(1+x)))),\[\sqrt {\frac{{1 - x}}{{1 + x}}} \],,
+differential (y=archtan(sqrt((1+x)/(1-x)))),\[y = {\tan ^{ - 1}}\sqrt {\frac{{1 + x}}{{1 - x}}} \],,
+differential (loga=archsin(sqrt(((x^2)-(y^2))/((x^2)+(y^2))))),\[\log a = {\sin ^{ - 1}}\sqrt {\frac{{{x^2} - {y^2}}}{{{x^2} + {y^2}}}} \],,
+differential (y=arccos(sqrt(cosx))),\[y = {\cos ^{ - 1}}\sqrt {\cos x} \],,
+"differential ((e^x)=((1+t)-(1-t))/((1+t)-(1-t))),(tan(y/2))=(sqrt((1-t)/(1+t)))",\[{e^x} = \frac{{\sqrt {1 + t}  - \sqrt {1 - t} }}{{\sqrt {1 + t}  - \sqrt {1 - t} }}{\rm{ and }}\tan \frac{y}{2} = \sqrt {\frac{{1 - t}}{{1 + t}}} \],,
+"differential ((x^2)+(y^2)=t-(1/t), (x^4)+(y^4)=(t^2)+(1/(t^2)))","\[{x^2} + {y^2} = t - \frac{1}{t}{\rm{ and, }}{x^4} + {y^4} = {t^2} + \frac{1}{{{t^2}}}\]",,
+differential (a(x-y)=(1-(x^2))+(1-(y^2))),\[a(x - y) = \sqrt {1 - {x^2}}  + \sqrt {1 - {y^2}} \],,
+differential (y=((x^2+(1/(x^2)+(1+(x^2)+(1/(x^2)+?.infty)))))),\[y = {x^2} + \frac{1}{{{x^2} + \frac{1}{{{x^2} + \frac{1}{{{x^2} + ...\infty }}}}}}\],,
+differential (arctan)(((sqrt(x))(3-x))/(1-3x)))),\[\left[ {{{\tan }^{ - 1}}\left( {\frac{{\sqrt x (3 - x)}}{{1 - 3x}}} \right)} \right]\],,
+differential ((x^3)-xy+(y^3)),\[{x^3} - xy + {y^3} = 1\],,
+differential ((a(x^2))+bx+c),\[{y^2} = a{x^2} + bx + c\],,
+differential (y=sinx+(e^x)),\[y = \sin x + {e^x}\],,
+"differential (y=(t^10)+1),x=(t^8)+1",\[y = {t^{10}} + 1{\rm{ and }}x = {t^8} + 1\],,
+differential (y=xlog(x/(a+bx))),\[y = x\log \left( {\frac{x}{{a + bx}}} \right)\],,
+differential (1=(a(x^2))+(2xy)+(b(y^2))),\[a{x^2} + 2hxy + b{y^2} = 1\],,
+"differential (x=(t^2),y=(t^3))","\[x = {t^2},y = {t^3}\]",,
+differential (y=x+(e^x)),\[y = x + {e^x}\],,
+differential (y=ln((1+cosx)^2)),\[y = \ln {(1 + \cos x)^2}\],,
+differential (y=((sqrt(a+x))-(sqrt(a-x)))/((sqrt(a+x))+(sqrt(a-x)))),\[y = \frac{{\sqrt {a + x}  - \sqrt {a - x} }}{{\sqrt {a + x}  + \sqrt {a - x} }}\],,
+differential (y=x^(9/4)),\[y = {x^{9/4}}\],,
+differential (y=2x^(1/3)),\[y = \sqrt[3]{{2x}}\],,
+differential (y=x^(-3/5)),\[y = {x^{ - 3/5}}\],,
+differential (y=5x^(1/4)),\[y = \sqrt[4]{{5x}}\],,
+differential (y=7(sqrt(x+6))),\[y = 7\sqrt {x + 6} \],,
+differential (y=(-2(sqrt(x-1)))),\[y =  - 2\sqrt {x - 1} \],,
+differential (y=(2x+5)^(-1/2)),\[y = {(2x + 5)^{ - 1/2}}\],,
+differential (y=((1-6x)^(2/3))),\[y = {(1 - 6x)^{2/3}}\],,
+differential (y=((x(x^2)+1)^(1/2))),\[y = x{({x^2} + 1)^{1/2}}\],,
+differential (y=((x(x^2)+1)^(-1/2))),\[y = x{({x^2} + 1)^{ - 1/2}}\],,
+differential (y=((t^2)^(1/7))),\[y = \sqrt[7]{{{t^2}}}\],,
+differential (y=((t^(-3))^(1/5))),\[y = \sqrt[5]{{{t^{ - 3}}}}\],,
+differential (y=sin((2t+5)^(-2/3))),\[y = \sin \left[ {{{\left( {2t + 5} \right)}^{ - 2/3}}} \right]\],,
+differential (y=(cos((1-6t)^2/3))),\[y = \cos \left[ {{{\left( {1 - 6t} \right)}^{2/3}}} \right]\],,
+differential (f(x)=(sqrt(1-(sqrt(x)))),\[f(x) = \sqrt {1 - \sqrt x } \],,
+differential (g(x)=(2(((2x^(-1/2))+1)^(-1/3))),\[g(x) = 2{(2{x^{ - 1/2}} + 1)^{ - 1/3}}\],,
+differential (h(x)=((sqrt(1+cos(2x))(1/3))),\[h(x) = \sqrt[3]{{1 + \cos (2x)}}\],,
+differential (k(x)=((sin(x+5))^(5/4)),\[k(x) = {\left( {\sin (x + 5)} \right)^{5/4}}\],,
+differential (6=(((x^2)y)+(x(y^2))),\[{x^2}y + x{y^2} = 6\],,
+differential (1=((x^3)-((x^2)y)+(y^3)),\[{x^3} - {x^2}y + {y^3} = 1\],,
+differential (x+y=((2xy)+(y^2)),\[2xy + {y^2} = x + y\],,
+differential (1=((x^3)-xy+(y^3)),\[{x^3} - xy + {y^3} = 1\],,
+differential ((x^2)-(y^2)=((x^2)((x-y)(y^3))),\[{x^2}{(x - y)^2} = {x^2} - {y^2}\],,
+differential (6y=((3xy+7)^2)),\[{(3xy + 7)^2} = 6y\],,
+differential ((y^2)=((x-1)/(x+1)),\[{y^2} = \frac{{x - 1}}{{x + 1}}\],,
+differential ((x^2)=((x-y)/(x+y)),\[{x^2} = \frac{{x - y}}{{x + y}}\],,
+differential (x=tany),\[x = \tan y\],,
+differential (xy=cot(xy)),\[xy = \cot (xy)\],,
+differential (0=x+tan(xy)),\[x + \tan (xy) = 0\],,
+differential (xy=x+siny),\[x + \sin y = xy\],,
+differential (1-xy=ysin(1/y)),\[y\sin \left( {\frac{1}{y}} \right) = 1 - xy\],,
+differential ((2x+2y)=(y^2)cos(1/y)),\[{y^2}\cos \left( {\frac{1}{y}} \right) = 2x + 2y\],,
+differential (1=(x^(1/2)+(y^(1/2))),\[{x^{1/2}} + {y^{1/2}} = 1\],,
+differential (y-2(sqrt(x))=((3/2)(x^(2/3))+(4/3)(x^(3/4)))),\[y - 2\sqrt x  = \frac{3}{2}{x^{2/3}} + \frac{4}{3}{x^{3/4}}\],,
+differential ((1/2)=sin(yx)),\[\sin (yx) = \frac{1}{2}\],,
+differential (yx=cosy+cosx),\[\cos y + \cos x = yx\],,
+differential (1=(x^2)+(y^2)),\[{x^2} + {y^2} = 1\],,
+differential (1=(x^(2/3))+(y^(2/3))),\[{x^{2/3}} + {y^{2/3}} = 1\],,
+differential ((y^2)=(x^2)+2x),\[{y^2} = {x^2} + 2x\],,
+differential (((y^2)-2x)=(1-2y)),\[{y^2} - 2x = 1 - 2y\],,
+differential (2(sqrt(y))=x-y),\[2\sqrt y  = x - y\],,
+differential (1=xy+(y^2)),\[xy + {y^2} = 1\],,

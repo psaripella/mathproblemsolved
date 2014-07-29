@@ -1,0 +1,16 @@
+product=integral-calculus
+root_directory=/home/calculus/www/www/images/integral-calculus/problems/
+logical_root_directory=images/integral-calculus/problems/
+question_directory=
+answer_directory=
+hints_directory=
+logical_hints_directory=
+problem_string=
+sql_id=32000
+asset_id=78
+catid=15
+access=6
+tail_string=
+end_of_problem_comma=",\n"
+start_problems=31
+end_problems=96

@@ -1,0 +1,70 @@
+<?php
+
+/* @VisitorInterest/index.twig */
+class __TwigTemplate_66203382196d865abaed08ce3370c62c0f40cdd9764dfe6b801eddf0f5820dde extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        echo "<h2>";
+        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('translate')->getCallable(), array("VisitorInterest_VisitsPerDuration")), "html", null, true);
+        echo "</h2>
+";
+        // line 2
+        echo $this->getContext($context, "dataTableNumberOfVisitsPerVisitDuration");
+        echo "
+
+<h2>";
+        // line 4
+        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('translate')->getCallable(), array("VisitorInterest_VisitsPerNbOfPages")), "html", null, true);
+        echo "</h2>
+";
+        // line 5
+        echo $this->getContext($context, "dataTableNumberOfVisitsPerPage");
+        echo "
+
+<h2>";
+        // line 7
+        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('translate')->getCallable(), array("VisitorInterest_visitsByVisitCount")), "html", null, true);
+        echo "</h2>
+";
+        // line 8
+        echo $this->getContext($context, "dataTableNumberOfVisitsByVisitNum");
+        echo "
+
+<h2>";
+        // line 10
+        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('translate')->getCallable(), array("VisitorInterest_VisitsByDaysSinceLast")), "html", null, true);
+        echo "</h2>
+";
+        // line 11
+        echo $this->getContext($context, "dataTableNumberOfVisitsByDaysSinceLast");
+        echo "
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "@VisitorInterest/index.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  51 => 11,  47 => 10,  42 => 8,  38 => 7,  33 => 5,  29 => 4,  24 => 2,  19 => 1,);
+    }
+}

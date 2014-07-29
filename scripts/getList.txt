@@ -1,0 +1,619 @@
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+./libraries/legacy/model/list.php
+		 * in their getListQuery() methods so I believe we should not be adding this now
+./modules/mod_weblinks/helper.php
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/libraries/legacy/model/list.php
+		 * in their getListQuery() methods so I believe we should not be adding this now
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/modules/mod_weblinks/helper.php
+	protected function getListQuery()
+		$store = $this->getStoreId('getListQuery');
+		$base = $this->getListQuery();
+		$base = $this->getListQuery();
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_finder/models/search.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_finder/models/suggestions.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_content/models/featured.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_content/models/archive.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_weblinks/models/category.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_newsfeeds/models/category.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_contact/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_contact/models/category.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/components/com_banners/models/banners.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/plugins/finder/categories/categories.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/plugins/finder/contacts/contacts.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/plugins/finder/weblinks/weblinks.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/plugins/finder/content/content.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/plugins/finder/newsfeeds/newsfeeds.php
+		$sql = $this->getListQuery();
+		$sql = $this->getListQuery();
+		$this->db->setQuery($this->getListQuery($sql), $offset, $limit);
+	protected function getListQuery($sql = null)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/helpers/indexer/adapter.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/index.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/filters.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/maps.php
+	protected function getListQuery($resolveFKs = true)
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_weblinks/models/weblinks.php
+	protected function _getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/manage.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/discover.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/update.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_languages/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/templates.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/styles.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_plugins/models/plugins.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_messages/models/messages.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_newsfeeds/models/newsfeeds.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/select.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/modules.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_categories/models/categories.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_redirect/models/links.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/menus.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/items.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_contact/models/contacts.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/notes.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/groups.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/levels.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuguser.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/users.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuggroup.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/clients.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/tracks.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/banners.php
+	protected function getListQuery()
+./tmp/install_52788eee38cc2/gk_meet_gavern_quickstart_J!30/administrator/components/com_search/models/searches.php
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/libraries/legacy/model/list.php
+		 * in their getListQuery() methods so I believe we should not be adding this now
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/modules/mod_weblinks/helper.php
+	protected function getListQuery()
+		$store = $this->getStoreId('getListQuery');
+		$base = $this->getListQuery();
+		$base = $this->getListQuery();
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_finder/models/search.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_finder/models/suggestions.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_content/models/featured.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_content/models/archive.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_weblinks/models/category.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_newsfeeds/models/category.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_contact/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_contact/models/category.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/components/com_banners/models/banners.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/plugins/finder/categories/categories.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/plugins/finder/contacts/contacts.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/plugins/finder/weblinks/weblinks.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/plugins/finder/content/content.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/plugins/finder/newsfeeds/newsfeeds.php
+		$sql = $this->getListQuery();
+		$sql = $this->getListQuery();
+		$this->db->setQuery($this->getListQuery($sql), $offset, $limit);
+	protected function getListQuery($sql = null)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/helpers/indexer/adapter.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/index.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/filters.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/maps.php
+	protected function getListQuery($resolveFKs = true)
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_weblinks/models/weblinks.php
+	protected function _getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/manage.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/discover.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/update.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_languages/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/templates.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/styles.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_plugins/models/plugins.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_messages/models/messages.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_newsfeeds/models/newsfeeds.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/select.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/modules.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_categories/models/categories.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_redirect/models/links.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/menus.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/items.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_contact/models/contacts.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/notes.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/groups.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/levels.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuguser.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/users.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuggroup.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/clients.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/tracks.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/banners.php
+	protected function getListQuery()
+./tmp/install_52788c08bdf97/gk_meet_gavern_quickstart_J!30/administrator/components/com_search/models/searches.php
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+./tmp/install_52788df8e0863/libraries/legacy/model/list.php
+		 * in their getListQuery() methods so I believe we should not be adding this now
+./tmp/install_52788df8e0863/modules/mod_weblinks/helper.php
+	protected function getListQuery()
+		$store = $this->getStoreId('getListQuery');
+		$base = $this->getListQuery();
+		$base = $this->getListQuery();
+./tmp/install_52788df8e0863/components/com_finder/models/search.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_finder/models/suggestions.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788df8e0863/components/com_content/models/featured.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788df8e0863/components/com_content/models/archive.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_weblinks/models/category.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_newsfeeds/models/category.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_contact/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_contact/models/category.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/components/com_banners/models/banners.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/plugins/finder/categories/categories.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/plugins/finder/contacts/contacts.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/plugins/finder/weblinks/weblinks.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/plugins/finder/content/content.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/plugins/finder/newsfeeds/newsfeeds.php
+		$sql = $this->getListQuery();
+		$sql = $this->getListQuery();
+		$this->db->setQuery($this->getListQuery($sql), $offset, $limit);
+	protected function getListQuery($sql = null)
+./tmp/install_52788df8e0863/administrator/components/com_finder/helpers/indexer/adapter.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_finder/models/index.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_finder/models/filters.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_finder/models/maps.php
+	protected function getListQuery($resolveFKs = true)
+./tmp/install_52788df8e0863/administrator/components/com_content/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_weblinks/models/weblinks.php
+	protected function _getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_installer/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_installer/models/manage.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_installer/models/discover.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_installer/models/update.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_languages/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_templates/models/templates.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_templates/models/styles.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_plugins/models/plugins.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_messages/models/messages.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_newsfeeds/models/newsfeeds.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_modules/models/select.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_modules/models/modules.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_categories/models/categories.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_redirect/models/links.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_menus/models/menus.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_menus/models/items.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_contact/models/contacts.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/notes.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/groups.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/levels.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/debuguser.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/users.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_users/models/debuggroup.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_banners/models/clients.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_banners/models/tracks.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_banners/models/banners.php
+	protected function getListQuery()
+./tmp/install_52788df8e0863/administrator/components/com_search/models/searches.php
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/libraries/legacy/model/list.php
+		 * in their getListQuery() methods so I believe we should not be adding this now
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/modules/mod_weblinks/helper.php
+	protected function getListQuery()
+		$store = $this->getStoreId('getListQuery');
+		$base = $this->getListQuery();
+		$base = $this->getListQuery();
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_finder/models/search.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_finder/models/suggestions.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_content/models/featured.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_content/models/archive.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_weblinks/models/category.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_newsfeeds/models/category.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_contact/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_contact/models/category.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/components/com_banners/models/banners.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/plugins/finder/categories/categories.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/plugins/finder/contacts/contacts.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/plugins/finder/weblinks/weblinks.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/plugins/finder/content/content.php
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/plugins/finder/newsfeeds/newsfeeds.php
+		$sql = $this->getListQuery();
+		$sql = $this->getListQuery();
+		$this->db->setQuery($this->getListQuery($sql), $offset, $limit);
+	protected function getListQuery($sql = null)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/helpers/indexer/adapter.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/index.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/filters.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_finder/models/maps.php
+	protected function getListQuery($resolveFKs = true)
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/featured.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_content/models/articles.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_weblinks/models/weblinks.php
+	protected function _getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/manage.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/discover.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_installer/models/update.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_languages/models/languages.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/templates.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_templates/models/styles.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_plugins/models/plugins.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_messages/models/messages.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_newsfeeds/models/newsfeeds.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/select.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_modules/models/modules.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_categories/models/categories.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_redirect/models/links.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/menus.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_menus/models/items.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_contact/models/contacts.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/notes.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/groups.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/levels.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuguser.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/users.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_users/models/debuggroup.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/clients.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/tracks.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_banners/models/banners.php
+	protected function getListQuery()
+./tmp/install_52788cd26c17d/gk_meet_gavern_quickstart_J!30/administrator/components/com_search/models/searches.php
+	protected function getListQuery()
+		$store = $this->getStoreId('getListQuery');
+		$base = $this->getListQuery();
+		$base = $this->getListQuery();
+./components/com_finder/models/search.php
+	protected function getListQuery()
+./components/com_finder/models/suggestions.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./components/com_content/models/featured.php
+	protected function getListQuery()
+		$query = parent::getListQuery();
+./components/com_content/models/archive.php
+	protected function getListQuery()
+./components/com_content/models/articles.php
+	protected function getListQuery()
+./components/com_weblinks/models/category.php
+	protected function getListQuery()
+./components/com_newsfeeds/models/category.php
+	protected function getListQuery()
+./components/com_contact/models/featured.php
+	protected function getListQuery()
+./components/com_contact/models/category.php
+	protected function getListQuery()
+./components/com_tags/models/tag.php
+	protected function getListQuery()
+./components/com_tags/models/tags.php
+	protected function getListQuery()
+./components/com_banners/models/banners.php
+	protected function getListQuery($sql = null)
+./plugins/finder/categories/categories.php
+	protected function getListQuery($sql = null)
+./plugins/finder/contacts/contacts.php
+	protected function getListQuery($sql = null)
+./plugins/finder/weblinks/weblinks.php
+	protected function getListQuery($sql = null)
+./plugins/finder/content/content.php
+	protected function getListQuery($sql = null)
+./plugins/finder/newsfeeds/newsfeeds.php
+	protected function getListQuery($query = null)
+./plugins/finder/tags/tags.php
+		$sql = $this->getListQuery();
+		$sql = $this->getListQuery();
+		$this->db->setQuery($this->getListQuery($sql), $offset, $limit);
+	protected function getListQuery($sql = null)
+./administrator/components/com_finder/helpers/indexer/adapter.php
+	protected function getListQuery()
+./administrator/components/com_finder/models/index.php
+	protected function getListQuery()
+./administrator/components/com_finder/models/filters.php
+	protected function getListQuery()
+./administrator/components/com_finder/models/maps.php
+	protected function getListQuery($resolveFKs = true)
+./administrator/components/com_content/models/featured.php
+	protected function getListQuery()
+./administrator/components/com_content/models/articles.php
+	protected function getListQuery()
+./administrator/components/com_weblinks/models/weblinks.php
+	protected function _getListQuery()
+./administrator/components/com_installer/models/languages.php
+	protected function getListQuery()
+./administrator/components/com_installer/models/manage.php
+	protected function getListQuery()
+./administrator/components/com_installer/models/discover.php
+	protected function getListQuery()
+./administrator/components/com_installer/models/update.php
+	protected function getListQuery()
+./administrator/components/com_languages/models/languages.php
+	protected function getListQuery()
+./administrator/components/com_templates/models/templates.php
+	protected function getListQuery()
+./administrator/components/com_templates/models/styles.php
+	protected function getListQuery()
+./administrator/components/com_plugins/models/plugins.php
+	protected function getListQuery()
+./administrator/components/com_messages/models/messages.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/smilies.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/blacklists.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/comments.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/subscriptions.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/mailq.php
+		$query = $this->_getListQuery();
+	protected function getListQuery()
+		$query = $this->_getListQuery();
+	protected function _getListQuery()
+			$this->query = $this->getListQuery();
+./administrator/components/com_jcomments/models/modellist.php
+	protected function getListQuery()
+./administrator/components/com_jcomments/models/custombbcodes.php
+	protected function getListQuery() 
+./administrator/components/com_sppaypal/models/sppaypals.php
+	protected function getListQuery()
+./administrator/components/com_newsfeeds/models/newsfeeds.php
+	protected function getListQuery()
+./administrator/components/com_modules/models/select.php
+	protected function getListQuery()
+./administrator/components/com_modules/models/modules.php
+	protected function getListQuery()
+./administrator/components/com_categories/models/categories.php
+	protected function getListQuery()
+./administrator/components/com_redirect/models/links.php
+	protected function getListQuery()
+./administrator/components/com_menus/models/menus.php
+	protected function getListQuery()
+./administrator/components/com_menus/models/items.php
+	protected function getListQuery()
+./administrator/components/com_contact/models/contacts.php
+	protected function getListQuery()
+./administrator/components/com_tags/models/tags.php
+	protected function getListQuery()
+./administrator/components/com_users/models/notes.php
+	protected function getListQuery()
+./administrator/components/com_users/models/groups.php
+	protected function getListQuery()
+./administrator/components/com_users/models/levels.php
+	protected function getListQuery()
+./administrator/components/com_users/models/debuguser.php
+	protected function getListQuery()
+./administrator/components/com_users/models/users.php
+	protected function getListQuery()
+./administrator/components/com_users/models/debuggroup.php
+	protected function getListQuery()
+./administrator/components/com_banners/models/clients.php
+	protected function getListQuery()
+./administrator/components/com_banners/models/tracks.php
+	protected function getListQuery()
+./administrator/components/com_banners/models/banners.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloaddownloads.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadrafile.php
+		$query	= $this->getListQuery();
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadcats.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadlogs.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadtags.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadfiles.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloaduploads.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadlics.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadstat.php
+	protected function getListQuery()
+./administrator/components/com_phocadownload/models/phocadownloadstyles.php
+	protected function getListQuery()
+./administrator/components/com_search/models/searches.php

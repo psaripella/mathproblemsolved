@@ -1,0 +1,10 @@
+.bg-transparent
+{ margin-top: -20px; }
+#header .module {width: 500px;margin-left: 0;}
+#header .module ul {float: right;}
+#navtop ul li li:hover, #navtop ul li li.hover {position: static;}
+.blog-featured .cols-3 .item {display: inline;width:47%}
+.blog-featured .cols-3 .item {margin-right: 2%;}
+/* remove button text search */
+#search .search_button { color: transparent; }
+}

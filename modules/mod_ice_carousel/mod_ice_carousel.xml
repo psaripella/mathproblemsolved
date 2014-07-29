@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+    <name>IceCarosuel Module</name>
+    <creationDate>November 2010</creationDate>
+    <author>IceTheme</author>
+    <copyright>GNU / GPL</copyright>
+    <authorEmail>info@icetheme.com</authorEmail>
+    <authorUrl>http://www.icetheme.com</authorUrl>
+    <version>3.0.0</version>
+	<description>
+	<![CDATA[
+	 <a target="_blank" href="icetheme.com"><b>IceCarosuel  Module</b></a> </br><br>IceCarosuel Module can display a set of articles in a small area on your website in an accordion way. This Module is released under the GPL license.<br><br><ul><li><a target="_blank" href="http://icetheme.com/Joomla-Extensions/icecarousel.html">IceCarosuel Page</a></li><li><a target="_blank" href="http://icetheme.com/Forums">Discussion</a></li></ul></li></ul> <script type="text/javascript" src="../modules/mod_ice_carousel/assets/form.js"></script> <style>.lof-group{ padding:2px;color:#666;background:#CCC;cursor:hand; font-weight:bold; cursor:pointer}</style>
+	]]>
+	</description>
+     <files>
+        <filename module="mod_ice_carousel">mod_ice_carousel.php</filename>
+        <filename module="mod_ice_carousel">helper.php</filename>
+		<filename module="mod_ice_carousel">index.html</filename>
+		<filename module="mod_ice_carousel">CHANGELOG.php</filename>
+		<filename module="mod_ice_carousel">LICENSE.php</filename>
+		
+        <folder module="mod_ice_carousel">libs</folder>
+		<folder module="mod_ice_carousel">assets</folder>
+        <folder module="mod_ice_carousel">tmpl</folder>
+		<folder module="mod_ice_carousel">themes</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_ice_carousel.ini</language>
+	</languages>
+	<config>
+    <fields 
+		name="params"
+		addfieldpath="/modules/mod_ice_carousel/libs/elements">
+		<fieldset 
+			name="basic">
+			<field 
+					name="theme" 
+					type="folderlist"
+					directory="modules/mod_ice_carousel/themes/" 
+					default="- Use Default -"
+					label="SELECT_THEME" 
+					description="THEME_FOR_VIEW">
+
+			</field>
+		    <field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />
+
+			<field 
+				name="main_width" 
+				type="text" 
+				default="600" 
+				label="DISPLAY_MAIN_WIDTH" 
+				description="DISPLAY_MAIN_WIDTH_DESC">
+			</field>
+			
+			<field 
+				name="main_height" 
+				type="text" 
+				default="300" 
+				label="DISPLAY_MAIN_HEIGHT" 
+				description="DISPLAY_MAIN_HEIGHT_DESC">
+			</field>
+			
+		   <field 
+			name="auto_renderthumb" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="RENDER_THUMBNAIL" 
+			description="RENDER_THUMBNAIL_DESC">
+			  <option value="1">YES</option>
+			  <option value="0">NO</option>
+			</field>
+			<field
+				name="alway_render_thumb" 
+				type="radio"
+				class="btn-group"
+				default="0" 
+				label="AUTO_RENDER_THUMBNAIL" 
+				description="AUTO_RENDER_THUMBNAIL_DESC">
+				  <option value="1">YES</option>
+				  <option value="0">NO</option>
+			</field>			
+			<field 
+				name="image_quanlity" 
+				type="text" 
+				default="75" 
+				label="IMAGE_QUANLITY" 
+				description="IMAGE_QUANLITY_DESC" />		
+			<field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />		
+			
+			<field 
+				name="data_source" 
+				type="list"
+				default="content" 
+				title="SOURCE" 
+				description="SOURCE_DESC">
+					<option value="content">Content</option>
+			</field>
+		</fieldset>
+			
+		<fieldset name="filtering"
+				label="MOD_CAROSUEL_FIELD_GROUP_FILTERING_LABEL"
+			>
+				<field
+					name="source_from"
+					type="list"
+					class="btn-group"
+					default="catid"
+					label="SOURCE_FROM"
+					description="SOURCE_FROM_DESC">
+						<option value="catid">Category</option>
+						<option value="article_id">Articles_ID</option>
+				</field>
+				<field name="article_id"
+					type="text"
+					size="45"
+					label="ARTICLES_ID"
+					description="ARTICLES_ID_DESC"/>
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					size="10"
+					label="JCATEGORY"
+					description="MOD_CATEGORY_DESC" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+				
+				<field
+					name="ordering"
+					type="list"
+					default="a.publish_up"
+					label="MOD_ARTICLES_NEWS_FIELD_ORDERING_LABEL"
+					description="MOD_ARTICLES_NEWS_FIELD_ORDERING_DESC">
+					
+					<option
+						value="a.ordering__ASC">MOD_ARTICLES_NEWS_FIELD_ORDERING_ORDERING_ASC</option>
+					<option
+						value="a.ordering__DESC">MOD_ARTICLES_NEWS_FIELD_ORDERING_ORDERING_DESC</option>
+					<option
+						value="a.created__ASC">MOD_ARTICLES_NEWS_FIELD_ORDERING_CREATED_DATE_ASC</option>
+					<option
+						value="a.created__DESC">MOD_ARTICLES_NEWS_FIELD_ORDERING_CREATED_DATE_DESC</option>
+					<option
+						value="a.hits__ASC">MOD_ARTICLES_NEWS_FIELD_ORDERING_HITS_ASC</option>
+					<option
+						value="a.hits__DESC">MOD_ARTICLES_NEWS_FIELD_ORDERING_HITS_DESC</option>
+					<option
+						value="rand()">MOD_ARTICLES_NEWS_FIELD_ORDERING_RANDOM</option>
+				</field>
+
+		</fieldset>
+			<fieldset name="ITEM_SETTING">
+			
+				 <field name="display_arrows" type="radio" class="btn-group" default="1" label="ICE_DISPLAY_ARROWS" description="ICE_DISPLAY_ARROWS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="display_caption" type="radio" class="btn-group" default="1" label="ICE_DISPLAY_CAPTION" description="ICE_DISPLAY_CAPTION_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			<field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />
+				<field 
+					name="limit_items" 
+					type="text" 
+					default="5" 
+					title="LIMIT_ITEMS" 
+					description="LIMIT_ITEMS_DESC" />
+				<field 
+					name="title_max_chars" 
+					type="text" 
+					default="100" 
+					label="TITLE_MAX_CHARS" 
+					description="TITLE_MAX_CHARS_DESC" />
+				<field 
+					name="description_max_chars" 
+					type="text" 
+					default="100" 
+					label="DESCIPTION_MAX_CHARS" 
+					description="DESCIPTION_MAX_CHARS_DESC" />
+				<field
+					name="link_titles"
+					type="list"
+					label="REAMORE_SHOW"
+					class="btn-group"
+					description="REAMORE_SHOW_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+
+				</field>
+			<field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />
+			
+				<field name="strip_tags" type="radio" class="btn-group" default="1" label="ICE_STRIP_TAGS" description="ICE_STRIP_TAGS_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				
+				<field
+					name="interval"
+					type="text" 
+					default="5000" 
+					label="INTERVAL" 
+					description="INTERVAL_DESC" />
+					
+				<field
+					name="effect"
+					type="list"
+					default="Slide Next"
+					label="ICE_EFFECT"
+					description="ICE_EFFECT_DESC">
+					<option
+						value="">Interval</option>
+					<option
+						value="vertical">Vertical</option>
+				</field>
+	
+				<field 
+					name="auto_start"
+					type="radio" 
+					class="btn-group" 
+					default="0"
+					label="AUTO_START"
+					description="AUTO_START_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+		</fieldset>
+		<fieldset 
+			name="advanced">
+			<field 
+				name="moduleclass_sfx" 
+				type="text" 
+				default="" 
+				label="MODULE_CLASS_SUFFIX" 
+				description="PARAMMODULECLASSSUFFIX" />	
+				
+			<field name="" type="spacer" default="" label="" description="" />
+
+			<field 
+				name="enable_cache"
+				type="list" 
+				default="0" 
+				label="CACHING" 
+				description="CACHING_DESC">
+					<option value="1">Use Cache Data</option>
+					<option value="0">Don't cache</option>
+				</field>
+				<field 
+					name="cache_time" 
+					type="text" 
+					default="15" 
+					label="CACHE_TIME"
+					description="CACHE_TIME_DESC" />
+					
+				<field 
+					name="enable_bootrap"
+					type="radio" 
+					class="btn-group" 
+					default="0" 
+					label="ENABLE_BOOTSTRAP"
+					description="ENABLE_BOOTSTRAP_DESC">					
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+			<field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />
+		</fieldset>
+
+	</fields>
+	
+	
+
+	</config>	
+</extension>
