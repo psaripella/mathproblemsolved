@@ -1,1 +1,1 @@
-<a target="_blank" href="http://gentidama.tumblr.com/">gentidama.com</a> <a target="_blank" href="https://www.youtube.com/watch?v=kSfsBXo40NM">posete online</a>
+<a target="_blank" href="http://gentidama.tumblr.com/">gentidama.com</a> <a target="_blank" href="https://www.youtube.com/watch?v=kSfsBXo40NM">genti ieftine</a>
