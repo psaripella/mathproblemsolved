@@ -1,3 +1,14 @@
 perl -p -e 's/\r$//' win.txt unix.txt
  mysql -u majordomo -p calculus_math
+perl ./create_all_articles.pl diffcalc.csv profiles/diffcalc-registered > diffcalc-registered.sql
+perl ./create_all_articles.pl diffcalc.csv profiles/diffcalc-customer > diffcalc-customer.sql
+perl ./create_all_articles.pl diffcalc.csv profiles/diffcalc-public > diffcalc-public.sql
+perl ./create_all_articles.pl intcalc-search.csv profiles/intfile-registered >intfile-registered.sql
+perl ./create_all_articles.pl intcalc-search.csv profiles/intfile-customer >intfile-customer.sql
+perl ./create_all_articles.pl intcalc-search.csv profiles/intfile-public >intfile-public.sql
+perl ./create_all_articles.pl apcalc-search.csv profiles/apmathall-custom
+perl ./create_all_articles.pl apcalc-search.csv profiles/apmathall-regist
+perl ./create_all_articles.pl apcalc-search.csv profiles/apmathall-public
+
+
 

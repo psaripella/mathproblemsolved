@@ -9,7 +9,7 @@ my $numArgs = $#ARGV + 1;
 
 if ($numArgs != 2) {
 
-print "Usage: perl create_all_articles.pl <search_text_file> <attribute_file> \n";
+print "Usage: perl create_all_articles.pl <search_text_file> <attribute_file in profiles directory> \n";
 
 exit 1 ;
 };

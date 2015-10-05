@@ -1,8 +1,8 @@
 <?php
 class JConfig {
 	public $MetaAuthor = '1';
-	public $MetaDesc = 'Calculus, integral, differential, Phani Saripella, trigonometry, precalculus, Advanced Placement, College Calculus';
-	public $MetaKeys = 'Calculus, integral, differential, Phani Saripella, trigonometry, precalculus, Advanced Placement, College Calculus';
+	public $MetaDesc = 'Calculus, integral, differential, trigonometry, precalculus, Advanced Placement, College Calculus';
+	public $MetaKeys = 'Calculus, integral, differential, trigonometry, precalculus, Advanced Placement, College Calculus';
 	public $MetaRights = '©2014 Mathproblemsolved.com. All rights reserved';
 	public $MetaTitle = '1';
 	public $MetaVersion = '0';

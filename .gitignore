@@ -4,8 +4,19 @@
 scratchpad.txt
 
 #Directories
+qb/
+components/com_jcomments/
 
 *installation/
+language/
+layouts/
+media/
+includes/
+templates/
+plugins/
+modules/
+libraries/
+components/
 apcalculus_temp_files/
 differential_temp_files/
 piwik/

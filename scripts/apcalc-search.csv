@@ -1,0 +1,156 @@
+(x^3-2*x-1) ,\[f\left( x \right) = {x^3} - 2x - 1{\text{ than }}f\left( { - 2} \right) = ?\],1,AP;Algebra
+(x-1)/((x^2)+1),\[{\text{domain of }}f\left( x \right) = \frac{{x - 1}}{{{x^2} + 1}}\],2,AP;Domain;Function
+(sqrt(x-2))/((x^2)-x),\[{\text{domain of }}g\left( x \right) = \frac{{\sqrt {x - 2} }}{{{x^2} - x}}\],3,AP;Domain;Function
+"((x^3)-(3(x^2))-(2^x)+5),g(x)=2,g(f(x))",\[\begin{gathered}  f\left( x \right) = {x^3} - 3{x^2} - 2x + 5 \hfill \\  {\text{g}}\left( x \right) = 2 \hfill \\  g\left( {f\left( x \right)} \right) = ? \hfill \\ \end{gathered} \],3,AP;Algebra;Function of Function
+"((x^3)+(A(x^2))+Bx-3),2A+B",\[f\left( x \right) = {x^3} + A{x^2} + Bx - 3\]\[f\left( 1 \right) = 4{\text{ and }}f\left( { - 1} \right) =  - 6\]\[2A + B = ?\],3,AP;Algebra
+sin(arctan x),"\[f\left( x \right) = \sin \left( {\arctan x} \right)\],\[{\text{range of }}f = ?\]",3,AP;Range;Trigonometric Function
+"roots of the equation f(x), f(2x)",\[{\text{roots of the equation }}f\left( x \right) = 0{\text{ are 1 and  - 2}}\]\[{\text{roots of }}f\left( {2x} \right) = 0{\text{ are?}}\],3,AP;Roots;Function
+"set of zeros of f(x),((x^3)+(4(x^2))+4x)",\[{\text{set of zeros of }}f\left( x \right) = {x^3} + 4{x^2} + 4x\],3,AP;Roots;Function
+values of x for which the graphs of (y=x+2) and ((y^2)=4x) intesect,\[{\text{The values of }}x{\text{ for  which the graphs of }}\]\[y = x + 2{\text{ and }}{y^2}{\text{ = 4}}x{\text{ intersect are?}}\],3,AP;Roots;Function
+function whose graph is a reflection in the y-axis of the graph of f(x),\[{\text{The function whose graph is a reflection in the}}\]\[y - {\text{axis of the graph of }}f\left( x \right) = 1 - {3^{^x}}\],3,AP;Function
+"f(x),g(x),f(g(x))",\[f\left( x \right){\text{ inverse function }}g\left( x \right)\]\[f\left( {g\left( x \right)} \right) = ?\],3,AP;Function;Inverse
+"f(x),(2(x^3)+x-5),real zero",\[f\left( x \right){\text{ }} = 2{x^3} + x - 5{\text{ has one real zero between?}}\],3,AP;Roots;Function
+"f(x),(sin(2pi/3)*x)",\[{\text{The period of }}f\left( x \right) = \sin \frac{{2\pi }}{3}x\],3,AP;Function;Periodicity
+"y,f(x),ln(cosx)",\[{\text{The range of }}y = f\left( x \right) = \ln \left( {\cos x} \right){\text{is}}\],3,AP;Range;Trigonometric Function;Logarithmic
+"logx(3^x),x/2","\[{\text{The }}{\log _x}\left( {{3^x}} \right) = \frac{x}{2},{\text{ than }}x = ?\]",3,AP;Roots;Function;Equation
+"f(x),((x^3)+2),(f^-1)(x)",\[{\text{The }}{f^{ - 1}}{\text{ be the inverse functin of}}\]\[f\left( x \right) = {x^3} + 2{\text{ then }}{f^{ - 1}}\left( x \right) = ?\],3,AP;Function;Inverse
+"f(x),((x^3)-(2(x^2))-x+2)",\[{\text{The set of  }}x - {\text{intercepts of the graph of }}\]\[f\left( x \right) = {x^3} - 2{x^2} - x + 2{\text{ is?}}\],3,AP;Roots;Function
+"(-pi/2,pi/2),f(x),(e^tanx)","\[{\text{If the domain of }}f{\text{ is restricted to the open interval }}\left( { - \frac{\pi }{2},\frac{\pi }{2}} \right)\]\[{\text{the range of }}f\left( x \right) = {e^{\tan x}}{\text{ is?}}\]",3,AP;Range;Trigonometric Function;Exponential;Tangent
+"reflection of the graph of y,f(x),x-axis",\[{\text{The reflection of the graph of }}y = f\left( x \right)\]\[\operatorname{in} {\text{ the }}x{\text{ - axis is?}}\],2,AP;Algebra
+"f(x),(sin(x/3)-1),smallest,maximum",\[{\text{The smallest postive }}x{\text{ forwhich the function }}f\left( x \right) = \sin \left( {\frac{x}{3}} \right) - 1\]\[{\text{is a maximum is ?}}\],4,AP;Maxima;Derivative application
+tan(arccos(-(sqrt2)/2)),\[\tan \left( {\arccos \left( { - \frac{{\sqrt 2 }}{2}} \right)} \right) = ?\],3,AP;Trigonometic Equation
+"f(x),inverse,2e^x,(f^-1)(x)",\[f\left( x \right){\text{ is inverse of }}f\left( x \right) = 2{e^{ - x}}\]\[{\text{then }}{f^{ - 1}}\left( x \right) = ?\],3,AP;Function;Inverse;Exponential
+"f(x),lnx,g(x),(9-(x^2)),(f(g(x)))",\[{\text{suppose that }}f\left( x \right) = \ln x{\text{ for all positive }}x{\text{ }}\]\[{\text{and }}g\left( x \right) = 9 - {x^2}{\text{ for all real }}x\]\[{\text{domain of }}f\left( {g\left( x \right)} \right) = ?\],3,AP;Domain;Function
+"f(x),lnx,g(x),(9-(x^2)),(f(g(x)))",\[{\text{suppose that }}f\left( x \right) = \ln x{\text{ for all positive }}x\]\[{\text{and }}g\left( x \right) = 9 - {x^2}{\text{ for all real }}x\]\[{\text{range of }}y = f\left( {g\left( x \right)} \right) = ?\],3,AP;Domain;Function
+"limits(xto2)(((x^2)-4)/((x^2)+4)),lim(xto2)",\[\mathop {\lim }\limits_{x \to 2} \frac{{{x^2} - 4}}{{{x^2} + 4}}\],4,AP;Limits;Quotient Rule;Power Rule
+"limits(xtoinfinity)((4-(x^2))/((x^2)-1)),lim(xto infinity)",\[\mathop {\lim }\limits_{x \to \infty } \frac{{4 - {x^2}}}{{{x^2} - 1}}\],4,AP;Limits;Quotient Rule
+"lim(x to 3)((x-3)/((x^20-(2*x)-3)),im(x to 3)",\[\mathop {\lim }\limits_{x \to 3} \frac{{x - 3}}{{{x^2} - 2x - 3}}\],2,AP;Limits
+"lim(x to 0)(x/x),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{x}{x}\],2,AP;Limits
+"lim(x to 2)(((x^3)-8)/((x^2)-4)),lim(x to 2)",\[\mathop {\lim }\limits_{x \to 2} \frac{{{x^3} - 8}}{{{x^2} - 4}}\],4,AP;Limits;Quotient Rule;Power Rule
+"lim(x to inf)((40(x^2))/((4(x^2))-x-2)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to \infty } \frac{{4 - {x^2}}}{{4{x^2} - x - 2}}\],3,AP;Limits
+"lim(x to -inf)(((5(x^3))+27)/((20(x^2))+10x+9)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to  - \infty } \frac{{5{x^3} + 27}}{{20{x^2} + 10x + 9}}\],3,AP;Limits
+"lim(x to inf)(((3x^2)+27)/((x^3)-27)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to \infty } \frac{{3{x^2} + 27}}{{{x^3} - 27}}\],4,AP;Limits;Quotient Rule
+"lim(x to inf)((2x^-x)/2x)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to \infty } \frac{{2{x^{ - x}}}}{{2x}}\],2,AP;Limits
+"lim(x to -inf)((2x^-x)/2x)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to  - \infty } \frac{{2{x^{ - x}}}}{{2x}}\],2,AP;Limits
+,,,
+"lim(x to 3)(y=((x^2)-9)/(3x-9)),lim(x to 3)",\[{\text{ }}\mathop {\lim }\limits_{x \to 3} y = \frac{{{x^2} - 9}}{{3x - 9}}\],2,AP;Limits
+"lim(x to 0)(sinx/((x^2)+3x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin x}}{{{x^2} + 3x}}\],3,AP;Limits;L''Hospital''s Rule;
+"lim(x to 0)(sin(1/x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \sin \frac{1}{x}\],,
+"lim(x to inf)(sin(((x^2)+1)/((2x-1)(2+x)))),lim(x to inf)",\[\mathop {\lim }\limits_{x \to \infty } \sin \frac{{2{x^2} + 1}}{{\left( {2x - 1} \right)\left( {2 + x} \right)}}\],2,AP;Limits
+"lim(x to 0)(fracx/x),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{{\left| x \right|}}{x}\],2,AP;Limits
+"lim(x to inf)(xsin(1/x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to \infty } x\sin \frac{1}{x}\],4,AP;Limits;L''Hospital''s Rule;sine;trigonometric
+"lim(x to p)(x((sin(pi-x))/(pi-x))),lim(x to pi)",\[\mathop {\lim }\limits_{x \to \pi } x\frac{{\sin \left( {\pi  - x} \right)}}{{\pi  - x}}\],3,AP;Limits;sine;trigonometric
+graph of f(x)=4/((x^2)-1),\[{\text{graph of }}f\left( x \right) = \frac{4}{{{x^2} - 1}}\],2,AP;Function
+graph ofy=((2(x^2))+(2x)+3)/((4(x^2))-4x),\[{\text{graph of }}y = \frac{{2{x^2} + 2x + 3}}{{4{x^2} - 4x}}\],2,AP;Function
+,,,
+lim(xto-2)floor(x),\[\mathop {\lim }\limits_{x \to  - 2} \left\lfloor x \right\rfloor {\text{  = ?}}\],3,AP;Limits;Floor Function;Discontinuous 
+lim(xtoinf)sinx,\[\mathop {\lim }\limits_{x \to \infty } \sin x\],3,AP;Limits;sine;trigonometric
+lim(x to 2)f(x),\[\mathop {\lim }\limits_{x \to 2} f\left( x \right)\],3,AP;Limits;sine;trigonometric
+,,,
+lim(x to 0)sqrt(3+arctan(1/x)),\[\mathop {\lim }\limits_{x \to 0} \sqrt {3 + \arctan \frac{1}{x}} \],3,AP;Limits;trigonometric;tangent;inverse
+differential(y=(x^5)tanx),\[\frac{{dy}}{{dx}}{\text{ is }}y = {x^5}\tan x\],4,Derivative;Sum Rule;Product Rule;
+differential(y=(2-x)/(3x-1)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{{2 - x}}{{3x - 1}}\]",2,Derivative;Quotient Rule
+differential(y=sqrt(3-2x)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \sqrt {3 - 2x} \]",3,Derivative;Chain Rule; Function of Functions;Power Rule
+differential(y=(2/((5x+1)^3))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{2}{{{{\left( {5x + 1} \right)}^3}}}\]",3,Derivative;Chain Rule; Function of Functions;Power Rule
+differential(y=(((3x)^2/3)-((4x)^1/2)-2)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = 3{x^{2/3}} - 4{x^{1/2}} - 2\]",2,Derivative;Power Rule
+differential(y=(2*sqrt(x))-(1/(2*sqrt(x)))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = 2\sqrt x  - \frac{1}{{2\sqrt x }}\]",2,Derivative;Power Rule
+differential(y=(sqrt((x^2)+2x-1))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \sqrt {{x^2} + 2x - 1} \]",3,Derivative;Chain Rule; Function of Functions;Power Rule
+differential(y=(x/(sqrt(1-(x^2))))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{x}{{\sqrt {1 - {x^2}} }}\]",4,Derivative;Chain Rule; Function of Functions;Power Rule;Product Rule
+,,,
+differential(y=(arctan(x/2))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = {\tan ^{ - 1}}\frac{x}{2}\]",4,Derivative;Trigonometric;Inverse;Tangent
+differential(y=(ln(secx+tanx))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \ln \left( {\sec x + \tan x} \right)\]",4,Derivative;TrigonometricTangent;Secant;Logarithm
+differential(y=(((e^x)-(e^-x))/((e^x)+(e^-x)))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{{{e^x} - {e^{ - x}}}}{{{e^x} + {e^{ - x}}}}\]",3,Derivative;Exponential;Quotient Rule
+differential(y=(ln(x(sqrt((x^2)+1))))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \ln \left( {x\sqrt {{x^2} + 1} } \right)\]",4,Derivative;Chain Rule; Function of Functions;Power Rule;Logarithm
+differential(y=((x^2)*(sin(1/x)))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = {x^2}\sin \frac{1}{x}{\text{ }}\left( {x \ne 0} \right)\]",4,Derivative;Chain Rule; Function of Functions;Power Rule;Trigonometric;Sine;Cosine
+differential(y=(1/(2sin2x))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{1}{{2\sin 2x}}\]",2,Derivative;Trigonometric;Sine
+differential(y=((e^-x)cos2x)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = {e^{ - x}}\cos 2x\]",3,Derivative;Trigonometric;Cosine;exponential;Product Rule
+differential(y=((sec^2)sqrtx)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = {\sec ^2}\sqrt x \]",5,Derivative;Chain Rule; Function of Functions;Power Rule;tangent;secant
+differential(y=(x(ln^3)x)),"\[\frac{{dy}}{{dx}}{\text{, if }}y = x{\ln ^3}x\]",5,Derivative;Chain Rule; Function of Functions;Product Rule;Logarithmic
+differential(y=((1+(x^2))/(1-(x^2)))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = \frac{{1 + {x^2}}}{{1 - {x^2}}}\]",4,Derivative;Chain Rule; Function of Functions;
+differential(y=(((sin^-1)*x-(sqrt(1-(x^2))))),"\[\frac{{dy}}{{dx}}{\text{, if }}y = {\sin ^{ - 1}}x - \sqrt {1 - {x^2}} \]",5,Derivative;Chain Rule; Function of Functions;Product Rule;Trigonometric
+differential(1=((x^3)-xy-(y^3))),"\[\frac{{dy}}{{dx}}{\text{, if }}{x^3} - xy + {y^3} = 1\]",4,Derivative;Implicit Differentiation;Power Rule
+differential(0=(x+(cos(x+y)))),"\[{\text{find }}\frac{{dy}}{{dx}}{\text{, if }}x + \cos (x + y) - 1 = 0\]",4,Derivative;Implicit Differentiation;Power Rule;cosine
+differential(0=(sinx-cosy-2)),"\[{\text{find }}\frac{{dy}}{{dx}}{\text{, if sin}}x - \cos y - 2 = 0\]",4,Derivative;Implicit Differentiation;Sine;cosine;Chain Rule;Function of Function
+differential(1=(3(x^2)-2xy+5(y^2))),"\[{\text{find }}\frac{{dy}}{{dx}}{\text{, if }}3{x^2} - 2xy + 5{y^2} = 1\]",4,Derivative;Implicit Differentiation;Product Rule;Chain Rule;Function of Function
+second order differential(x=t^2 - 1; y=t^4 - 2t^3),"\[{\text{find }}\frac{{{d^2}y}}{{d{x^2}}}{\text{, if }}x = {t^2} - 1{\text{ and }}y = {t^4} - 2{t^3},{\text{ then }}t = 1\]",3,Derivative;Second Order Differnential;Power Rule
+f(x)=(x^4)-(4(x^3))+(4(x^2))-1,"\[f\left( x \right) = {x^4} - 4{x^3} + 4{x^2} - 1,{\text{ }}\]",2,Derivative;Power Rule
+"f(x)=16*(sqrt(x)),f""(4)=?","\[{\text{if }}f\left( x \right) = 16\sqrt x ,{\text{ then }}f''\left( 4 \right) = ?\]",3,Derivative;Second Order Differnential;Power Rule
+"f(x)=ln(x^3),f""(3)=?","\[{\text{if }}f\left( x \right) = \ln {x^3},{\text{ then }}f''\left( 3 \right) = ?\]",3,Derivative;Second Order Differnential;Logarithmic
+second order differential(x^2 + y^2 = 25),"\[{\text{find }}\frac{{{d^2}y}}{{d{x^2}}}{\text{, for }}{x^2} + {y^2} = 25,{\text{ at}}\left( {0,5} \right)\]",3,Derivative;Second Order Differnential;Implicit Differentiation;Power Rule
+second order differential(y=asincx+bcoscx),,3,Derivative;Second Order Differnential;cosine;sine;Trigonometric
+differential(5^x),,4,Derivative;Exponential;Newton Raphson Method
+"y=((e^x)(x-1)),y""(0)=?","\[{\text{If }}y = {e^x}\left( {x - 1} \right),{\text{ then }}y''\left( 0 \right) = ?\]",3,Derivative;Second Order Differnential;Exponential;Product Rule
+"differential(x=e^t*(cost), y= e^t*(sint))","\[\frac{{dy}}{{dx}},{\text{ if }}x = {e^\theta }\cos \theta {\text{ and }}y = {e^\theta }\sin \theta {\text{ when }}\theta {\text{ = }}\frac{\pi }{2}\]",4,Derivative;Exponential;Trigonometric;Cosine;Sine
+second order differential(x=cost; y=cos2t),"\[{\text{Find }}\frac{{{d^2}y}}{{d{x^2}}}\left( {\sin t \ne 0} \right),{\text{ if }}x = \cos t{\text{ and }}y = \cos 2t\]",4,Derivative;Second Order Differnential;Trigonometric;cosine
+limit(xto0)((1+x)^6)-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {1 + x} \right)}^6} - 1}}{x}\],3,Limits;L''Hospital''s Rule
+limit(xto0)(((sqrt(8+x))-x)/()),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sqrt[3]{{8 + x}} - 2}}{x}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)(((ln(e_x))-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\ln \left( {e + x} \right) - 1}}{x}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)((cosx-1)/cosx),\[\mathop {\lim }\limits_{x \to 0} \frac{{\cos x - 1}}{{\cos x}}\],2,Limits;Trigonometric;Cosine
+MVT(f(x)=x^(2/3)),,3,Derivative;Mean Value Theorem
+differentia(f(x)=2x^3 - x),,3,Derivative;Secant;Tangent;Slope
+differential(h(x))  h(x) is inverse (f(x)=1/x)),,2,Derivative;Power Rule
+limt(x to inf)((e^x)/(x^50)),\[\mathop {\lim }\limits_{x \to \infty } \frac{{{e^x}}}{{{x^{50}}}} = ?\],2,Limits;L''Hospital''s Rule
+differential(sin(xy)=x,"\[{\text{find }}\frac{{dy}}{{dx}},{\text{ if }}\sin \left( {xy} \right) = x\]",4,Derivative;Implicit Differentiation;Product Rule;Chain Rule;Function of Function;sine
+limt(x to 0)(sin2x/x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 2x}}{x}\],2,Limits;L''Hospital''s Rule
+limt(x to 0)(sin3x/sin4x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 3x}}{{\sin 4x}}\],2,Limits;L''Hospital''s Rule
+limt(x to 0)((1-cosx)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{1 - \cos x}}{x}\],2,Limits;L''Hospital''s Rule
+limt(x to 0)((tanpix)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\tan \pi x}}{x}\],2,Limits;L''Hospital''s Rule
+limt(x to inf)((x^2)sin1/x),\[\mathop {\lim }\limits_{x \to \infty } {x^2}\sin \frac{1}{x}\],2,Limits;Trigonometric;sine
+sint=(x-3/3);cost=(y+1)/3,,1,Locus;Circle
+limit(x to 0)((secx-cosx)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sec x - \cos x}}{{{x^2}}} = ?\],2,Limits;Trigonometric;sine
+,,,
+,,,
+,,,
+,,,
+"(alpha+beta=(pi/2)),((beta+gamma)=alpha),tan alpha=?","\[{\text{if }}\alpha {\text{ + }}\beta {\text{ = }}\left( {\pi /2} \right){\text{ and }}\beta {\text{ + }}\gamma {\text{ = }}\alpha {\text{, tan}}\alpha {\text{ = ?}}\]",4,Trigonometry;Tangent
+,"\[\int_{ - \pi }^\pi  {\frac{{{{\cos }^2}x}}{{1 + {a^x}}}} dx,a > 0 = ?\]",,
+"f(x)=(x(e^x*(1-x))),f`(x)","\[{\text{if }}f\left( x \right) = x{e^{x\left( {1 - x} \right)}},{\text{ then }}f'\left( x \right){\text{ is}}\]",4,Derivative;Product Rule;Exponential Function
+,,,
+,,,
+,,,
+,,,
+,,,
+(sin((cot^-1)(1+x)))=cos(arctanx),"\[\sin \left( {{{\cot }^{ - 1}}\left( {1 + x} \right)} \right) = \cos \left( {{{\tan }^{ - 1}}x} \right),{\text{ }}x = ?\]",5,Trigonometry;Pre-calculus;Sine;Cotangent;Cosine;Tangent;Inverse
+,,,
+,\[\int\limits_0^1 {\sqrt {\frac{{1 - x}}{{1 + x}}} } dx\],,
+,,,
+,,,
+,,,
+integral(((x^2)-1)/((x^3)(sqrt((2(x^4))-(2(x^2))+1)))dx,\[\int {\frac{{{x^2} - 1}}{{{x^3}\sqrt {2{x^4} - 2{x^2} + 1} }}} dx\],5,Integral;Power Rule;Substitution
+,,,
+integral(1/((((x-1)^3)((x+2)^5))^1/4))dx,\[\int {\frac{1}{{{{\left[ {{{\left( {x - 1} \right)}^3}{{\left( {x + 2} \right)}^5}} \right]}^{1/4}}}}} dx\],4,Integral;Partial Functions
+limit(x to 0)((1+sinx-cosx+(log(1-x)))/(x^3)),\[{\text{f }}\mathop {\lim }\limits_{x \to 0} \frac{{1 + \sin x - \cos x + \log \left( {1 - x} \right)}}{{{x^3}}}\],3,Limits;L''Hospital''s Rule
+,,,
+,,,
+limit(x to 0)((((x^3)-x)^3)/((sin((x^2)/4))*(log(1+3x)))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {{x^x} - 1} \right)}^3}}}{{\sin \frac{{{x^2}}}{4}\log \left( {1 + 3x} \right)}}{\text{  = ?}}\],3,Limits;L''Hospital''s Rule
+,,,
+,,,
+integral(dx/((x^2)+4x+13)),\[\int {\frac{{dx}}{{{x^2} + 4x + 13}}} \],3,Integral;Inverse;Tangent;Subsititution
+,,,
+,,,
+integral(dx/(x((x^7)+1))),\[\int {\frac{{dx}}{{x\left( {{x^7} + 1} \right)}}} \],4,Integral;Partial Functions
+,,,
+integral(dx/((sin(x-a))(sin(x-b)))),\[\int {\frac{{dx}}{{\sin \left( {x - a} \right)\sin \left( {x - b} \right)}}} {\text{ is?}}\],5,Integral;Trigonometric;
+limit(x to 0)(xloge(sinx)),\[\mathop {\lim }\limits_{x \to 0} x{\log _e}\left( {\sin x} \right){\text{  = ?}}\],3,Limits;L''Hospital''s Rule
+,,,
+,,,
+,,,
+integral(sin(logx)+cos(logx))dx,\[\int {\left[ {\sin \left( {\log x} \right) + \cos \left( {\log x} \right)} \right]} dx = ?\],5,Integral;Integration by Parts;Substitution;Trigonometric;Sine;Cosine;Logarithmic
+differential((x+y)/(x-y)),\[\frac{{dy}}{{dx}} = \frac{{\left( {x + y} \right)}}{{\left( {x - y} \right)}}\],,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+differential+(sqrt((1-(y^2))/(1-(x^2))))=0,\[\frac{{dy}}{{dx}} + \sqrt {\left[ {\frac{{1 - {y^2}}}{{1 - {x^2}}}} \right]}  = 0\],5,Integration;Inverse; Trigonometric
+limit(x to 9)(((x^(3/2))-27)/(x-9)),\[\mathop {\lim }\limits_{x \to 9} \left( {\frac{{{x^{3/2}} - 27}}{{x - 9}}} \right)\],,
+,,,
+,,,
+limit(x to 0)((x^(1/x))/(e^((1/x)+1))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{e^{1/x}}}}{{{e^{\left( {1/x} \right) + 1}}}}\],3,Limits;L''Hospital''s Rule
+,,,
+integral(dx/((1+(e^x))(1+e^(-x)))),\[\int {\frac{{dx}}{{\left( {1 + {e^x}} \right)\left( {1 + {e^{ - x}}} \right)}}}  = ?\],5,Integration; Trigonometric; Substitution
+,,,
+limit(x to 0)((2(sin^2)3x)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{2{{\sin }^2}3x}}{{{x^2}}} = ?\],3,Limits;L''Hospital''s Rule;Product Rule

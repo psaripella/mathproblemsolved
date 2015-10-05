@@ -1583,3 +1583,433 @@ Set-Cookie: AKDC=slc-b-origin-www-2.paypal.com; expires=Fri, 18-Jul-2014 17:03:1
 
 INVALID
 
+[08/17/2014 11:43 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:43:40 Aug 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-21SVY4RLF87S, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AaoQY1mlUZAao.pOyyozINSb8KGkA9kJWN.qcKKCIJgWPsyrCkL8nrgl, payer_email=mathtest@gmail.com, txn_id=7AY88880N22877311, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=cf9d36597a832, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=14400
+Strict-Transport-Security: max-age=14400
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Sun, 17 Aug 2014 15:43:53 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=VPHu7n1sRI5nHfdPZBbR3wKYq7vnEY1tuwyCuTb8yQfXNxCT9LOyHIabvk_HpziPK3E0NOBwwyGPEXOtbVuS-qDLCzWC_HCxCQBdNEJgjVvuqzeFQSuNwX6GySE7LFbbNcUDIcDJlC5-7RvXhK335nuqKO4DLIUWXAZO46EsVwgyAw6njLsdvfTX2OWI1thMhjOacwaei-PdaNScNJQlDGc3zXkkUf9aNxYqjpk1BwS4hS96q2V4Mr6F7gIbRVkU9tnXA7E5z9ZfkurhGWESis4aeOh-qztBPpTLf1gQ7i3n-K1l2KMXyRJfCDGuodxWYW3n4rxq3-NIuE4hH6Yt21ABATb5_YWDlMk8Yy2icuS5L9RynXN_SDvltAFTLnrO_vlKJGCsIObjCb86h3fzuf3HIZv1uklQq3Slv0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 14-Aug-2024 15:43:53 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 16-Aug-2016 15:43:53 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1408290233147404; path=/; expires=Tue, 09-Aug-44 15:43:53 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3117281363; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.32.1408290233138252; path=/; expires=Tue, 09-Aug-44 15:43:53 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Sun, 17-Aug-2014 16:13:53 GMT; path=/; secure
+
+INVALID
+
+[08/17/2014 11:45 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:44:03 Aug 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-PNN0F1YM6MUN, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=ApDRP1K8i.lgxo4jDkd8UQJkM4U3AzkYrR9DpKkMCieYLUTTYQDLtFFM, payer_email=mathtest@gmail.com, txn_id=6D108697G8505290C, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=a1aed234da372, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=14400
+Strict-Transport-Security: max-age=14400
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-2.paypal.com
+Date: Sun, 17 Aug 2014 15:45:14 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=377BWzcygxAWBTxRnhWT0DJ9nKmpDpTKQmlop14rPiaMPswt96aEQTNMp2yEopOH66Iz917o5JQLSDGSlLuiEr4lscYdg_fDcl2pPMRrLAiAAVJoNTyfZLxlAcmvbgGIh5s4R3DeCuOXvfiRtbkH8D9d6-DazaxquXzAVRBxI7xTVL-nRjpodjXaPVVJitv9rNn19zr-CB9RXR_QDomIMDFTTnmWpR_Cg1cleUXL-UFf4nbTfcIspL7eOIZoDLN_bxwopBI6I_Oiryf-6Y2nHiOv0M1yjX3Z8C48gAxYQa-AZD2OaS8bEqcmp8XhEsUtKqcfI-GLR-pGCvse-9vp8KcAz3WzokfyaZERG8fh9mnkcMNaMHL64A7jPoa0yCrr5F5aIBGtAIrejOlFqWQQcH_kgBvuckqkPtGTaG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 14-Aug-2024 15:45:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 16-Aug-2016 15:45:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1408290313745549; path=/; expires=Tue, 09-Aug-44 15:45:13 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D164556883; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.62.1408290313735146; path=/; expires=Tue, 09-Aug-44 15:45:13 GMT
+Set-Cookie: AKDC=slc-a-origin-www-2.paypal.com; expires=Sun, 17-Aug-2014 16:15:14 GMT; path=/; secure
+
+INVALID
+
+[08/17/2014 11:45 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:44:09 Aug 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-4BK83L46F6JP, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AIbV-w6SIfp-F1DaWgdvXeNy2IruAgwfQmWbXk2qOthY.lPNeckqbrOp, payer_email=mathtest@gmail.com, txn_id=4RU25713HD349401E, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=dd5fd3e3474e, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=14400
+Strict-Transport-Security: max-age=14400
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-1.paypal.com
+Date: Sun, 17 Aug 2014 15:45:14 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=FjaNt_YKX_Nt2ZC9st0cGZdurnyCdR4R1d85-kVKinxH0V1zoFcoGvecBTzoz1iYJ02F1s2gEOQc20wU4JVDy40Xu3HHozPT2bk7XJt_6Kun72t4qAcuwofixi3r38oFe5g_g2zZnOsV48Dq5eBFbaPkQbDNzKpko_DVVAl-cNJ8Mk1lWMsGbUuTZKcFWy4XD7zf1kfG8U8JghL2U8kh4dtrjm-u0i4FtqTn9oCVFDmcS7npER3atxqh8pwgpCJyG3jKvNaPCNh05udPvaPxEHniWIlXC2wHu_xkpdSSxQZ9t-ZyIihHKZpBKT6auvl7ldf9OcCnyFBNE4hDzadVLEhtuEizCGr0sJqFEqBNSqf73K32cWED5nEeQtTpSg4nxFcIXRqynPP45D4r5vIGENo9NjoYFFAYuJIH7C72XCJUGZ9fzeddFKiP9OC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 14-Aug-2024 15:45:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 16-Aug-2016 15:45:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1408290313752566; path=/; expires=Tue, 09-Aug-44 15:45:13 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D164556883; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.34.1408290313739840; path=/; expires=Tue, 09-Aug-44 15:45:13 GMT
+Set-Cookie: AKDC=slc-a-origin-www-1.paypal.com; expires=Sun, 17-Aug-2014 16:15:14 GMT; path=/; secure
+
+INVALID
+
+[08/18/2014 11:55 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=DKWMLXU2BBNMY, address_street=1 Main St, payment_date=08:54:25 Aug 18, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-LBEDVK047KDK, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=Az3wjKBeFSH9.K6CHGNGQe0OFa-oAihiKj2yOLCckFtD9Vcpln6g1nya, payer_email=cyberredemption@gmail.com, txn_id=42497497NK5274618, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=e3fe737689d32, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=14400
+Strict-Transport-Security: max-age=14400
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Mon, 18 Aug 2014 15:55:16 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=Hyf_I6TvfWEVJxV80FdKFvQrwx2g2ucIBA7MoOitqVs1HAnQHfmTovyLJPMNy3_fp___RiunFh-ceNQjw3QkyA56dXw1yiIziuVB_2qAFWg6hEh1Sdqg-yV_U0UblczurRjTF6DZItrA9KCYjREa-eybpw7iLsRaTdrPrJ0WXsf1na5hwod2oXO9tv3ZtMI_br1CS-fbeOrIR5wbzXNFU5rM5CbUqcrK23yC0MdCOYabjATr1NApwfGuHTO-wihoDp_bv3-D_ophW4MqKXPFLNJUsL2ooddCczyR3SvmXF_7a0GRmBfUZH4amCIH3xgVHoYxs5h3OJxtaz_-5v-zBv6TyXg8idWyA0Ff9TppHeEuGusbHqSCSJUg53yrD1scEdPxiHkaGA2jS2gBZgBX3tHEHDPN-YAMUdx-hip28UJr32h8rBPeB91OLse; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Thu, 15-Aug-2024 15:55:16 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Wed, 17-Aug-2016 15:55:16 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.134.1408377316135431; path=/; expires=Wed, 10-Aug-44 15:55:16 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3827429971; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.38.1408377316123686; path=/; expires=Wed, 10-Aug-44 15:55:16 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Mon, 18-Aug-2014 16:25:16 GMT; path=/; secure
+
+INVALID
+
+[08/30/2014 6:56 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+transaction_subject=, txn_type=send_money, payment_date=15:56:16 Aug 30, 2014 PDT, last_name=Kumar, residence_country=US, payment_gross=150.00, mc_currency=USD, business=sales@mathproblemsolved.com, payment_type=instant, protection_eligibility=Ineligible, verify_sign=AAjjDCP62O89--e4vTTBZnfrxJyWA0LGVs0irxOmoawqaiNb7UC5p5H., payer_status=verified, payer_email=phanikumar3696@gmail.com, txn_id=6NG86425ED309993G, receiver_email=sales@mathproblemsolved.com, first_name=Phani, payer_id=SGYCXNBFWWPXN, receiver_id=99V6BB6LN8WY2, payment_status=Completed, mc_gross=150.00, charset=windows-1252, notify_version=3.8, ipn_track_id=8e8345437fa48, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=14400
+Strict-Transport-Security: max-age=14400
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-1.paypal.com
+Date: Sat, 30 Aug 2014 22:56:26 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=vce9c3vGnOJQ2ZKxFeAhmEwQ5Bq4dc3WCdWI7zsAiJGgvHWS8lrWHOJrAAYoxAf-URgD5N2MmmyNNmxU5rt0fX_m1q8kpFl96yYVOky8jFBVp8sga6PS-BUOqSPgTOc-3P4WMIpzhqJjZhoVmjmQcG3mjG0tQxSLZoYbBSqORhc6I6_aI4mOW8ITCByfpxhVQzh8oMMcYpZ98ivyDkZgGZt0q8vy7_Upha_Jm6VwoM_ErtABDhCIpoDH8UY2SI5VgE0Apuimkv8q7k749k1EK0L-nsr0y2IBwu0R-B4C0BXr9w99QrB47uJI7fju5rLpZ-g7SbRA-T0_rr0JJQCi9UXGtdSpyLeyvkZgX68hA0_l9hiMqAipGIXTblS9yx-YG1NtBc2DfqmopZuJhQH5GUFDFmIr2w70ws_c4K7sbq-xulJw6U_uYMkbE2a; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 27-Aug-2024 22:56:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 29-Aug-2016 22:56:26 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1409439386024593; path=/; expires=Mon, 22-Aug-44 22:56:26 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D2589327956; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.44.1409439386013987; path=/; expires=Mon, 22-Aug-44 22:56:26 GMT
+Set-Cookie: AKDC=slc-a-origin-www-1.paypal.com; expires=Sat, 30-Aug-2014 23:26:26 GMT; path=/; secure
+
+VERIFIED
+
+[09/17/2014 11:31 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:30:45 Sep 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-4BK83L46F6JP, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AJjiv-7KURHwuOkigiW.SQ42ScnFACBMmPl7wgGO83EGnNCBioqcWXRm, payer_email=mathtest@gmail.com, txn_id=10T53839TG926453R, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=772234a93377a, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-1.paypal.com
+Date: Wed, 17 Sep 2014 15:31:07 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=GZ-f_xeSLpMuk1D_s4x1v_6YFEP5NDkm8KBOWM-6QZjxpsPYbJSbPue8KyS6Kn1uxpARv5jA1rMx_e4zR_uEwNNmcXQH2LJiu-fqGyOcGQV6yzMG0XqUs_ZEEP__987uYklD0Z_wQ-J9vNsZ8lRChvl6iku-xJ38W2NLbz94bkgCuddWWo-nbRBlWd75NpIG8UHAsPvo1p3I2pZyo8VW0dO7fCYpyIpt9zkCUcGw7ztCTYFbgHzjghWViczBEikM-9LyKYqSSSDj8rO6uV1VhQNtlxHXfW3UZTm51EOOSOoY_rD1SjmuQjYa7HrACS-bTrbCzWyVyhbI5xjS8cWpUMst7rQXTS8Q75XHy3Cha_Sgwq5v083SrTk1NSqcPxSzMBWAXKkbInjt11M78Y-P5r9u1GnE3SaaUDJeeL5ltAl4qKM3yU7lcxTuOD4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 14-Sep-2024 15:31:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 16-Sep-2016 15:31:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1410967866615559; path=/; expires=Fri, 09-Sep-44 15:31:06 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D984160596; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.36.1410967866604961; path=/; expires=Fri, 09-Sep-44 15:31:06 GMT
+Set-Cookie: AKDC=slc-a-origin-www-1.paypal.com; expires=Wed, 17-Sep-2014 16:01:07 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[09/17/2014 11:31 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:30:40 Sep 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-PNN0F1YM6MUN, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=ApVBQYhyCT6119feXnnBAb3.lsGUAKXtjreNMwjFUO.oozGNttLsmIVE, payer_email=mathtest@gmail.com, txn_id=1E221476YD050231Y, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=36e718a6b0a54, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-1.paypal.com
+Date: Wed, 17 Sep 2014 15:31:12 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=UyRHKYqXUYn7FxnUVN8UQCjmCsmJN1ICh8LbN24MV9OojH16q-eYEZyvO5-4FMZPhmyymfLjraTZqouYektZBXngRq-NePde6HTtfKwd1kiCBDVTsM6be4yDXKuo0myDSwgkBoYfizwHSoZDLrUVIfD9zsYqmj55PxUv9_mUk0DCsjOyhaJ9tE4oaU85RmWEd98iERXDBWtPz0I8LdHzWD1jjM6YGTEVT5HmeNDSddBPjAUdIMPJq7SeBWwQ5ggbuFHJKzfhh4pcOX48_byom0vHKxTYv4gTb_1PFJspGiuGDHVnGbSjBkp73h5m3-rQvWu5yDww8FKIFlPmLtG6weeVf50WhFluip7lka6SUflSoRphaqctJurNSUcWB70f24XaUnaMTXjkyLKJxOy0NPQn8nSiBm5-TUSkb6OSwgvHW57W6OI5axf5v_C; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 14-Sep-2024 15:31:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 16-Sep-2016 15:31:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.134.1410967871908961; path=/; expires=Fri, 09-Sep-44 15:31:11 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D1068046676; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.38.1410967871898029; path=/; expires=Fri, 09-Sep-44 15:31:11 GMT
+Set-Cookie: AKDC=slc-a-origin-www-1.paypal.com; expires=Wed, 17-Sep-2014 16:01:12 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[09/17/2014 11:31 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:30:11 Sep 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-21SVY4RLF87S, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=A6aS8tuK5ZMIUOR.YqK698xAoeOgAaYjfeHipiQaTNrdnVrW1kt.SAgQ, payer_email=mathtest@gmail.com, txn_id=40G599551T506490A, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=366ec5943c840, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-1.paypal.com
+Date: Wed, 17 Sep 2014 15:31:12 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=WtzTeHCXgNpylvl2-6i0LT_x4mIoGZizpvEMQJ1TrbKEsho53qfNhzvJToPyn3MMvkVHedVYxEZ0i2cYTB37Kt7JoRnvGw5rrc8Pf_0x7BPhLhBysb5BAXLYq-rg8ialZ61v-o65ofJYmBlV8jfFv6MY4JUj90znhgIG2c4UubxdEDbX3uGBKBgJ999NibclYHAvC9Q6EbYsCpul8ZpQzgG1dWKO6N3IRbD68iVDZLDlCCDVDpdjTfYcEVM2nKh9C67m42Fh7AbgyhA4uTPb148uc00qruBnccYSH8YWNJXtb4lDlO3pEPcmv7vZQsNu02vLNcQELObrgVl_LVQpaYkMRQVEgnYXh9Gti4e3bqIrRqdJxoHfWEPbQSy8ed7S-jZpYXY91SduQ7jagJn_SO2plB5oytkv5ylh1FaowBccYL9IEBUsfAhdKPW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 14-Sep-2024 15:31:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 16-Sep-2016 15:31:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.134.1410967872460319; path=/; expires=Fri, 09-Sep-44 15:31:12 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D1084823892; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.37.1410967872449705; path=/; expires=Fri, 09-Sep-44 15:31:12 GMT
+Set-Cookie: AKDC=slc-a-origin-www-1.paypal.com; expires=Wed, 17-Sep-2014 16:01:12 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[09/18/2014 11:51 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=DKWMLXU2BBNMY, address_street=1 Main St, payment_date=08:50:18 Sep 18, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-LBEDVK047KDK, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=A0xTPVJgKi-Djn9RwPlGLW.vo71hA4VxtQ0DaJlD-X..xPIJ2hI1oyxG, payer_email=cyberredemption@gmail.com, txn_id=1E527873TH760701R, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=27e242eb6b117, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-2.paypal.com
+Date: Thu, 18 Sep 2014 15:51:12 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=rSoqoqELYrYaM6r4q0COF75wHJJSmbsVYpdtrJQZ7iMgqQLLdKClR_Vko8pV41RSMkBxujGK53Uk_vNpCKrNtkHvwNd7Kz88ceeQUx4PpSkv8DXuVoEoPMz4UB09GzFd5gOZOr4Gy66MoFY1SfTtgfb0XweX0PjF3hkluXCtaiA-GkW2Oq8jtscZTRm-H_EXzkt3kFMtp3K6IZwYb1Nda2_4t_smLT48TASoDZFr7nlKsnOqbygOb69sZd2SWBdhF5V8TRQJLuKW4Eo2PbFL-DksS6Pr1gZcn92nMmi155k_unwCK_pncEWphuWYtSEk5DxToNBUtNxeMjcf3yDF2nnOMPYX_1-03f5zkK1CNkgoW5hzaKWiHbLiiLiI9Fi0cHRPpFs5P3mCrpRVXcqLsDLTF_YaChXDACvuWm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 15-Sep-2024 15:51:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 17-Sep-2016 15:51:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.134.1411055472442774; path=/; expires=Sat, 10-Sep-44 15:51:12 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D1895766612; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.61.1411055472430423; path=/; expires=Sat, 10-Sep-44 15:51:12 GMT
+Set-Cookie: AKDC=slc-a-origin-www-2.paypal.com; expires=Thu, 18-Sep-2014 16:21:12 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[10/17/2014 12:56 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=09:55:49 Oct 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-4BK83L46F6JP, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AcCIvUFZLGai2P14SqFG0y8VP1mWA.TiBCkzEKjs5M92.FdPDD2FRFn0, payer_email=mathtest@gmail.com, txn_id=09R910608Y681601S, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=b22546939918, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Fri, 17 Oct 2014 16:56:14 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=YLpjQPdMs1BzOvY6wttIgwiE8qfFKgzqKjDGu13sYgKf4TouHfwgMTC-gFuIlRBhvs5WvS2qNPdk6vGUcmTS-Z25q2wvu_o0i1cNT-d4UkpTYipj6jdqyVW261vP4cusFMFvTx2sdfMxEEm2hW6Zb17SUJP4sPNp6eBxOK4cpOyueosWOoJ9GxBOTVX63fkNIuOIKl05MnoiM_u-Q9qI-i5-BPEQpIIR7xI0TXvACiAoPrmKTriDxNLqACd6nMaILFEx36phB_tH5tlyS_FS5DcGg2UQkQS1uSVbA0VmF976n3T3_c1Z-p-7FMM-1Eanu4aGX5Ex9tt28w8MYoFkFwEd4uBDOZqhP25Xloa35O6hLgwNJAAPbxryEn1hVMIfE78boY3mQ7WbUFPUA3NT0Buy5dEXFqBXnsYNd1Wq809kQq9bvYxmiUMor_u; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 14-Oct-2024 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 16-Oct-2016 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.134.1413564974439373; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D776618324; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.46.1413564974429632; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Fri, 17-Oct-2014 17:26:14 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[10/17/2014 12:56 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=09:55:39 Oct 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-21SVY4RLF87S, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AuB.HU-Oo6DJPosMEl7GD7ExKJmlAobDaJ.Sx50yemhF1jcNhUf7gQS9, payer_email=mathtest@gmail.com, txn_id=47E19599XK7953017, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=1979b734be8cd, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Fri, 17 Oct 2014 16:56:14 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=VH7XV5nUtVEvKlt8stbQo5YiFd-MPP0c4rtQTKQWOgaIrCbx-sQnVqPm0ze_Ab9zeXwCN2pCPbXe6fNhXkAoUKz2TvnQn7_URTErbgRyobwTcc57vQV6GPt-PEkZv_WzzqV80IT-tF2dZrR7uVP2T7M2MMDwNGlVnF-HSqsSSNWGGBYyMecLGujdSGhnWZPS9wEgS5mAlkSKl33qx1visQHEs60BEuRywAd0cAgiEiVDYQCAyfTSMZtMDCi5txUIEwCBVjfv5K9_roB4mFMlQZ6QYX7TYXDuh3vluyoS4kOAOvW5_RwIawxljU523u-zbrR99WjFZUdO40Y6JxZeYlVZplmWdqx-vdUOxXP1YQ5uJkY7ScGcHkW8btL0nKbATkXmJ60uRLBNDtwFpwm6r3nU_qeZ_drI3KbdH7SOnERvy7tCxFVwkvQgq3y; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 14-Oct-2024 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 16-Oct-2016 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.134.1413564974441537; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D776618324; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.47.1413564974432301; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Fri, 17-Oct-2014 17:26:14 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[10/17/2014 12:56 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=09:55:45 Oct 17, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-PNN0F1YM6MUN, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AXC-7jkq2l-759zSWhUGyDAz1K0MA80UeZDv8mKLx9Izmz6y8Ps-RrG9, payer_email=mathtest@gmail.com, txn_id=29455141411596223, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=a495a994dca11, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-2.paypal.com
+Date: Fri, 17 Oct 2014 16:56:14 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=6AoDtco9sB5lYGP_rQMzfozool8iyl4Uw8DFeuyADAYXa2lDsJkskDZ2hDxCT8AGDjhG8ANEfte0kFh4KbRNs8YdwnIxy83pu6-XQMLhhN9GfjF_KSxu7dH-31gKykBnz2vyUsljDYNZKa2PEP8QjsZ8AUATOPZniW0HzbJBk7u4UUOxFqi1R2WdMoVvnY_VPpdb_z9MmIs0l1kDdpGDSw6NJin47YVwwOCvfOxjlx3TCFatWiDfYmE8orOCxQpwxR9rswckX7t4ddpUjdnWgcJfdcejISQXp6Zas3z-GCtKjfIo4fUlyx5PZHIb3kwXWn6u51z2GM-oVhmopCvB7pLAGkIq6_X1X2tLGsBKrjVqrGbYabMPBHdUN0EKKFmcN5yh9QaF-L0S_6DZA1tGhJXEaZvVybOy2x4aWUW_RtwTO2xBTsfQ7U86KfG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 14-Oct-2024 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 16-Oct-2016 16:56:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1413564974490322; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D776618324; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.63.1413564974479256; path=/; expires=Sun, 09-Oct-44 16:56:14 GMT
+Set-Cookie: AKDC=slc-b-origin-www-2.paypal.com; expires=Fri, 17-Oct-2014 17:26:14 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[10/18/2014 2:14 PM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=DKWMLXU2BBNMY, address_street=1 Main St, payment_date=11:14:27 Oct 18, 2014 PDT, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-LBEDVK047KDK, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AfOKBbK9dWyhZp7T3QxlKLWa36.nAeXqNtNjxOCjFjYQ4RPEFmF9Yqx-, payer_email=cyberredemption@gmail.com, txn_id=0SD11595EY053420M, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=b367f97fe5f59, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Sat, 18 Oct 2014 18:14:45 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=LzD5JXvcU1FRTYj9RSGm-vaOjabpaOg08bXdyLzhQXR0gqnjx7ZDFZOQacTcV2GQfVuNYHTLq_ZNodJx8DUgLJlhcA95xwqb2tbLJzwHWoRVpJ5wiy1OCImoS24KcIIgxkgn_r6H20B-1gW0Tqtnqto9eaY2-W_nBDxG6AJfZeVN-QOFY4pYnvEHIIWpkSNYn1OcGN_izFbjn6pbcrUANzCNWCNnND-J_gdgn1SPGlYWdAr8kOLzminPyv37bUm1K4ccJL3q9erqSTClMNeota3-P8KZi3VSGDVesRA77mx0sH6_bshOPgy1X43vxyPOIGG0phYeaLjEuNcFcyuB2Ghy_FWweIfOAo6LQ58tz37bSJaKPpQ2kow6TzOo63jRaRCM00I5JHgDx4nk35jnP07E5XQn7SCznMhlHnAz5fmcq0Xzh-IVbLoiUa8; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 15-Oct-2024 18:14:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 17-Oct-2016 18:14:44 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1413656084575486; path=/; expires=Mon, 10-Oct-44 18:14:44 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D346964564; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.40.1413656084563896; path=/; expires=Mon, 10-Oct-44 18:14:44 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Sat, 18-Oct-2014 18:44:45 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[12/06/2014 11:15 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:15:18 Dec 06, 2014 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-PNN0F1YM6MUN, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=AB5vRIRDZkquZyc9wPgRY7jYxmEXA0QmhJCymd3PEKqsFJNhDtrW8bew, payer_email=mathtest@gmail.com, txn_id=7S790296HR6957325, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=e419060a3d2d1, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-2.paypal.com
+Date: Sat, 06 Dec 2014 16:15:39 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=bYpDsuh0yKHLajbHJg9dkjpbL8kGdLhECzYlaiJ5UnBG24_O_5o4jeySlhC7_If1GAJ1bsUPTFj5LnE7h0pDM8codqDNnSibFog-ZyMkacQKl0DnqMkPRUuPwPDCU0YO_WEaXwCaYxSZl1bKwtVOBMXPm_376UMcx6V6L2zsMLrR_zZQBwmlOSmBL9ipqoy2c_sRwkT3bHvxXG1QPCJVVOj9XIwzCSDmk420lWFfla1-Hu4KJhKsq9bPmxEiqG5YZAfXlYguV2BjAYksa_M3mrUM2lf4DviLguJLcEt4YQgFbs-EOzWiwq0Wk3g9qvgue0pg2XgLL7laHS4b6B4C5jifLtI_lGtUU_d13xehboz4kaGVwhUBbIRqiuiLnt0EM-UegqwY2ND0tbTwoIwhw_J3hArRjMTAXz66QnCjpCe3SbjAfzXUxh9EPse; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 03-Dec-2024 16:15:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 05-Dec-2016 16:15:39 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1417882538797945; path=/; expires=Mon, 28-Nov-44 16:15:38 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D2854978388; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.59.1417882538783854; path=/; expires=Mon, 28-Nov-44 16:15:38 GMT
+Set-Cookie: AKDC=slc-b-origin-www-2.paypal.com; expires=Sat, 06-Dec-2014 16:45:39 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[12/06/2014 11:16 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:15:20 Dec 06, 2014 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-4BK83L46F6JP, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=Azc-7yMpA1xjVlOZ3sKRt9Z0YZRpAhPVAhQyA91LJQxexmB6XQ.v3CyU, payer_email=mathtest@gmail.com, txn_id=6CY93430NN280202J, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=864e49635079e, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-origin-www.paypal.com
+Date: Sat, 06 Dec 2014 16:16:20 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=OAuI3W8VmlnByKe8cbZx6LcIAfZdjYOUGvkBZvTnKvZ1JY-VGxpY1GvWjqKRqIaUWzxq6ROPd2Ocxg2a-bNdMY1pt1V4Mhu9QgAr6-QbtMfj5aJpvH5MOyd8EDrsgo7-IbKcdqBIlzcGZBGbdsi_R-MSI1QE9SYgWHDd9lyyUUDihzGnPbnZzyJj_NqU3XiUwUaKXoEAYrjA--T0hEzp27ipQdK-2paHQaoSFtfyfrILKvEdiWDnA5zUqVG2HDsUAlDhl6Y3NVK-I69oELdWmmA0FUo57hgx_AqQW6Ns6R2nDm9ZJTMgKMht6-XK8hsSONe0I50PsEMOoiS8SVCy8VRPXDpO8f4vmhmfWASGL9K2s3Fb2Q81Bi-Zjfinu7WKptj_jL4UauxaciJnZjSx2ikdJZ4vEnr4SIlAArdNoOr0KOrr21zUCzGwpRi; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 03-Dec-2024 16:16:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 05-Dec-2016 16:16:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.14.1417882580261539; path=/; expires=Mon, 28-Nov-44 16:16:20 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3559621460; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.0.11.1417882580255641; path=/; expires=Mon, 28-Nov-44 16:16:20 GMT
+Set-Cookie: AKDC=slc-origin-www.paypal.com; expires=Sat, 06-Dec-2014 16:46:20 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[12/06/2014 11:16 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=B8TJT4KMK7N9Y, address_street=1 Main St, payment_date=08:15:16 Dec 06, 2014 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-21SVY4RLF87S, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=A9l97w8nN.MbxyBxxV.lgUdvaozFA2UyLsTDfPkYQOIJ7X6KoZ3CvPsB, payer_email=mathtest@gmail.com, txn_id=1SB510915K329744H, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=5f3a82461e87, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-origin-www.paypal.com
+Date: Sat, 06 Dec 2014 16:16:22 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=whrXao-LT9L3SqOTx0R6cEjumwERwnEp6Yg5jWpaXmb48ImzR_Pd7cZOGlaxSiZs5s0HATybik3zv5NiChlDb6sSHlju77J9qT1L5WKsXOF4QBEYi8cdVREm5kBbqhMcYtUYcMFMTjrtJJ4hVyPourFzIU0Zfu1x8D3BHmLn1vNnoL8pzW2tUqB3lHEFX8fBhXZ6Sn0RnJ68luggNI59LcrxtpGEadCVgjDXpvAMT7mjLWBP0fG1VyBTd3zoMoGKGfIj6vjRpAd5ndkThmGgYSoKqfKgJAE-IHaLBARNU-g0V6azacNBC2QjOHS8IJKd_Gb5qWZGuDJsuOKO-jl_rGMnfbAwpHlXyMS2ZbhUAtQX-x7WfoXDK-5zW8jWLN7fcIOU4cU8unUctotMwh3nywNHaajM07dzACw-E_yPLLUKkxlUrtw5Hz8fY2q; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 03-Dec-2024 16:16:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 05-Dec-2016 16:16:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.14.1417882581763717; path=/; expires=Mon, 28-Nov-44 16:16:21 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3576398676; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.0.11.1417882581756696; path=/; expires=Mon, 28-Nov-44 16:16:21 GMT
+Set-Cookie: AKDC=slc-origin-www.paypal.com; expires=Sat, 06-Dec-2014 16:46:22 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
+[12/06/2014 11:16 AM] - FAIL: IPN Validation Failed.
+IPN POST Vars from Paypal:
+mc_gross=4.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=DKWMLXU2BBNMY, address_street=1 Main St, payment_date=08:15:54 Dec 06, 2014 PST, payment_status=Completed, charset=windows-1252, address_zip=95131, first_name=Calculus, mc_fee=0.44, address_country_code=US, address_name=Calculus Yogi, notify_version=3.8, subscr_id=I-LBEDVK047KDK, payer_status=verified, business=mathtestbiz@gmail.com, address_country=United States, address_city=San Jose, verify_sign=Ak7ehbbeDGtv2z.LchKKTFpCN3ifA6re9dpjg8Q8wUJbqpFmx3i7xtb3, payer_email=cyberredemption@gmail.com, txn_id=8M123906AF9366203, payment_type=instant, last_name=Yogi, address_state=CA, receiver_email=mathtestbiz@gmail.com, payment_fee=0.44, receiver_id=89G2X9RNY9PN8, txn_type=subscr_payment, item_name=Math subscription, mc_currency=USD, item_number=Math_solved_sub, residence_country=US, test_ipn=1, transaction_subject=Math subscription, payment_gross=4.99, ipn_track_id=681983b0ba5b3, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-origin-www.paypal.com
+Date: Sat, 06 Dec 2014 16:16:22 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=TtRqyBE1BxIe6VJsR97yUk4ncVaxCXyCAsPitNyiBtIbMaDax_2ZfLK4xP5u9Ukx1dhSkA5M-MX_XVWbwCM_NJcxIbkM6G5gC3OqiQI2Ub9DvTw0SyMKj9dr9ZWstGrD0xzgD-n5LXWyybbTkzBFm9s_JS2_rXjrq8vpHDBPV2MBBFWXIzzCN4erRyaYajQkuSM3ONDxDEt2dUca0pzn5cdLX0uCx3vir1L4qmbxsbwigPcXPsCdhOfdwNFNN1OWxAjEkDfZQ5nwX5uKz5FyFM_j6HH8cqj9zXJq6iuWVnT4ByaGAqgElWHC5v03ekrGJVx6PiWDpMxfnr1XEkbz7cxby3uHRR86gPU7jjbAZdgVmCF48mtkWSBh1DM52BGwyuL8Z9w5p3LyRdSWe7_Senn7SGHYFauKBD22vk0l8SFyOwzHZrHTLrBkRrG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 03-Dec-2024 16:16:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 05-Dec-2016 16:16:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.14.1417882582000545; path=/; expires=Mon, 28-Nov-44 16:16:22 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3576398676; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.0.11.1417882581993521; path=/; expires=Mon, 28-Nov-44 16:16:21 GMT
+Set-Cookie: AKDC=slc-origin-www.paypal.com; expires=Sat, 06-Dec-2014 16:46:22 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+
