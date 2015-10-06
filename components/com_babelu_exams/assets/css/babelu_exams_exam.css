@@ -1,0 +1,197 @@
+@CHARSET "UTF-8";
+
+div.progress_bar_wrapper
+{
+	position:relative;
+}
+
+div.progress_bar_outer
+{
+	height:30px;
+}
+
+div.progress_bar_box
+{
+	position:relative;
+	margin:auto;
+	padding:0px 0px 0px 0px;
+	margin-top:10px;
+	text-align:center;
+	width:95%;
+	height:15px;
+	border: 1px solid #000;
+	background-color:#f00;
+	color:#000;
+	font-weight:700;
+	z-index:0;
+}
+
+div.progress_bar_completed
+{
+	position:absolute;
+	background-color:#0f0;
+	height:15px;
+	width:0%;
+	z-index:0;
+	
+}
+
+div.progress_bar_text
+{
+	position:absolute;
+	z-index:1;
+	margin:auto;
+	text-align:center;
+	width:100%;
+}
+
+div.babelu_exams_section_navi
+{
+	position:relative!important;
+}
+
+div.babelu_exams_section_navi ul
+{
+	list-style:none!important;
+	margin-left:5px;
+	margin-right:5px;
+	padding-left:0px;
+}
+
+div.babelu_exams_section_navi ul li
+{
+	background-image:none!important;
+	display:inline;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+div.babelu_exams_problem_input ul
+{
+	list-style: none!important;
+	padding-left:0px;
+}
+div.babelu_exams_problem_input li
+{
+	background-image:none!important;
+}
+
+
+.has_text
+{
+	color:#000!important;
+}
+
+div.closed
+{
+	display:none;
+}
+div.open
+{
+	display:block;
+}
+
+fieldset.babelu_exams_fieldset
+{
+	border: solid 1px #CCC;
+	border-image: initial;
+	padding-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+
+.babelu_exams_problem_ul label
+{
+  display:inline-block;
+  max-width: 90%;
+}
+
+#babelu_exams_review_table
+{
+	width:100%;
+}
+
+#babelu_exams_review_table th, #babelu_exams_review_table td
+{
+	padding-left: 5px;
+}
+
+#babelu_exams_review_table
+{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.bu-left
+{
+	text-align:left;
+}
+
+.bu-center
+{
+	text-align:center;
+}
+
+.bu-right
+{
+	text-align:right;
+}
+
+div#babelu_exams_timer_box
+{
+	background-image: url('../images/timer_one_icon.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 5px; center;
+	padding-left:35px;
+	padding-right:3px;
+	font-size: 1.5em;
+}
+
+div.top_left
+{
+	position: fixed;
+	z-index:1000;
+	left: 0px;
+	top: 5px;
+
+}
+
+div.top_right
+{
+	position: fixed;
+	z-index:1000;
+	right: 0px;
+	top: 5px;
+}
+
+div.bottom_left
+{
+	position: fixed;
+	z-index:1000;
+	left: 0px;
+	bottom: 5px;
+}
+
+div.bottom_right
+{
+	position: fixed;
+	z-index:1000;
+	right: 0px;
+	bottom: 5px;
+}
+
+div.inline_float_left
+{
+	float:left;
+}
+
+div.inline_float_right
+{
+	float:right;
+}
+
+label.bu-markers
+{
+	max-width:200px;
+}

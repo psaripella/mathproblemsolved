@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC" />
+			
+		 <field name="title" type="text" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_NOTIFICATION_PROFILE_TITLE" 
+			description="COM_BABELU_EXAMS_FORM_DESC_NOTIFICATION_PROFILE_TITLE"
+			required="true" filter="safehtml" />
+		
+			<field
+				name="admin_to_notify"
+				type="user"
+				size="50"
+				class="inputbox"
+				required="true"
+				label="COM_BABELU_EXAMS_FORM_LBL_ADMIN_TO_NOTIFY"
+				description="COM_BABELU_EXAMS_FORM_DESC_ADMIN_TO_NOTIFY"
+				/>
+				
+			<field name="admin_msg_id" type="sql" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_ADMIN_MSG_ID"
+				description="COM_BABELU_EXAMS_FORM_DESC_ADMIN_MSG_ID"
+				query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT id, title FROM #__babelu_exams_notification_messages"
+				key_field="id" value_field="title"/>
+				
+			<field name="user_msg_id" type="sql" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_USER_MSG_ID" 
+				description="COM_BABELU_EXAMS_FORM_DESC_USER_MSG_ID"
+				query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT id, title FROM #__babelu_exams_notification_messages"
+				key_field="id" value_field="title" />
+				
+			<field name="comment_msg_id" type="sql" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_COMMENT_MSG_ID" 
+				description="COM_BABELU_EXAMS_FORM_DESC_COMMENT_MSG_ID"
+				query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT id, title FROM #__babelu_exams_notification_messages"
+				key_field="id" value_field="title" />
+				
+			<field id="notify_admin_manual" name="notify_admin_manual" type="radio" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_NOTIFY_ADMIN_MANUAL" description="COM_BABELU_EXAMS_FORM_DESC_NOTIFY_ADMIN_MANUAL" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+
+			<field id="notify_admin_automatic" name="notify_admin_automatic" type="radio" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_NOTIFY_ADMIN_AUTOMATIC" description="COM_BABELU_EXAMS_FORM_DESC_NOTIFY_ADMIN_AUTOMATIC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>
+			
+			<field id="notify_user_automatic" name="notify_user_automatic" type="radio" class="inputbox"
+				label="COM_BABELU_EXAMS_FORM_LBL_NOTIFY_USER_AUTOMATIC" description="COM_BABELU_EXAMS_FORM_DESC_NOTIFY_USER_AUTOMATIC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+			</field>			
+			
+	</fieldset>
+</form>

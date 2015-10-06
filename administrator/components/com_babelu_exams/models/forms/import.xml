@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form enctype="multipart/form-data">
+	<fieldset>
+		<field name="group_id" type="sql"
+			label="BABELU_EXAMS_IMPORT_FORM_GROUP_ID_LABEL" description="BABELU_EXAMS_IMPORT_FORM_GROUP_ID_DESC"
+			query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT id, title FROM #__babelu_exams_groups"
+			key_field="id"
+			value_field="title" />
+
+		<field name="importFile" type="file"
+			label="BABELU_EXAMS_IMPORT_FORM_IMPORT_CSV_LABEL" description="BABELU_EXAMS_IMPORT_FORM_IMPORT_CSV_DESC"
+			accept="text/csv" />
+	</fieldset>
+</form>

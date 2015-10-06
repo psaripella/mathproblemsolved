@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_BABELU_EXAMS_CATEGORY_VIEW_DEFAULT_TITLE">
+		<message>COM_BABELU_EXAMS_CATEGORY_VIEW_DEFAULT_MSG</message>
+	</layout>
+	
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request"
+		 >
+       	<field 
+       	name="id" 
+       	type="sql" 
+       	class="inputbox"
+        label="COM_BABELU_EXAMS_FORM_LBL_EXAM_CATID"
+        description="COM_BABELU_EXAMS_FORM_DESC_EXAM_CATID" 
+        required="true" 
+        query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT `id`, `title` FROM `#__babelu_exams_categories`" key_field="id" value_field="title"
+         /> 
+		</fieldset>
+	</fields>
+</metadata>

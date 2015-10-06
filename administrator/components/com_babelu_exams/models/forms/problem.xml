@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="created_by" type="createdby" default=""
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_CREATED_BY" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_CREATED_BY" />
+		
+		<field name="standard" type="text" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_STANDARD" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_STANDARD"
+			filter="safehtml" />
+			
+		<field name="problem_text" type="editor"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_PROBLEM_TEXT" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_PROBLEM_TEXT"
+			buttons="true" class="inputbox" filter="JComponentHelper::filterText" required="true" />
+
+		<field name="group_id" type="modal_groups" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_GROUP_ID" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_GROUP_ID"
+			required="true" filter="safehtml" />
+
+		<field name="answers" type="textarea" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_ANSWERS" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_ANSWERS"
+			cols="5" rows="5" required="true" filter="safehtml"  placeholder="COM_BABELU_EXAMS_FORM_ANSWERS_PLACEHOLDER"/>
+
+		<field name="options" type="textarea" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_OPTIONS" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_OPTIONS"
+			cols="5" rows="5" required="true" filter="safehtml"  placeholder="COM_BABELU_EXAMS_FORM_OPTIONS_PLACEHOLDER" />
+		
+		<field name="default_input_type" type="list" size="1" class="inputbox"
+			default="0" label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_DEFAULT_INPUT_TYPE"
+			description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_DEFAULT_INPUT_TYPE">
+			<option value="0">COM_BABELU_EXAMS_PROBLEM_TYPE_RADIO_BUTTON</option>
+			<option value="1">COM_BABELU_EXAMS_PROBLEM_TYPE_CHECK_BOX</option>
+			<option value="2">COM_BABELU_EXAMS_PROBLEM_TYPE_TEXT_INPUT</option>
+			<option value="3">COM_BABELU_EXAMS_PROBLEM_TYPE_TEXT_AREA</option>
+		</field>
+			
+		<field name="level" type="modal_levels" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_EXAM_LEVEL" description="COM_BABELU_EXAMS_FORM_DESC_EXAM_LEVEL"
+			default="0" filter="safehtml" />
+
+		<field name="point_value" type="text" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_POINT_VALUE" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_POINT_VALUE"
+			filter="safehtml" />
+
+		<field name="result_text" type="editor" buttons="true" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_PROBLEM_RESULT_TEXT" description="COM_BABELU_EXAMS_FORM_DESC_PROBLEM_RESULT_TEXT"
+			filter="JComponentHelper::filterText" />
+
+		<field name="state" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox" size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+	</fieldset>
+</form>

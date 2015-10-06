@@ -3,6 +3,7 @@
 *.zip
 scratchpad.txt
 
+
 #Directories
 qb/
 components/com_jcomments/
@@ -26,4 +27,7 @@ questions/
 trig-precalc_temp_files/
 administrator/
 
-
+#Track these sub-directories
+administrator/components/com_babelu_exams/
+media/com_babelu_exams
+components/com_babelu_exams/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC" />
+			
+		<field name="title" type="text" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_MSG_TITLE" description="COM_BABELU_EXAMS_FORM_DESC_MSG_TITLE"
+			required="true" filter="safehtml" />
+		
+		<field name="msg_subject" type="text" size="40" class="inputbox"
+			label="COM_BABELU_EXAMS_FORM_LBL_MSG_SUBJECT" description="COM_BABELU_EXAMS_FORM_DESC_MSG_SUBJECT"
+			required="true" filter="safehtml" />
+			
+		<field name="msg_body" type="editor" buttons="true" class="inputbox"
+			filter="safehtml" label="COM_BABELU_EXAMS_FORM_LBL_MSG_BODY"
+			description="COM_BABELU_EXAMS_FORM_DESC_MSG_BODY" required="true" />
+	</fieldset>
+</form>

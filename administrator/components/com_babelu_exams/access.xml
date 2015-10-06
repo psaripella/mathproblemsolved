@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<access component="com_babelu_exams">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		
+		<action name="bue.manage.categories" title="COM_BABELU_EXAMS_ACTION_MANAGE_CATEGORIES" description="COM_BABELU_EXAMS_ACTION_MANAGE_CATEGORIES_DESC" />
+		
+		<action name="bue.manage.levels" title="COM_BABELU_EXAMS_ACTION_MANAGE_LEVELS" description="COM_BABELU_EXAMS_ACTION_MANAGE_LEVELS_DESC" />
+		
+		<action name="bue.manage.notifications" title="COM_BABELU_EXAMS_ACTION_MANAGE_NOTIFICATIONS" description="COM_BABELU_EXAMS_ACTION_MANAGE_NOTIFICATIONS_DESC" />
+		
+		<action name="bue.manage.problems" title="COM_BABELU_EXAMS_ACTION_MANAGE_PROBLEMS" description="COM_BABELU_EXAMS_ACTION_MANAGE_PROBLEMS_DESC" />
+		<action name="bue.import.problems" title="COM_BABELU_EXAMS_ACTION_IMPORT_PROBLEMS" description="COM_BABELU_EXAMS_ACTION_IMPORT_PROBLEMS_DESC" />
+		<action name="bue.export.problems" title="COM_BABELU_EXAMS_ACTION_EXPORT_PROBLEMS" description="COM_BABELU_EXAMS_ACTION_EXPORT_PROBLEMS_DESC" />
+		
+		<action name="bue.export.results" title="COM_BABELU_EXAMS_ACTION_EXPORT_RESULTS" description="COM_BABELU_EXAMS_ACTION_EXPORT_RESULTS_DESC" />
+		
+		<action name="bue.comment" title="COM_BABELU_EXAMS_ACTION_COMMENT" description="COM_BABELU_EXAMS_ACTION_COMMENT_DESC" />
+		<action name="bue.grade" title="COM_BABELU_EXAMS_ACTION_GRADE" description="COM_BABELU_EXAMS_ACTION_GRADE_DESC" />
+	</section>
+	<section name="exam">
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="bue.comment" title="COM_BABELU_EXAMS_ACTION_COMMENT" description="COM_BABELU_EXAMS_ACTION_COMMENT_DESC" />
+		<action name="bue.grade" title="COM_BABELU_EXAMS_ACTION_GRADE" description="COM_BABELU_EXAMS_ACTION_GRADE_DESC" />
+	</section>
+</access>
