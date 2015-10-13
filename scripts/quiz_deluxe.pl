@@ -1,0 +1,165 @@
+#!/usr/bin/perl
+
+# 
+
+use warnings;
+use strict;
+use Switch;
+
+my $numArgs = $#ARGV + 1;
+
+if ($numArgs != 4) {
+
+print "Usage: perl quiz_deluxe.pl <product> <start_probem> <end_problem> <start of DB ID>\n";
+
+exit 1 ;
+};
+my $problem_number = 0;
+
+
+my %attribute_hash_ref ;  # ref will return HASH
+my $product = $ARGV[0];
+if (!$product) { $product = "integral-calculus";};
+ $attribute_hash_ref{"product"} = $product;
+ $attribute_hash_ref{"root_directory"} = "/home/calculus/www/www/images/${product}/problems/";
+ $attribute_hash_ref{"logical_root_directory"} = "images/${product}/problems/";
+ $attribute_hash_ref{"question_directory"} = '';
+ $attribute_hash_ref{"answer_directory"} = '';
+ $attribute_hash_ref{"hints_directory"} = '';
+ $attribute_hash_ref{"logical_hints_directory"} = '';
+ $attribute_hash_ref{"problem_string"} = '';
+ my $tail_string='';
+ my $end_of_problem_comma = ",\n" ;
+ $attribute_hash_ref{"start_problems"} = $ARGV[1];
+ $attribute_hash_ref{"end_problems"} = $ARGV[2];
+ $attribute_hash_ref{"start_DB_id"} = $ARGV[3];
+
+
+my $root_directory = $attribute_hash_ref{"root_directory"} ;
+my $logical_root_directory = $attribute_hash_ref{"logical_root_directory"} ;
+my $question_directory = $attribute_hash_ref{"question_directory"};
+my $answer_directory = $attribute_hash_ref{"answer_directory"};
+my $hints_directory = $attribute_hash_ref{"hints_directory"};
+my $options_directory = $attribute_hash_ref{"options_directory"};
+my $logical_hints_directory = $attribute_hash_ref{"logical_hints_directory"};
+my $problem_string = $attribute_hash_ref{"problem_string"};
+my $real_question_directory;
+my $real_answer_directory;
+my $real_hints_directory;
+my $real_options_directory;
+
+#print " sql_id = $sql_id ,  $attribute_hash_ref->{"sql_id"};\n";
+
+
+my $start_problems = $attribute_hash_ref{"start_problems"};
+my $end_problems = $attribute_hash_ref{"end_problems"};
+my $start_DB_id =  $attribute_hash_ref{"start_DB_id"};
+
+opendir my $DIR, $root_directory or die "Error in opening dir '$root_directory' because: $!";
+
+
+closedir $DIR;
+my $first_line = q?"question category","question type","is correct","question/answer text","points","attempts","random","is feedback","correct feedback text","incorrect feedback text"?;
+  print "${first_line}\r\n" ;
+
+
+
+#Single or zero problems - no end of problem comma
+my $count = $end_problems - $start_problems ;
+#print "problem count = $count \n";
+
+if ($count <= 1) {$end_of_problem_comma = "";};
+
+my $option1_string = "";
+my $option2_string = "";
+my $option3_string = "";
+my $option4_string = "";
+my $option234_string ="";
+my $level = "1";
+my $point_value = "1" ;
+my $result_text = "";
+my $status = "1";
+my $QUESTION_DIR;
+my $OPTIONS_DIR;
+
+
+PROBLEM: for (my $i = $start_problems; $i <= $end_problems; $i++) {
+
+my $product_index = $start_DB_id + $i - 1 ;
+#<p><img src="images/integral-calculus/problems/problem1/question/question1.jpg" alt="" /></p>
+#https://www.mathproblemsolved.com/index.php/trig-precalc/12002-trig-precalc.3
+  $real_question_directory = ${root_directory}."problem${i}"."/question" ;
+  $real_answer_directory = ${root_directory}."problem${i}"."/answer" ;
+  $real_hints_directory = ${root_directory}."problem${i}"."/hints";
+  $real_options_directory =${root_directory}."problem${i}"."/options";
+  $question_directory = ${logical_root_directory}."problem${i}"."/question" ;
+  $answer_directory = ${logical_root_directory}."problem${i}"."/answer" ;
+  $hints_directory = ${logical_root_directory}."problem${i}"."/hints";
+  $options_directory ="https://mathproblemsolved.com/".${logical_root_directory}."problem${i}"."/options";
+
+opendir  $QUESTION_DIR, $real_question_directory or next PROBLEM;
+opendir  $OPTIONS_DIR, $real_options_directory or next PROBLEM;
+
+  opendir ($QUESTION_DIR, $real_question_directory) ;
+  opendir ($OPTIONS_DIR, $real_options_directory) ;
+
+  if ($QUESTION_DIR && $OPTIONS_DIR) {
+
+my $base_path = "$real_question_directory/new_question${i}.jpg";
+
+
+my $correct_string;
+my $incorrect_string;
+my $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/index.php/?.$product."/".$product_index."-".$product.".2".q?"  />Click for Complete solution</a> ? ;
+
+# some questions have been rewritten to deal with multiple choice questions. 
+#It is called new_question1.jpg (or whatever)
+#If it exists use that - else use the original question
+if (-e $base_path) {
+
+    #file exists - set variable and other things
+        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/new_question?.${i}.q?.jpg" alt="" /></p> ?.q?,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+
+}
+else
+{
+        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/question?.${i}.q?.jpg" alt="" /></p> ?.q?/,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+
+
+};
+
+my $first;
+my $second;
+my $third;
+my $fourth;
+my $first_correct;
+my $second_correct;
+my $third_correct;
+my $fourth_correct;
+
+#my $random0thru3 = int(rand(4));
+#my $random0thru3  = 0
+
+#print " random number is $random0thru3 \n";
+#switch($random0thru3){
+#   case 0    { $first = 1; $second = 2; $third = 3; $fourth = 4;  $first_correct = "TRUE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
+#   case 1    { $first = 2; $second = 1; $third = 3; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "TRUE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
+#   case 2    { $first = 3; $second = 2; $third = 1; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "TRIE" ; $fourth_correct="FALSE";}
+#   case 3    { $first = 4; $second = 1; $third = 2; $fourth = 1;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="TRUE";}
+#   else      { print "Bad random number which is not 0 or 1 or 2 or 3" }
+#} ;
+
+  $option1_string =  q?"","","TRUE",<p><img src="?.$options_directory.q?/option?.${i}.q?_1.jpg" alt="" /></p>,"0","","","","Correct. Check the solution if needed",""?;
+  $option2_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_2.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+  $option3_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_3.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+  $option4_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_4.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+
+
+  print "$problem_string\r\n"."$option1_string\r\n"."$option2_string\r\n"."$option3_string\r\n"."$option4_string\r\n";
+
+
+closedir $QUESTION_DIR;
+ closedir $OPTIONS_DIR;
+}
+  
+}

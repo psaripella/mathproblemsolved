@@ -1,0 +1,56 @@
+
+calculus@s483:~/www/www$ for i in {121..139}
+> do
+> mkdir ~/www/www/images/differential-calculus/problems/problem${i}
+> mkdir ~/www/www/images/differential-calculus/problems/problem${i}/question
+> mkdir ~/www/www/images/differential-calculus/problems/problem${i}/answer
+>  mkdir ~/www/www/images/differential-calculus/problems/problem${i}/hints
+cp ~/www/www/images/differential-calculus/gif_images/answer${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/answer
+cp ~/www/www/images/differential-calculus/gif_images/hint${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/hints
+cp ~/www/www/images/differential-calculus/jpg_images/answer${i}*.jpg ~/www/www/images/differential-calculus/problems/problem${i}/answer
+cp ~/www/www/images/differential-calculus/jpg_images/hint${i}*jpg ~/www/www/images/differential-calculus/problems/problem${i}/hints
+cp ~/www/www/images/differential-calculus/gif_images/question${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/question
+cp ~/www/www/images/differential-calculus/jpg_images/question${i}*jpg ~/www/www/images/differential-calculus/problems/problem${i}/question
+
+
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/hint93*.gif': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/hint93*.jpg': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/hint105*.gif': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/hint105*.jpg': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/answer111*.gif': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/answer111*.jpg': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/answer113*.gif': No such file or directory
+cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/answer113*.jpg': No such file or directory
+
+{"image_intro":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_intro":"","image_intro_alt":"Intro Image","image_intro_caption":"","image_fulltext":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_fulltext":"","image_fulltext_alt":"Full Article Image","image_fulltext_caption":""}
+
+
+<p>&nbsp;</p>
+<hr id="article-hint" class="system-pagebreak" title="Hint1" />
+<p><img style="outline: #ff0000 dotted thick; display: block; margin-left: auto; margin-right: auto;" src="images/differential-calculus/problems/problem10/hints/hint10_1.jpg" alt="" align="middle" /></p>
+<p>&nbsp;</p>
+<hr id="article-answer" class="system-pagebreak" style="align: center;" title="Solution Step1" />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Solution Step 1</h2>
+<p><img class="img-polaroid" style="display: block; margin-left: auto; margin-right: auto;" src="images/differential-calculus/problems/problem10/answer/answer10_1.jpg" alt="" /></p>
+<p>&nbsp;</p>
+
+
+
+
+
+{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}
+./problem78/answer
+./problem68/answer ./problem85/answer ./problem90/answer ./problem65/answer ./problem63/answer ./problem70/answer ./problem66/answer ./problem87/answer ./problem77/answer ./problem75/answer ./problem71/answer ./problem64/answer ./problem88/answer ./problem62/answer ./problem86/answer ./problem61/answer ./problem84/answer ./problem69/answer ./problem79/answer ./problem82/answer ./problem74/answer ./problem83/answer ./problem76/answer ./problem80/answer ./problem73/answer ./problem67/answer ./problem89/answer ./problem72/answer}
+
+
+
+To strip the line feed as we go from windows to unix:
+perl -p -e 's/\r$//' win.txt unix.txt
+
+git remote add math-bucket https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git
+git remote -v
+
+math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (fetch)
+math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (push)

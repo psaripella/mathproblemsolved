@@ -1,0 +1,5 @@
+"question category","question type","is correct","question/answer text","points","attempts","random","is feedback","correct feedback text","incorrect feedback text"
+"TrigPrecalc2","mchoice","",<p>Solve the following: </p><p><img src="images/trig-precalc/problems/problem1/question/new_question1.jpg" alt="" /></p>,"10","1","0","TRUE",<a href="https://www.mathproblemsolved.com/index.php/index.php/trig-precalc/12000-trig-precalc.2"  />Click for Complete solution</a>,<a href="https://www.mathproblemsolved.com/index.php/index.php/trig-precalc/12000-trig-precalc.2"  />Click for Complete solution</a>
+"","","FALSE",<p><img src="https://mathproblemsolved.com/images/trig-precalc/problems/problem1/options/option1_3.jpg" alt="" /></p>,"1","","","","Correct. Check the solution if needed",""
+"","","FALSE",<p><img src="https://mathproblemsolved.com/images/trig-precalc/problems/problem1/options/option1_2.jpg" alt="" /></p>,"1","","","","Incorrect. Check the solution",""
+"","","TRUE",<p><img src="https://mathproblemsolved.com/images/trig-precalc/problems/problem1/options/option1_1.jpg" alt="" /></p>,"2","","","","Incorrect. Check the solution",""
