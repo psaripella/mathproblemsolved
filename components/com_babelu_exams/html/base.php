@@ -53,7 +53,7 @@ abstract class Babelu_examsHtmlBase
 	 */
 	protected function escape($string)
 	{
-		$value = htmlspecialchars(trim($string), ENT_COMPAT, 'UTF-8', false);
+		$value = strip_tags(trim($string));
 		return $value;
 	}
 		
@@ -66,11 +66,15 @@ abstract class Babelu_examsHtmlBase
 	 */
 	public function addProperty($name, $value)
 	{
-		if ($name != 'class')
+		if ($name == 'value')
 		{
-			$this->properties[$this->escape($name)] = $this->escape($value);
-		}
-		
+			$this->properties[$this->escape($name)] = 'HELLOVALUE'.$this->escape($value);
+		} if ($name != 'class')
+                {
+                        $this->properties[$this->escape($name)] = $this->escape($value);
+                }
+
+
 		return $this;
 	}
 	

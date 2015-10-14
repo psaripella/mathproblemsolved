@@ -1,14 +1,14 @@
 
 #files
 *.zip
-scratchpad.txt
-
+log/error.php
 
 #Directories
 qb/
 components/com_jcomments/
 
 *installation/
+tmp/
 language/
 layouts/
 media/

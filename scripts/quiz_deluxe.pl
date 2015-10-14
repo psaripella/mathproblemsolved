@@ -105,27 +105,26 @@ opendir  $OPTIONS_DIR, $real_options_directory or next PROBLEM;
 
   if ($QUESTION_DIR && $OPTIONS_DIR) {
 
-my $base_path = "$real_question_directory/new_question${i}.jpg";
-
+my $new_base_path = "$real_question_directory/new_question${i}.jpg";
+my $old_base_path = "$real_question_directory/question${i}.jpg";
 
 my $correct_string;
 my $incorrect_string;
-my $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/index.php/?.$product."/".$product_index."-".$product.".2".q?"  />Click for Complete solution</a> ? ;
+my $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/index.php/?.$product."/".$product_index."-".$product.".2".q?"  target="_blank"/>Click for Complete solution</a>? ;
 
 # some questions have been rewritten to deal with multiple choice questions. 
 #It is called new_question1.jpg (or whatever)
 #If it exists use that - else use the original question
-if (-e $base_path) {
+if (-e $new_base_path) {
 
     #file exists - set variable and other things
-        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/new_question?.${i}.q?.jpg" alt="" /></p> ?.q?,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/new_question?.${i}.q?.jpg" alt="" /></p>?.q?,"10","1","1","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
 
-}
-else
-{
-        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/question?.${i}.q?.jpg" alt="" /></p> ?.q?/,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+} elsif (-e $old_base_path) {
+        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/question?.${i}.q?.jpg" alt="" /></p>?.q?/,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
 
-
+} else {
+next PROBLEM;
 };
 
 my $first;
@@ -149,6 +148,14 @@ my $fourth_correct;
 #   else      { print "Bad random number which is not 0 or 1 or 2 or 3" }
 #} ;
 
+my $option_string_check = $real_options_directory.q?/option?.${i}.q?_1.jpg? ;
+  if (! -e $option_string_check) {
+# Options do not exist - move on to next problem
+next PROBLEM;
+};
+
+
+  
   $option1_string =  q?"","","TRUE",<p><img src="?.$options_directory.q?/option?.${i}.q?_1.jpg" alt="" /></p>,"0","","","","Correct. Check the solution if needed",""?;
   $option2_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_2.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
   $option3_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_3.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
