@@ -118,10 +118,10 @@ my $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php
 if (-e $new_base_path) {
 
     #file exists - set variable and other things
-        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/new_question?.${i}.q?.jpg" alt="" /></p>?.q?,"10","1","1","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+        $problem_string = q?"?.$product.q?","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/new_question?.${i}.q?.jpg" alt="" /></p>?.q?,"10","1","1","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
 
 } elsif (-e $old_base_path) {
-        $problem_string = q?"TrigPrecalc2","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/question?.${i}.q?.jpg" alt="" /></p>?.q?/,"10","1","0","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
+        $problem_string = q?"?.$product.q?","mchoice","",?.q?<p>Solve the following: </p>?.q?<p><img src="?.$question_directory.q?/question?.${i}.q?.jpg" alt="" /></p>?.q?,"10","1","1","TRUE",?.$path_to_solution.q?,?.$path_to_solution;
 
 } else {
 next PROBLEM;
@@ -136,17 +136,17 @@ my $second_correct;
 my $third_correct;
 my $fourth_correct;
 
-#my $random0thru3 = int(rand(4));
+my $random0thru3 = int(rand(4));
 #my $random0thru3  = 0
 
 #print " random number is $random0thru3 \n";
-#switch($random0thru3){
-#   case 0    { $first = 1; $second = 2; $third = 3; $fourth = 4;  $first_correct = "TRUE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
-#   case 1    { $first = 2; $second = 1; $third = 3; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "TRUE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
-#   case 2    { $first = 3; $second = 2; $third = 1; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "TRIE" ; $fourth_correct="FALSE";}
-#   case 3    { $first = 4; $second = 1; $third = 2; $fourth = 1;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="TRUE";}
-#   else      { print "Bad random number which is not 0 or 1 or 2 or 3" }
-#} ;
+switch($random0thru3){
+   case 0    { $first = 1; $second = 2; $third = 3; $fourth = 4;  $first_correct = "TRUE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
+   case 1    { $first = 2; $second = 1; $third = 3; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "TRUE"; $third_correct = "FALSE" ; $fourth_correct="FALSE";}
+   case 2    { $first = 3; $second = 2; $third = 1; $fourth = 4;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "TRUE" ; $fourth_correct="FALSE";}
+   case 3    { $first = 4; $second = 1; $third = 2; $fourth = 1;  $first_correct = "FALSE"; $second_correct = "FALSE"; $third_correct = "FALSE" ; $fourth_correct="TRUE";}
+   else      { print "Bad random number which is not 0 or 1 or 2 or 3" }
+} ;
 
 my $option_string_check = $real_options_directory.q?/option?.${i}.q?_1.jpg? ;
   if (! -e $option_string_check) {
@@ -156,10 +156,10 @@ next PROBLEM;
 
 
   
-  $option1_string =  q?"","","TRUE",<p><img src="?.$options_directory.q?/option?.${i}.q?_1.jpg" alt="" /></p>,"0","","","","Correct. Check the solution if needed",""?;
-  $option2_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_2.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
-  $option3_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_3.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
-  $option4_string =  q?"","","FALSE",<p><img src="?.$options_directory.q?/option?.${i}.q?_4.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+  $option1_string =  q?"","","?.$first_correct.q?",<p><img src="?.$options_directory.q?/option?.${i}.q?_1.jpg" alt="" /></p>,"0","","","","Correct. Check the solution if needed",""?;
+  $option2_string =  q?"","","?.$second_correct.q?",<p><img src="?.$options_directory.q?/option?.${i}.q?_2.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+  $option3_string =  q?"","","?.$third_correct .q?",<p><img src="?.$options_directory.q?/option?.${i}.q?_3.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
+  $option4_string =  q?"","","?.$fourth_correct.q?",<p><img src="?.$options_directory.q?/option?.${i}.q?_4.jpg" alt="" /></p>,"0","","","","Incorrect: Check solution",""?;
 
 
   print "$problem_string\r\n"."$option1_string\r\n"."$option2_string\r\n"."$option3_string\r\n"."$option4_string\r\n";

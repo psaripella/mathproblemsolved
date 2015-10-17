@@ -54,3 +54,17 @@ git remote -v
 
 math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (fetch)
 math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (push)
+
+
+# Create The quizzes
+
+    perl quiz_deluxe.pl trig-precalc  1 30 12000 > trigprecalc-public-exam.csv
+    perl quiz_deluxe.pl differential-calculus 1 30 20000 > differential-public-exam.csv
+    perl quiz_deluxe.pl integral-calculus 1 30 30000 > integral-public-exam.csv
+    perl quiz_deluxe.pl trig-precalc 1 10  12000 > hello3.txt
+    perl quiz_deluxe.pl differential-calculus 1 10  20000 > diffcalc-exam.csv
+    perl quiz_deluxe.pl integral-calculus 1 10  30000 >  intcalc-exam.csv
+    perl quiz_deluxe.pl differential-calculus 1 119  22000 > diffcalc-customer-exam.csv
+    perl quiz_deluxe.pl integral-calculus 1 119  32000 >  integral-customer-exam.csv
+    perl quiz_deluxe.pl trig-precalc 1 119  13000 >  trigprecalc-customer-exam.csv
+
