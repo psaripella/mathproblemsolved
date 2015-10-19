@@ -8,9 +8,9 @@ use Switch;
 
 my $numArgs = $#ARGV + 1;
 
-if ($numArgs != 4) {
+if ($numArgs < 4) {
 
-print "Usage: perl quiz_deluxe.pl <product> <start_probem> <end_problem> <start of DB ID>\n";
+print "Usage: perl quiz_deluxe.pl <product> <start_probem> <end_problem> <start of DB ID> <optionl solution payt>\n";
 
 exit 1 ;
 };
@@ -70,6 +70,8 @@ my $count = $end_problems - $start_problems ;
 
 if ($count <= 1) {$end_of_problem_comma = "";};
 
+my $solution_directory = $ARGV[4];
+
 my $option1_string = "";
 my $option2_string = "";
 my $option3_string = "";
@@ -110,8 +112,14 @@ my $old_base_path = "$real_question_directory/question${i}.jpg";
 
 my $correct_string;
 my $incorrect_string;
-my $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/index.php/?.$product."/".$product_index."-".$product.".2".q?"  target="_blank"/>Click for Complete solution</a>? ;
+my $path_to_solution;
 
+if ( $solution_directory eq "") {
+	$path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/index.php/?.$product."/".$product_index."-".$product.".2".q?"  target="_blank"/>Click for Complete solution</a>? ;
+} else {
+        $path_to_solution = "<a href=".q?"https://www.mathproblemsolved.com/index.php/?.$solution_directory."/".$product_index."-".$product.".1".q?"  target="_blank"/>Click for Complete solution</a>? ;
+
+}
 # some questions have been rewritten to deal with multiple choice questions. 
 #It is called new_question1.jpg (or whatever)
 #If it exists use that - else use the original question
