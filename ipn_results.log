@@ -2013,3 +2013,117 @@ Strict-Transport-Security: max-age=63072000
 
 INVALID
 
+[10/26/2015 3:34 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=1.00, protection_eligibility=Eligible, address_status=confirmed, payer_id=SGYCXNBFWWPXN, tax=0.00, address_street=2066 Kimberlin Place, payment_date=12:34:01 Oct 26, 2015 PDT, payment_status=Completed, charset=windows-1252, address_zip=95051, first_name=Phani, mc_fee=0.33, address_country_code=US, address_name=c yogi, notify_version=3.8, custom=, payer_status=verified, address_country=United States, address_city=Santa Clara, quantity=1, verify_sign=ANn5dzzcIR78iGR7aGxnVnfhg7baAyhO2cMK9rWKmJJpylB4LW5-1Ob4, payer_email=phanikumar3696@gmail.com, txn_id=5SY39864CM057815W, payment_type=instant, last_name=Kumar, address_state=CA, receiver_email=sales@mathproblemsolved.com, payment_fee=0.33, receiver_id=99V6BB6LN8WY2, txn_type=express_checkout, item_name=, mc_currency=USD, item_number=, residence_country=US, handling_amount=0.00, transaction_subject=, payment_gross=1.00, shipping=0.00, ipn_track_id=86a831c08ddad, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Paypal-Debug-Id: b8ee240e1f134
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+DC: dcg11-origin-www.paypal.com
+Date: Mon, 26 Oct 2015 19:34:06 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=yNvtB4hvULVandXgVHp9LXyvL2nivouVQM757OuBGsQzsAZXyCfBIcY9aLaG7YDG1paEhXA2z12XaWwmuISHQPBPRoU9UoW4sNiFEmXlS-GWkCdyawGTWm1jEKJQ_doDNKxO3yxpQsyLBp8Ghnl90WRTS_S2QzvBeO4H5s6nQtUEvv80jo3Jr4F4v_VUx36FLNO9tJVPJdFNeMuXqhla-kur5jJ1uocBpqbbeMRV7zTmYDkcgIeRcj4WVSOkFPAaCEYUFuI12jRfVVjQcFT6S6vZbL7OrnVZpNzachlv5H2FZba5HMyEyjsn0WvVRhfrRLqnWNzU9AZ_jMkUCdV8x5DoCm01X4gY6M_r_52DGpXVxaAMacnrksCYLWGUf0LpDV3I5AsLkBWhdz9n81JHuBurUlpTNyNXzcW_RCs43lOqAXTq99-nhbHK8-K; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Thu, 23-Oct-2025 19:34:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Wed, 25-Oct-2017 19:34:06 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.147.1445888046133898; path=/; expires=Wed, 18-Oct-45 19:34:06 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D780152406; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.0.11.1445888046126783; path=/; expires=Wed, 18-Oct-45 19:34:06 GMT
+Set-Cookie: AKDC=dcg11-origin-www.paypal.com; expires=Mon, 26-Oct-2015 20:04:06 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+[10/26/2015 3:37 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=-1.00, protection_eligibility=Eligible, payer_id=SGYCXNBFWWPXN, address_street=2066 Kimberlin Place, payment_date=12:37:06 Oct 26, 2015 PDT, payment_status=Refunded, charset=windows-1252, address_zip=95051, first_name=Phani, mc_fee=-0.03, address_country_code=US, address_name=c yogi, notify_version=3.8, reason_code=refund, custom=, address_country=United States, address_city=Santa Clara, verify_sign=A2qdZVlvxecX-hv041exbstuf4AmARBZXIS3.VsgmWCVxLEyDbPkUuZk, payer_email=phanikumar3696@gmail.com, parent_txn_id=5SY39864CM057815W, txn_id=0ME50216XK8914513, payment_type=instant, last_name=Kumar, address_state=CA, receiver_email=sales@mathproblemsolved.com, payment_fee=-0.03, receiver_id=99V6BB6LN8WY2, item_name=, mc_currency=USD, item_number=, residence_country=US, handling_amount=0.00, transaction_subject=, payment_gross=-1.00, shipping=0.00, ipn_track_id=d5039dd193a43, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Paypal-Debug-Id: 6a59ce1935284
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Mon, 26 Oct 2015 19:37:16 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=z25x4cNSdtFRioPPPpF0i2kT6Ops_TnOgnb35zxotK0ZvnR90WJg0LFdxTmOMolHBNELNwt5dDttm5Awbn9oht8sFa5LWhgfVzSEUNcb5OvumH_b9RS-uWz7LVQkgckSCTFKGaq8Zdm2Y3lo65yzCT7AGLTWMIx8b8fzqmNQZQAYmRjgjtQijUt1DQZMx6dATHbkXNxQquj0Dujyz9zZ0WbsQDFFTkg9-ainEzz9uQwFyiQ0He7mIOP9OEwuyWPBqo9_8sELe1Iprx6fKgpH1Xjv3yZz7L7224K0g5ur_QZjCPiSu9IlJOs1O7U__UXdHwobynCxHxKJLlnJ-lfL5FqhW5YOYN3PMQsbfm2hoDR8dN3TokWBfKLT3eLyaVKI6zxfHjBrVxmVgirj49jl1mh3ln01evYF_c-SRyJgOl2-pSD_LyftPgGd3GO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Thu, 23-Oct-2025 19:37:16 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Wed, 25-Oct-2017 19:37:16 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1445888236237125; path=/; expires=Wed, 18-Oct-45 19:37:16 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D3967823446; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.46.1445888236217463; path=/; expires=Wed, 18-Oct-45 19:37:16 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Mon, 26-Oct-2015 20:07:16 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+[10/27/2015 2:21 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+mc_gross=0.99, protection_eligibility=Eligible, address_status=confirmed, payer_id=SGYCXNBFWWPXN, tax=0.00, address_street=19336 Harleigh Drive, payment_date=11:21:32 Oct 27, 2015 PDT, payment_status=Completed, charset=windows-1252, address_zip=95070, first_name=Phani, mc_fee=0.33, address_country_code=US, address_name=Phani Kumar, notify_version=3.8, custom=, payer_status=verified, business=sales@mathproblemsolved.com, address_country=United States, address_city=Saratoga, quantity=1, verify_sign=AHvL-vvtaqXAG.p6LTTET8MXO7JdAqQ39hiU6upsfdTY78yojfDZxiNF, payer_email=phanikumar3696@gmail.com, txn_id=85X87481TN264500S, payment_type=instant, last_name=Kumar, address_state=CA, receiver_email=sales@mathproblemsolved.com, payment_fee=0.33, receiver_id=99V6BB6LN8WY2, txn_type=express_checkout, item_name=, mc_currency=USD, item_number=, residence_country=US, handling_amount=0.00, transaction_subject=, payment_gross=0.99, shipping=0.00, ipn_track_id=29e72fb647f4a, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Paypal-Debug-Id: b8cb3ffb64ea3
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+DC: dcg11-origin-www.paypal.com
+Date: Tue, 27 Oct 2015 18:21:48 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=JIC5Lw5WKvp6jO20cd1re7ocxj32Tc_1mvZRSvlHb0kEN8PpEo89i4j-XmRoJARxM-fpnwEs5t0ig-4odwAmjFrwW5e2NEr6NSNEMwPKkuSMNeJKJcvqvAkv_u5fUBsOpFtrOhfl4D0Qfwa4w846fFEIKCXqRTNw5rtefd_OiYL-NObm8WnNfUKiGW5kDNJ6e9WItXuaysEH1X8GgnMWV450bF-bnX_5rcsMY870NcLwB1npXYh9AxiWbW4LNyQU2XdDrmlezEDrsoEx_8nzGSz-6wgmcyIOGcfIXaIDPZSOcBEmcdhmmY99hSnKGS5XBlZ_g1CdNvd3iv-Dj0_-utNaYWcKzEFwKwLw7lyhu5gMvTHK91DJoXqBeFpqBCnZlw1HjwUC8JWbKEfH0IpFskz4Jrs2HQ1-1B2M9WpEYA2g7AMt_gFkg9zWzRq; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 24-Oct-2025 18:21:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 26-Oct-2017 18:21:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.148.1445970108420626; path=/; expires=Thu, 19-Oct-45 18:21:48 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D3166711638; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.1.4.1445970108413169; path=/; expires=Thu, 19-Oct-45 18:21:48 GMT
+Set-Cookie: AKDC=dcg11-origin-www.paypal.com; expires=Tue, 27-Oct-2015 18:51:48 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+[10/30/2015 4:00 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+transaction_subject=, payment_date=13:00:06 Oct 30, 2015 PDT, txn_type=express_checkout, last_name=Kumar, residence_country=US, item_name=, payment_gross=0.99, mc_currency=USD, business=sales@mathproblemsolved.com, payment_type=instant, protection_eligibility=Ineligible, verify_sign=Anp6FYsTiu25aR0NYrmne7rT0vriAn9FABEY3b3c8-DL4sl3Q5wkk-VR, payer_status=verified, tax=0.00, payer_email=phanikumar3696@gmail.com, txn_id=4PV97926PN335364P, quantity=1, receiver_email=sales@mathproblemsolved.com, first_name=Phani, payer_id=SGYCXNBFWWPXN, receiver_id=99V6BB6LN8WY2, item_number=, handling_amount=0.00, payment_status=Completed, payment_fee=0.33, mc_fee=0.33, shipping=0.00, mc_gross=0.99, custom=, charset=windows-1252, notify_version=3.8, ipn_track_id=9e2511bdd0075, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Paypal-Debug-Id: c8ddcf057ff55
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+DC: dcg12-origin-www-1.paypal.com
+Date: Fri, 30 Oct 2015 20:00:20 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=-qn4euOsvj1jW5RX7ew_yicryJM4l5KZbDiC3r036kjXqjA8nzwIiWl9HldCwXTXw2RkxFUI7k9GSJaWhmkm2fpWJih9AURZf2i1GgxHz_IifK2bXXNW3MONioWkXBQtjGYKs61Hck4hz3bAcbFVUNtEJjbNn1TPCds-Y-LX_88A6Q1Qx0ZY1Buc6PQeEKs2PcVoPLLLkjZ2B0J7KvZz76ECS80iD_UFNRdK1uT9PPnXXrQHL4tA7og2WjR2hF7TXTkCmeO66InJGcw-CqCV6ATVoe3I6PI2d0CGCo-cLF5LBUZfF4GSMA4AM8Vg8nnnaGkkZm2K_oul5yIc7TPziZbIELhrajq3TOYoiF9HuT1gTEg38tJumgGQaxDdh1JmrLF_f_XeG_wNYXI0khynhw6w9B9ExdIaBRODynD6uuMRHw0Nq6mVtGaixoW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 27-Oct-2025 20:00:19 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 29-Oct-2017 20:00:19 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.17.1.18.1446235219531114; path=/; expires=Sun, 22-Oct-45 20:00:19 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE11.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D1405891414; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.17.1.10.1446235219523902; path=/; expires=Sun, 22-Oct-45 20:00:19 GMT
+Set-Cookie: AKDC=dcg12-origin-www-1.paypal.com; expires=Fri, 30-Oct-2015 20:30:20 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
