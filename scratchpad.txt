@@ -1,3 +1,53 @@
+#To create the sql for the probems:
+#Essentially you need a search terms file (see intcalc-search.csv ). Also a profile file 
+#(look at profiles/intfile-test-registered )
+perl create_all_articles.pl intcalc-search.csv profiles/intfile-test-registered > intfile-registered-withsolution.sql
+perl create_all_articles.pl intcalc-search.csv profiles/intfile-registered > intfile-registered.sql
+
+#For mysql stuff
+ mysql -u calculus -p calculus_math
+pw: usual
+(delete the rows first ...)
+delete from math_content where id >=62000 and id <= 62118 ;
+Query OK, 118 rows affected (0.02 sec)
+
+source  intfile-regtest.sql
+quit
+# (and you are back on command shell
+
+
+#How to create problems/solutions
+1) Open MathType. 
+2) Type the problem and save it as problemXX.gif
+3) Create a hintXX.gif
+4) Solve it and save as answerXX.gif
+5) Create 4 files optionXX_1.gif, _2.gif, _3.gif, _4.gif. 1.gif contains correct answer, others contain some variation - but incorrect.
+6) Move these files to images/<product>/problems/probemXX
+
+#How to Use Adobe Photoshop to create the jpg files from gif files and to add the copyright info.
+1) Get all the gif files in one directory
+2) Do File->Scripts->Image Processor  (open gif files and save as jpeg files).
+3) Open Bridge
+4) Open File->File Info. (in tiny right arrrow at the top right -> open the default profiles). Apply to the jpeg files . It saves the info.
+5) Verify that any jpg file has the file info.
+i
+#Create the directory structure on the mathproblemsolved.com server
+calculus@s483:~$   for i in {1..10}
+> do
+>  mkdir ~/www/www/images/limits/problems/problem${i}
+> mkdir ~/www/www/images/limits/problems/problem${i}/question
+> mkdir ~/www/www/images/limits/problems/problem${i}/answer
+> mkdir ~/www/www/images/limits/problems//problem${i}/hints
+> cp ~/www/www/images/limits/gif_images/answer${i}*.gif  ~/www/www/images/limits/problems/problem${i}/answer
+>  cp ~/www/www/images/limits/gif_images/hint${i}*.gif ~/www/www/images/limits/problems//problem${i}/hints
+> cp ~/www/www/images/limits/gif_images/question${i}*.gif ~/www/www/images/limits/problems/problem${i}/question
+>  cp ~/www/www/images/limits/jpg_images/answer${i}*.jpg  ~/www/www/images/limits/problems/problem${i}/answer
+> cp ~/www/www/images/limits/jpg_images/hint${i}*.jpg ~/www/www/images/limits/problems//problem${i}/hints
+>  cp ~/www/www/images/limits/jpg_images/question${i}*.jpg  ~/www/www/images/limits/problems/problem${i}/question
+> mkdir ~/www/www/images/limits/problems//problem${i}/options
+> cp ~/www/www/images/limits/gif_images/option${i}*.gif  ~/www/www/images/limits/problems//problem${i}/options
+>  cp ~/www/www/images/limits/jpg_images/option${i}*.jpg ~/www/www/images/limits/problems//problem${i}/options
+> done
 
 calculus@s483:~/www/www$ for i in {121..139}
 > do
@@ -13,14 +63,6 @@ cp ~/www/www/images/differential-calculus/gif_images/question${i}*.gif  ~/www/ww
 cp ~/www/www/images/differential-calculus/jpg_images/question${i}*jpg ~/www/www/images/differential-calculus/problems/problem${i}/question
 
 
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/hint93*.gif': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/hint93*.jpg': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/hint105*.gif': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/hint105*.jpg': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/answer111*.gif': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/answer111*.jpg': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/gif_images/answer113*.gif': No such file or directory
-cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/answer113*.jpg': No such file or directory
 
 {"image_intro":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_intro":"","image_intro_alt":"Intro Image","image_intro_caption":"","image_fulltext":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_fulltext":"","image_fulltext_alt":"Full Article Image","image_fulltext_caption":""}
 
@@ -37,7 +79,7 @@ cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/
 <p>&nbsp;</p>
 
 
-
+# The following is the format that you are trying to hit to read into the problem/solution/hint/options structure
 
 
 {"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}
@@ -46,7 +88,7 @@ cp: cannot stat `/home/calculus/www/www/images/differential-calculus/jpg_images/
 
 
 
-To strip the line feed as we go from windows to unix:
+#To strip the line feed as we go from windows to unix:
 perl -p -e 's/\r$//' win.txt unix.txt
 
 git remote add math-bucket https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git
@@ -67,4 +109,3 @@ math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathpr
     perl quiz_deluxe.pl differential-calculus 1 119  22000 > diffcalc-customer-exam.csv
     perl quiz_deluxe.pl integral-calculus 1 119  32000 >  integral-customer-exam.csv
     perl quiz_deluxe.pl trig-precalc 1 119  13000 >  trigprecalc-customer-exam.csv
-

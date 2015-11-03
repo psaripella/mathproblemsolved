@@ -34,11 +34,11 @@ tan(arccos(-(sqrt2)/2)),\[\tan \left( {\arccos \left( { - \frac{{\sqrt 2 }}{2}} 
 "lim(x to -inf)((2x^-x)/2x)),lim(x to inf)",\[\mathop {\lim }\limits_{x \to  - \infty } \frac{{2{x^{ - x}}}}{{2x}}\],2,AP;Limits
 ,,,
 "lim(x to 3)(y=((x^2)-9)/(3x-9)),lim(x to 3)",\[{\text{ }}\mathop {\lim }\limits_{x \to 3} y = \frac{{{x^2} - 9}}{{3x - 9}}\],2,AP;Limits
-"lim(x to 0)(sinx/((x^2)+3x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin x}}{{{x^2} + 3x}}\],3,AP;Limits;L''Hospital''s Rule;
+"lim(x to 0)(sinx/((x^2)+3x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin x}}{{{x^2} + 3x}}\],3,AP;Limits;L'Hospital's Rule;
 "lim(x to 0)(sin(1/x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \sin \frac{1}{x}\],,
 "lim(x to inf)(sin(((x^2)+1)/((2x-1)(2+x)))),lim(x to inf)",\[\mathop {\lim }\limits_{x \to \infty } \sin \frac{{2{x^2} + 1}}{{\left( {2x - 1} \right)\left( {2 + x} \right)}}\],2,AP;Limits
 "lim(x to 0)(fracx/x),lim(x to 0)",\[\mathop {\lim }\limits_{x \to 0} \frac{{\left| x \right|}}{x}\],2,AP;Limits
-"lim(x to inf)(xsin(1/x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to \infty } x\sin \frac{1}{x}\],4,AP;Limits;L''Hospital''s Rule;sine;trigonometric
+"lim(x to inf)(xsin(1/x)),lim(x to 0)",\[\mathop {\lim }\limits_{x \to \infty } x\sin \frac{1}{x}\],4,AP;Limits;L'Hospital's Rule;sine;trigonometric
 "lim(x to p)(x((sin(pi-x))/(pi-x))),lim(x to pi)",\[\mathop {\lim }\limits_{x \to \pi } x\frac{{\sin \left( {\pi  - x} \right)}}{{\pi  - x}}\],3,AP;Limits;sine;trigonometric
 graph of f(x)=4/((x^2)-1),\[{\text{graph of }}f\left( x \right) = \frac{4}{{{x^2} - 1}}\],2,AP;Function
 graph ofy=((2(x^2))+(2x)+3)/((4(x^2))-4x),\[{\text{graph of }}y = \frac{{2{x^2} + 2x + 3}}{{4{x^2} - 4x}}\],2,AP;Function
@@ -82,19 +82,19 @@ differential(5^x),,4,Derivative;Exponential;Newton Raphson Method
 "y=((e^x)(x-1)),y""(0)=?","\[{\text{If }}y = {e^x}\left( {x - 1} \right),{\text{ then }}y''\left( 0 \right) = ?\]",3,Derivative;Second Order Differnential;Exponential;Product Rule
 "differential(x=e^t*(cost), y= e^t*(sint))","\[\frac{{dy}}{{dx}},{\text{ if }}x = {e^\theta }\cos \theta {\text{ and }}y = {e^\theta }\sin \theta {\text{ when }}\theta {\text{ = }}\frac{\pi }{2}\]",4,Derivative;Exponential;Trigonometric;Cosine;Sine
 second order differential(x=cost; y=cos2t),"\[{\text{Find }}\frac{{{d^2}y}}{{d{x^2}}}\left( {\sin t \ne 0} \right),{\text{ if }}x = \cos t{\text{ and }}y = \cos 2t\]",4,Derivative;Second Order Differnential;Trigonometric;cosine
-limit(xto0)((1+x)^6)-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {1 + x} \right)}^6} - 1}}{x}\],3,Limits;L''Hospital''s Rule
-limit(xto0)(((sqrt(8+x))-x)/()),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sqrt[3]{{8 + x}} - 2}}{x}\],3,Limits;L''Hospital''s Rule
-limit(x to 0)(((ln(e_x))-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\ln \left( {e + x} \right) - 1}}{x}\],3,Limits;L''Hospital''s Rule
+limit(xto0)((1+x)^6)-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {1 + x} \right)}^6} - 1}}{x}\],3,Limits;L'Hospital's Rule
+limit(xto0)(((sqrt(8+x))-x)/()),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sqrt[3]{{8 + x}} - 2}}{x}\],3,Limits;L'Hospital's Rule
+limit(x to 0)(((ln(e_x))-1)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\ln \left( {e + x} \right) - 1}}{x}\],3,Limits;L'Hospital's Rule
 limit(x to 0)((cosx-1)/cosx),\[\mathop {\lim }\limits_{x \to 0} \frac{{\cos x - 1}}{{\cos x}}\],2,Limits;Trigonometric;Cosine
 MVT(f(x)=x^(2/3)),,3,Derivative;Mean Value Theorem
 differentia(f(x)=2x^3 - x),,3,Derivative;Secant;Tangent;Slope
 differential(h(x))  h(x) is inverse (f(x)=1/x)),,2,Derivative;Power Rule
-limt(x to inf)((e^x)/(x^50)),\[\mathop {\lim }\limits_{x \to \infty } \frac{{{e^x}}}{{{x^{50}}}} = ?\],2,Limits;L''Hospital''s Rule
+limt(x to inf)((e^x)/(x^50)),\[\mathop {\lim }\limits_{x \to \infty } \frac{{{e^x}}}{{{x^{50}}}} = ?\],2,Limits;L'Hospital's Rule
 differential(sin(xy)=x,"\[{\text{find }}\frac{{dy}}{{dx}},{\text{ if }}\sin \left( {xy} \right) = x\]",4,Derivative;Implicit Differentiation;Product Rule;Chain Rule;Function of Function;sine
-limt(x to 0)(sin2x/x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 2x}}{x}\],2,Limits;L''Hospital''s Rule
-limt(x to 0)(sin3x/sin4x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 3x}}{{\sin 4x}}\],2,Limits;L''Hospital''s Rule
-limt(x to 0)((1-cosx)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{1 - \cos x}}{x}\],2,Limits;L''Hospital''s Rule
-limt(x to 0)((tanpix)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\tan \pi x}}{x}\],2,Limits;L''Hospital''s Rule
+limt(x to 0)(sin2x/x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 2x}}{x}\],2,Limits;L'Hospital's Rule
+limt(x to 0)(sin3x/sin4x)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sin 3x}}{{\sin 4x}}\],2,Limits;L'Hospital's Rule
+limt(x to 0)((1-cosx)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{1 - \cos x}}{x}\],2,Limits;L'Hospital's Rule
+limt(x to 0)((tanpix)/x),\[\mathop {\lim }\limits_{x \to 0} \frac{{\tan \pi x}}{x}\],2,Limits;L'Hospital's Rule
 limt(x to inf)((x^2)sin1/x),\[\mathop {\lim }\limits_{x \to \infty } {x^2}\sin \frac{1}{x}\],2,Limits;Trigonometric;sine
 sint=(x-3/3);cost=(y+1)/3,,1,Locus;Circle
 limit(x to 0)((secx-cosx)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sec x - \cos x}}{{{x^2}}} = ?\],2,Limits;Trigonometric;sine
@@ -119,10 +119,10 @@ limit(x to 0)((secx-cosx)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{\sec 
 integral(((x^2)-1)/((x^3)(sqrt((2(x^4))-(2(x^2))+1)))dx,\[\int {\frac{{{x^2} - 1}}{{{x^3}\sqrt {2{x^4} - 2{x^2} + 1} }}} dx\],5,Integral;Power Rule;Substitution
 ,,,
 integral(1/((((x-1)^3)((x+2)^5))^1/4))dx,\[\int {\frac{1}{{{{\left[ {{{\left( {x - 1} \right)}^3}{{\left( {x + 2} \right)}^5}} \right]}^{1/4}}}}} dx\],4,Integral;Partial Functions
-limit(x to 0)((1+sinx-cosx+(log(1-x)))/(x^3)),\[{\text{f }}\mathop {\lim }\limits_{x \to 0} \frac{{1 + \sin x - \cos x + \log \left( {1 - x} \right)}}{{{x^3}}}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)((1+sinx-cosx+(log(1-x)))/(x^3)),\[{\text{f }}\mathop {\lim }\limits_{x \to 0} \frac{{1 + \sin x - \cos x + \log \left( {1 - x} \right)}}{{{x^3}}}\],3,Limits;L'Hospital's Rule
 ,,,
 ,,,
-limit(x to 0)((((x^3)-x)^3)/((sin((x^2)/4))*(log(1+3x)))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {{x^x} - 1} \right)}^3}}}{{\sin \frac{{{x^2}}}{4}\log \left( {1 + 3x} \right)}}{\text{  = ?}}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)((((x^3)-x)^3)/((sin((x^2)/4))*(log(1+3x)))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{{\left( {{x^x} - 1} \right)}^3}}}{{\sin \frac{{{x^2}}}{4}\log \left( {1 + 3x} \right)}}{\text{  = ?}}\],3,Limits;L'Hospital's Rule
 ,,,
 ,,,
 integral(dx/((x^2)+4x+13)),\[\int {\frac{{dx}}{{{x^2} + 4x + 13}}} \],3,Integral;Inverse;Tangent;Subsititution
@@ -131,7 +131,7 @@ integral(dx/((x^2)+4x+13)),\[\int {\frac{{dx}}{{{x^2} + 4x + 13}}} \],3,Integral
 integral(dx/(x((x^7)+1))),\[\int {\frac{{dx}}{{x\left( {{x^7} + 1} \right)}}} \],4,Integral;Partial Functions
 ,,,
 integral(dx/((sin(x-a))(sin(x-b)))),\[\int {\frac{{dx}}{{\sin \left( {x - a} \right)\sin \left( {x - b} \right)}}} {\text{ is?}}\],5,Integral;Trigonometric;
-limit(x to 0)(xloge(sinx)),\[\mathop {\lim }\limits_{x \to 0} x{\log _e}\left( {\sin x} \right){\text{  = ?}}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)(xloge(sinx)),\[\mathop {\lim }\limits_{x \to 0} x{\log _e}\left( {\sin x} \right){\text{  = ?}}\],3,Limits;L'Hospital's Rule
 ,,,
 ,,,
 ,,,
@@ -149,8 +149,8 @@ differential+(sqrt((1-(y^2))/(1-(x^2))))=0,\[\frac{{dy}}{{dx}} + \sqrt {\left[ {
 limit(x to 9)(((x^(3/2))-27)/(x-9)),\[\mathop {\lim }\limits_{x \to 9} \left( {\frac{{{x^{3/2}} - 27}}{{x - 9}}} \right)\],,
 ,,,
 ,,,
-limit(x to 0)((x^(1/x))/(e^((1/x)+1))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{e^{1/x}}}}{{{e^{\left( {1/x} \right) + 1}}}}\],3,Limits;L''Hospital''s Rule
+limit(x to 0)((x^(1/x))/(e^((1/x)+1))),\[\mathop {\lim }\limits_{x \to 0} \frac{{{e^{1/x}}}}{{{e^{\left( {1/x} \right) + 1}}}}\],3,Limits;L'Hospital's Rule
 ,,,
 integral(dx/((1+(e^x))(1+e^(-x)))),\[\int {\frac{{dx}}{{\left( {1 + {e^x}} \right)\left( {1 + {e^{ - x}}} \right)}}}  = ?\],5,Integration; Trigonometric; Substitution
 ,,,
-limit(x to 0)((2(sin^2)3x)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{2{{\sin }^2}3x}}{{{x^2}}} = ?\],3,Limits;L''Hospital''s Rule;Product Rule
+limit(x to 0)((2(sin^2)3x)/(x^2)),\[\mathop {\lim }\limits_{x \to 0} \frac{{2{{\sin }^2}3x}}{{{x^2}}} = ?\],3,Limits;L'Hospital's Rule;Product Rule

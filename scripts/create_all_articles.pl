@@ -7,7 +7,7 @@ use strict;
 
 my $numArgs = $#ARGV + 1;
 
-if ($numArgs != 2) {
+if ($numArgs < 2) {
 
 print "Usage: perl create_all_articles.pl <search_text_file> <attribute_file in profiles directory> \n";
 
@@ -167,12 +167,11 @@ my $created_by_alias = q?'src="images/?.${product}.q?/problems/problem?.$i.q?/qu
 
   #print "$hints_directory \n";
   #print "hints count = $hints_count \n";
-
-if ($purchase_message >= 1) 
+my $j = 1;
+if ($purchase_message == 1) 
 {
 
 # '<a href="https://www.mathproblemsolved.com/index.php/purchase2">Click here to purchase the full solution</a></p>'
-my	$j = 1;
          my $temp_string = q?\r\n<hr class="system-pagebreak" title="Hint?.
                 $j.
                 q?" />?.
@@ -190,9 +189,30 @@ my	$j = 1;
         print $temp_string ;
 
 }
-else
-{
-  for (my $j = 1; $j <= $hints_count ; $j++) 
+elsif ($purchase_message == 2) {
+
+# '<a href="https://www.mathproblemsolved.com/index.php/purchase2">Click here to purchase the full solution</a></p>'
+         my $temp_string = q?\r\n<hr class="system-pagebreak" title="Hint?.
+                $j.
+                q?" />?.
+                q?\r\n<h4 class="hint-title">Hint?.
+                $j.
+                q? </h4>?.
+#Below: When hint was a text file
+#               q?\r\n<p>&nbsp;?.$hint_file.q?</p>?.
+                q?\r\n<p><img class="img-hintandsolution" src="?.${logical_hints_directory}.q?/hint?.${i}."_".${j}.".jpg".q?" alt="" /></p>\r\n<p>&nbsp;</p>?.
+
+                q?\r\n<hr class="system-pagebreak" title="Solution Step?.$j.q?" />?.
+                q?\r\n<p>&nbsp;</p>?.
+                q?\r\n<p>&nbsp;</p>?.
+                q?\r\n<p><img class="img-hintandsolution" src="?.${answer_directory}.q?/answer?.${i}."_".${j}.".jpg".q?" alt="" /></p>\r\n<p>&nbsp;</p>? ;
+                #q?<a href="https://www.mathproblemsolved.com/index.php/purchase2">Click here to purchase the full solution</a></p>?;
+        print $temp_string ;
+
+}
+
+else {
+  for ( $j = 1; $j <= $hints_count ; $j++) 
 	{
   	#print " j =  $j \n" ;
 	#print "$hints_directory/hint${j}.txt\n" ;
