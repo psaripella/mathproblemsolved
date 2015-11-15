@@ -4,7 +4,7 @@ then
 
 echo "Error: "
 echo "Usage: create_structure.sh category low_index high_index"
-echo "./create_structure.sh trig-precalc 1 92"
+echo "Example: ./create_structure.sh trig-precalc 1 92"
 exit 1
 
 fi 
@@ -23,11 +23,28 @@ fi
 for (( i=$low_index; i<=$high_index; i++ ))
  do
 echo creating/dealing with problem${i}
+if [ ! -d problems/problem${i} ]; then
 mkdir problems/problem${i}
+fi
+if [ ! -d problems/problem${i}/question ]; then
 mkdir problems/problem${i}/question
+fi
+if [ ! -d problems/problem${i}/answer ]; then
 mkdir problems/problem${i}/answer
+fi
+if [ ! -d problems/problem${i}/hints ]; then
 mkdir problems/problem${i}/hints
+fi
+if [ ! -d problems/problem${i}/options ]; then
 mkdir problems/problem${i}/options
+fi
+
+
+#mkdir problems/problem${i}
+#mkdir problems/problem${i}/question
+#mkdir problems/problem${i}/answer
+#mkdir problems/problem${i}/hints
+#mkdir problems/problem${i}/options
 cp gif_images/question${i}.gif problems/problem${i}/question
 cp gif_images/new_question${i}.gif problems/problem${i}/question
 cp gif_images/answer${i}_*.gif problems/problem${i}/answer

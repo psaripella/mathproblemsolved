@@ -2127,3 +2127,31 @@ Strict-Transport-Security: max-age=63072000
 
 VERIFIED
 
+[11/03/2015 7:25 PM] - SUCCESS!
+IPN POST Vars from Paypal:
+transaction_subject=, payment_date=16:24:53 Nov 03, 2015 PST, txn_type=express_checkout, last_name=Kumar, residence_country=US, item_name=, payment_gross=0.99, mc_currency=USD, business=sales@mathproblemsolved.com, payment_type=instant, protection_eligibility=Eligible, verify_sign=AnxFOYvIYNiXtDtuord169Zt-Pd5APXYhsOMIJbZ2dtjesphsyCABwtI, payer_status=verified, tax=0.00, payer_email=phanikumar3696@gmail.com, txn_id=3FV17151CL372233P, quantity=1, receiver_email=sales@mathproblemsolved.com, first_name=Phani, payer_id=SGYCXNBFWWPXN, receiver_id=99V6BB6LN8WY2, item_number=, handling_amount=0.00, payment_status=Completed, payment_fee=0.10, mc_fee=0.10, shipping=0.00, mc_gross=0.99, custom=, charset=windows-1252, notify_version=3.8, ipn_track_id=c4790cf451f3b, 
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Paypal-Debug-Id: a4b96f202665d
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+DC: dcg11-origin-www.paypal.com
+Date: Wed, 04 Nov 2015 00:25:07 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=H2KFwY9cot07ZDKilT53L_EE_OVBEFf8CdoEQMcxLQi13Eus7ogCL0GRqu7UQll0IaRh9ICKLy1ZsVcHJQha_9KXz1e4bR8qFaOj6zZ-L-hrDLsiZRPJEgmBfNZB0JBiSKXbuQoSuX2Q1jt295LMrQO6e6nWV5G2YfUR_Bb7_ejRbd0KdzNrVUmnbSVbbeWJXt04GlbJ7HTa1Iru7_1RfHE47zjYwLbAkkOQqGCQVVRh5ZDYhBasojAI-okW4GPvO20wWHk9p9tsEQSNDbkDS75KdxxHnx3Y5r2HDZa3fHukxNobuUy6AaR3CsmL0oJwZPlIlhrrhdUVIUJL_rdP68Izu13bVu6MwQ8IuwzMxUCuNAITqzXDR2HOCse91T6l6mmFNuv5zncUnlHw0I6Y0cEprAyotpVmdhfaS2hKBBAmUx7jbiIDoP47pQi; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 01-Nov-2025 00:25:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 03-Nov-2017 00:25:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.16.0.148.1446596707164384; path=/; expires=Fri, 27-Oct-45 00:25:07 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE9.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D1666201942; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.16.1.4.1446596707157092; path=/; expires=Fri, 27-Oct-45 00:25:07 GMT
+Set-Cookie: AKDC=dcg11-origin-www.paypal.com; expires=Wed, 04-Nov-2015 00:55:07 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+

@@ -30,39 +30,15 @@ quit
 3) Open Bridge
 4) Open File->File Info. (in tiny right arrrow at the top right -> open the default profiles). Apply to the jpeg files . It saves the info.
 5) Verify that any jpg file has the file info.
-i
+
+
+#FTP files over
+1)FTP over the files (the "gif_images" directory with the underlying "JPEG" directory created by Adobe)
+2) Move the JPEG directory to jpg_files directory (create_structure expects it)
+
+
 #Create the directory structure on the mathproblemsolved.com server
-calculus@s483:~$   for i in {1..10}
-> do
->  mkdir ~/www/www/images/limits/problems/problem${i}
-> mkdir ~/www/www/images/limits/problems/problem${i}/question
-> mkdir ~/www/www/images/limits/problems/problem${i}/answer
-> mkdir ~/www/www/images/limits/problems//problem${i}/hints
-> cp ~/www/www/images/limits/gif_images/answer${i}*.gif  ~/www/www/images/limits/problems/problem${i}/answer
->  cp ~/www/www/images/limits/gif_images/hint${i}*.gif ~/www/www/images/limits/problems//problem${i}/hints
-> cp ~/www/www/images/limits/gif_images/question${i}*.gif ~/www/www/images/limits/problems/problem${i}/question
->  cp ~/www/www/images/limits/jpg_images/answer${i}*.jpg  ~/www/www/images/limits/problems/problem${i}/answer
-> cp ~/www/www/images/limits/jpg_images/hint${i}*.jpg ~/www/www/images/limits/problems//problem${i}/hints
->  cp ~/www/www/images/limits/jpg_images/question${i}*.jpg  ~/www/www/images/limits/problems/problem${i}/question
-> mkdir ~/www/www/images/limits/problems//problem${i}/options
-> cp ~/www/www/images/limits/gif_images/option${i}*.gif  ~/www/www/images/limits/problems//problem${i}/options
->  cp ~/www/www/images/limits/jpg_images/option${i}*.jpg ~/www/www/images/limits/problems//problem${i}/options
-> done
-
-calculus@s483:~/www/www$ for i in {121..139}
-> do
-> mkdir ~/www/www/images/differential-calculus/problems/problem${i}
-> mkdir ~/www/www/images/differential-calculus/problems/problem${i}/question
-> mkdir ~/www/www/images/differential-calculus/problems/problem${i}/answer
->  mkdir ~/www/www/images/differential-calculus/problems/problem${i}/hints
-cp ~/www/www/images/differential-calculus/gif_images/answer${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/answer
-cp ~/www/www/images/differential-calculus/gif_images/hint${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/hints
-cp ~/www/www/images/differential-calculus/jpg_images/answer${i}*.jpg ~/www/www/images/differential-calculus/problems/problem${i}/answer
-cp ~/www/www/images/differential-calculus/jpg_images/hint${i}*jpg ~/www/www/images/differential-calculus/problems/problem${i}/hints
-cp ~/www/www/images/differential-calculus/gif_images/question${i}*.gif  ~/www/www/images/differential-calculus/problems/problem${i}/question
-cp ~/www/www/images/differential-calculus/jpg_images/question${i}*jpg ~/www/www/images/differential-calculus/problems/problem${i}/question
-
-
+#Use scripts/create_structure.sh
 
 {"image_intro":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_intro":"","image_intro_alt":"Intro Image","image_intro_caption":"","image_fulltext":"images\/differential-calculus\/problems\/problem10\/question\/question10.jpg","float_fulltext":"","image_fulltext_alt":"Full Article Image","image_fulltext_caption":""}
 

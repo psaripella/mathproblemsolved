@@ -4,6 +4,7 @@
 log/error.php
 
 #Directories
+cache/
 qb/
 components/com_jcomments/
 
