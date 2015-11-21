@@ -7,8 +7,7 @@ perl create_all_articles.pl intcalc-search.csv profiles/intfile-registered > int
 #For mysql stuff
  mysql -u calculus -p calculus_math
 pw: usual
-(delete the rows first ...)
-(limits ..._
+(Delete no longer needed, this is now in the creation of the articles)
 mysql> delete from math_content where id >= 13000 and id <= 13082;
 mysql> delete from math_content where id >= 12000 and id <= 12032;
 mysql> delete from math_content where id >= 110000 and id <= 110011;
@@ -18,6 +17,7 @@ mysql> delete from math_content where id >= 111000 and id <= 111014;
 delete from math_content where id >=62000 and id <= 62118 ;
 Query OK, 118 rows affected (0.02 sec)
 
+(Deletes articles from before and then gets them into DB)
 source  intfile-regtest.sql
 quit
 # (and you are back on command shell
