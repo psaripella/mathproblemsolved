@@ -7,6 +7,7 @@ log/error.php
 cache/
 qb/
 components/com_jcomments/
+modules/mod_maximenuck/
 
 *installation/
 tmp/

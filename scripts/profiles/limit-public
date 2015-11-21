@@ -1,6 +1,6 @@
-product=trig-precalc
-root_directory=/home/calculus/www/www/images/trig-precalc/problems/
-logical_root_directory=images/trig-precalc/problems/
+product=limits
+root_directory=/home/calculus/www/www/images/limits/problems/
+logical_root_directory=images/limits/problems/
 question_directory=
 answer_directory=
 hints_directory=

@@ -11,6 +11,12 @@ defined('_JEXEC') or die;
 jimport('joomla.filesystem.file');
 require_once dirname(__FILE__) . '/helper.php';
 
+// set the default html id for the menu
+if ( $params->get('menuid', '') === '' ) {
+	$params->set('menuid', 'maximenuck' . $module->id);
+}
+$menuID = $params->get('menuid', '');
+
 // retrieve menu items
 $thirdparty = $params->get('thirdparty', 'none');
 switch ($thirdparty) :
@@ -20,16 +26,16 @@ switch ($thirdparty) :
 		// require_once dirname(__FILE__).'/helper.php';
 		$items = modMaximenuckHelper::getItems($params);
 		break;
-	case 'virtuemart':
-		// Include the syndicate functions only once
-		if (JFile::exists(dirname(__FILE__) . '/helper_virtuemart.php')) {
-			require_once dirname(__FILE__) . '/helper_virtuemart.php';
-			$items = modMaximenuckvirtuemartHelper::getItems($params);
-		} else {
-			echo '<p style="color:red;font-weight:bold;">File helper_virtuemart.php not found ! Please download the patch for Maximenu - Virtuemart on <a href="http://www.joomlack.fr">http://www.joomlack.fr</a></p>';
-			return false;
-		}
-		break;
+//	case 'virtuemart':
+//		// Include the syndicate functions only once
+//		if (JFile::exists(dirname(__FILE__) . '/helper_virtuemart.php')) {
+//			require_once dirname(__FILE__) . '/helper_virtuemart.php';
+//			$items = modMaximenuckvirtuemartHelper::getItems($params);
+//		} else {
+//			echo '<p style="color:red;font-weight:bold;">File helper_virtuemart.php not found ! Please download the patch for Maximenu - Virtuemart on <a href="http://www.joomlack.fr">http://www.joomlack.fr</a></p>';
+//			return false;
+//		}
+//		break;
 	case 'hikashop':
 		// Include the syndicate functions only once
 		if (JFile::exists(dirname(__FILE__) . '/helper_hikashop.php')) {
@@ -57,6 +63,28 @@ switch ($thirdparty) :
 			$items = modMaximenuckk2Helper::getItems($params);
 		} else {
 			echo '<p style="color:red;font-weight:bold;">File helper_k2.php not found ! Please download the patch for Maximenu - k2 on <a href="http://www.joomlack.fr">http://www.joomlack.fr</a></p>';
+			return false;
+		}
+		break;
+	case 'joomshopping':
+		// Include the syndicate functions only once
+		if (JFile::exists(dirname(__FILE__) . '/helper_joomshopping.php')) {
+			require_once dirname(__FILE__) . '/helper_joomshopping.php';
+			$items = modMaximenuckjoomshoppingHelper::getItems($params, false);
+		} else {
+			echo '<p style="color:red;font-weight:bold;">File helper_joomshopping.php not found ! Please download the patch for Maximenu - Joomshopping on <a href="http://www.joomlack.fr">http://www.joomlack.fr</a></p>';
+			return false;
+		}
+		break;
+	default:
+	case 'adsmanager':
+		// Include the syndicate functions only once
+		if (JFile::exists(JPATH_ROOT . '/plugins/system/maximenuck_'.$thirdparty.'/helper/helper_maximenuck_'.$thirdparty.'.php')) {
+			require_once JPATH_ROOT . '/plugins/system/maximenuck_'.$thirdparty.'/helper/helper_maximenuck_'.$thirdparty.'.php';
+			$className = 'modMaximenuck'.$thirdparty.'Helper';
+			$items = $className::getItems($params, false);
+		} else {
+			echo '<p style="color:red;font-weight:bold;">Plugin maximenuck_'.$thirdparty.' not found ! Please download the patch for Maximenu - '.ucfirst($thirdparty).' on <a href="http://www.joomlack.fr">http://www.joomlack.fr</a></p>';
 			return false;
 		}
 		break;
@@ -101,17 +129,14 @@ if ($active) {
 // params for the script
 $fxduration = $params->get('fxduration', 500);
 $fxtransition = $params->get('fxtransition', 'linear');
-// $usemootools = $params->get('usemootools', '1');
 $orientation = $params->get('orientation', 'horizontal');
 $testoverflow = $params->get('testoverflow', '0');
 $opentype = $params->get('opentype', 'open');
 $fxdirection = $params->get('direction', 'normal');
 $directionoffset1 = $params->get('directionoffset1', '30');
 $directionoffset2 = $params->get('directionoffset2', '30');
-
 $behavior = $params->get('behavior', 'moomenu');
-$usecss = $params->get('usecss', '1');
-$menuID = $params->get('menuid', 'maximenuck');
+$usecss = $params->get('usecss', '1'); // for old version compatibility (no more used in the xml)
 $usefancy = $params->get('usefancy', '1');
 $fancyduree = $params->get('fancyduration', 500);
 $fancytransition = $params->get('fancytransition', 'linear');
@@ -130,51 +155,93 @@ $logowidth = $params->get('logowidth', '');
 $usejavascript = $params->get('usejavascript', '1');
 $effecttype = ($params->get('layout', 'default') == '_:pushdown') ? 'pushdown' : 'dropdown';
 
-if ($effecttype == 'pushdown' && $orientation == 'vertical') {
-	echo '<p style="color:red;font-weight:bold;">MAXIMENU MESSAGE : You can not use the Pushdown layout for a Vertical menu</p>';
+if ( ($effecttype == 'pushdown' || $effecttype == 'megatabs') && $orientation == 'vertical') {
+	echo '<p style="color:red;font-weight:bold;">MAXIMENU MESSAGE : You can not use this layout for a Vertical menu</p>';
 	return false;
 }
-
 // detection for mobiles
 if (isset($_SERVER['HTTP_USER_AGENT']) && (strstr($_SERVER['HTTP_USER_AGENT'], 'iPhone') || strstr($_SERVER['HTTP_USER_AGENT'], 'iPad') || strstr($_SERVER['HTTP_USER_AGENT'], 'iPod') || strstr($_SERVER['HTTP_USER_AGENT'], 'Android'))) {
 	$behavior = 'click';
 	$ismobile = '1';
 }
 
-// add external stylesheets
-if ($orientation == 'vertical') {
-	if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/moo_maximenuvck_rtl.css')) {
-		$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuvck_rtl.css');
-	} else {
-		$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuvck.css');
-	}
-	if ($usecss == 1) {
-		if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuvck_rtl.php')) {
-			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuvck_rtl.php?monid=' . $menuID);
+if ( $theme != '-1' ) {
+	if ( JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuck.php') ) {
+		if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuck_rtl.php')) {
+			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuck_rtl.php?monid=' . $menuID);
 		} else {
-			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuvck.php?monid=' . $menuID);
+			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuck.php?monid=' . $menuID);
 		}
-	}
-} else {
-	if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/moo_maximenuhck_rtl.css')) {
-		$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuhck_rtl.css');
-	} else {
-		$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuhck.css');
-	}
-	if ($usecss == 1) {
-		if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuhck_rtl.php')) {
-			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuhck_rtl.php?monid=' . $menuID);
-		} else {
-			$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuhck.php?monid=' . $menuID);
-		}
-	}
+	} else { // compatibility with old themes
+		$retrocompatibility_css = '#'.$menuID.' div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck:hover div.floatck div.floatck,
+#'.$menuID.' ul.maximenuck li.sfhover div.floatck div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck.sfhover div.floatck div.floatck {
+left: auto !important;
+height: auto;
+width: auto;
+display: none;
 }
 
-if (JFile::exists('modules/mod_maximenuck/themes/' . $theme . '/css/ie7.css')) {
-	echo '
-		<!--[if lte IE 7]>
-		<link href="' . JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/ie7.css" rel="stylesheet" type="text/css" />
-		<![endif]-->';
+#'.$menuID.' ul.maximenuck li:hover div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck li:hover div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck li:hover div.floatck li:hover div.floatck,
+#'.$menuID.' ul.maximenuck li.sfhover div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck li.sfhover div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck li.sfhover div.floatck li.sfhover div.floatck {
+display: block;
+left: auto !important;
+height: auto;
+width: auto;
+}
+
+div#'.$menuID.' ul.maximenuck li.maximenuck.nodropdown div.floatck,
+div#'.$menuID.' ul.maximenuck li.maximenuck div.floatck li.maximenuck.nodropdown div.floatck,
+div#'.$menuID.' .maxipushdownck div.floatck div.floatck {
+display: block !important;
+}';
+		$document->addStyleDeclaration($retrocompatibility_css);
+		// add external stylesheets
+		if ($orientation == 'vertical') {
+			if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/moo_maximenuvck_rtl.css')) {
+				$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuvck_rtl.css');
+			} else {
+				$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuvck.css');
+			}
+			if ($usecss == 1 ) {
+				if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuvck_rtl.php')) {
+					$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuvck_rtl.php?monid=' . $menuID);
+				} else {
+					$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuvck.php?monid=' . $menuID);
+				}
+			}
+		} else {
+			if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/moo_maximenuhck_rtl.css')) {
+				$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuhck_rtl.css');
+			} else {
+				$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/moo_maximenuhck.css');
+			}
+			if ($usecss == 1) {
+				if ($langdirection == 'rtl' && JFile::exists(dirname(__FILE__) . '/themes/' . $theme . '/css/maximenuhck_rtl.php')) {
+					$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuhck_rtl.php?monid=' . $menuID);
+				} else {
+					$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/maximenuhck.php?monid=' . $menuID);
+				}
+			}
+		}
+	}
+
+	if (JFile::exists('modules/mod_maximenuck/themes/' . $theme . '/css/ie7.css')) {
+		echo '
+			<!--[if lte IE 7]>
+			<link href="' . JURI::base(true) . '/modules/mod_maximenuck/themes/' . $theme . '/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]-->';
+	}
+} else {
+	$dropdown_css = '#'.$menuID.' div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck:hover div.floatck div.floatck,
+#'.$menuID.' ul.maximenuck li.sfhover div.floatck div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck.sfhover div.floatck div.floatck {
+display: none;
+}
+
+#'.$menuID.' ul.maximenuck li:hover div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck li:hover div.floatck, #'.$menuID.' ul.maximenuck li:hover div.floatck li:hover div.floatck li:hover div.floatck,
+#'.$menuID.' ul.maximenuck li.sfhover div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck li.sfhover div.floatck, #'.$menuID.' ul.maximenuck li.sfhover div.floatck li.sfhover div.floatck li.sfhover div.floatck {
+display: block;
+}';
+		$document->addStyleDeclaration($dropdown_css);
 }
 
 $menuposition = $params->get('menuposition', '0');
@@ -186,6 +253,8 @@ if ($menuposition) {
         " . $fixedcssposition . "
         right: 0 !important;
         z-index: 1000 !important;
+		margin: 0 auto;
+		" . ($params->get('fixedpositionwidth') ? "max-width: " . modMaximenuckHelper::testUnit($params->get('fixedpositionwidth')) . ";" : "" ) . "
     }";
 	if ($menuposition == 'topfixed') {
 		$fixedcss .= "div#" . $menuID . ".maximenufixed ul.maximenuck {
@@ -199,14 +268,24 @@ if ($menuposition) {
 	$document->addStyleDeclaration($fixedcss);
 }
 
+if ($params->get('usemobileburgericon') === '1') {
+	$mobiletogglercss = "@media screen and (max-width: 524px) {"
+		. "#" . $menuID . " .maximenumobiletogglericonck {display: block !important;font-size: 33px !important;text-align: right !important;padding-top: 10px !important;}"
+		. "#" . $menuID . " ul.maximenuck .maximenumobiletogglerck ~ li.maximenuck.level1 {display: none !important;}"
+		. "#" . $menuID . " ul.maximenuck .maximenumobiletogglerck:checked ~ li.maximenuck.level1 {display: block !important;}"
+		. "}";
+	$document->addStyleDeclaration($mobiletogglercss);
+}
+
 // get the css from the plugin params and inject them
-if (JPluginHelper::isEnabled('system', 'maximenuckparams')) {
+// if (JPluginHelper::isEnabled('system', 'maximenuckparams')) {
+if ( file_exists(JPATH_ROOT . '/administrator/components/com_maximenuck/maximenuck.php') ) {
 	modMaximenuckHelper::injectModuleCss($params, $menuID);
 }
 
 // add compatibility css for templates
 $templatelayer = $params->get('templatelayer', 'beez3-position1');
-if ($usecss == 1 AND $templatelayer != -1)
+if ($templatelayer != -1)
 	$document->addStyleSheet(JURI::base(true) . '/modules/mod_maximenuck/templatelayers/' . $templatelayer . '.css');
 
 // add responsive css
@@ -224,7 +303,7 @@ if ($usejavascript && $params->get('layout', 'default') != '_:flatlist' && $para
 	if ($opentype == 'scale' || $opentype == 'puff' || $opentype == 'drop')
 		$document->addScript(JURI::base(true) . '/modules/mod_maximenuck/assets/jquery.ui.1.8.js');
 
-	$load = ($params->get('load', 'domready') == 'load') ? "jQuery(window).load(function(){jQuery" : "jQuery(document).ready(function($){\$";
+	$load = ($params->get('load', 'domready') == 'load') ? "jQuery(window).load(function(){jQuery" : "jQuery(document).ready(function(jQuery){jQuery";
 	$js = $load . "('#" . $menuID . "').DropdownMaxiMenu({"
 			. "fxtransition : '" . $fxtransition . "',"
 			. "dureeIn : " . $dureein . ","
@@ -246,11 +325,13 @@ if ($usejavascript && $params->get('layout', 'default') != '_:flatlist' && $para
 
 	$document->addScriptDeclaration($js);
 
+
+
 // add fancy effect
 	if ($orientation == 'horizontal' && $usefancy == 1) {
 		$document->addScript(JURI::base(true) . '/modules/mod_maximenuck/assets/fancymenuck.js');
-		$js = "jQuery(document).ready(function($){
-            $('#" . $menuID . "').FancyMaxiMenu({"
+		$js = "jQuery(window).load(function(){
+            jQuery('#" . $menuID . "').FancyMaxiMenu({"
 				. "fancyTransition : '" . $fancytransition . "',"
 				. "fancyDuree : " . $fancyduree . "});"
 				. "});";

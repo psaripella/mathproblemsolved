@@ -37,3 +37,5 @@
 2015-11-04 20:28:37 ERROR vmError: Save failed with the following error: User name in use
 2015-11-08 01:39:36 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
 2015-11-08 20:14:38 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2015-11-15 21:56:14 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2015-11-16 05:10:07 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.

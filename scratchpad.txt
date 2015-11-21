@@ -8,6 +8,13 @@ perl create_all_articles.pl intcalc-search.csv profiles/intfile-registered > int
  mysql -u calculus -p calculus_math
 pw: usual
 (delete the rows first ...)
+(limits ..._
+mysql> delete from math_content where id >= 13000 and id <= 13082;
+mysql> delete from math_content where id >= 12000 and id <= 12032;
+mysql> delete from math_content where id >= 110000 and id <= 110011;
+mysql> delete from math_content where id >= 111000 and id <= 111011;
+mysql> delete from math_content where id >= 111000 and id <= 111014;
+
 delete from math_content where id >=62000 and id <= 62118 ;
 Query OK, 118 rows affected (0.02 sec)
 

@@ -9,7 +9,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <!-- debut maximenu CK, par cedric keiflin -->
-<select name="maximenuckdropselect" style="width: auto" onChange="top.location.href=this.options[this.selectedIndex].value">
+<select name="maximenuckdropselect" style="width: auto" onchange="top.location.href=this.options[this.selectedIndex].value" class="<?php echo $params->get('moduleclass_sfx'); ?>">
 	<?php
 	foreach ($items as $i => &$item) {
 		$selected = ($item->current) ? ' selected="selected"' : '';

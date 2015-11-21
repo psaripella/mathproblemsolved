@@ -11,7 +11,7 @@
 	<license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
 	<authorEmail>ced1870@gmail.com</authorEmail>
 	<authorUrl>http://www.joomlack.fr</authorUrl>
-	<version>7.1.4</version>
+	<version>8.0.20</version>
 	<description>MOD_MAXIMENUCK_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_maximenuck">mod_maximenuck.php</filename>
@@ -39,6 +39,18 @@
 		<fields name="params">
 			<fieldset name="basic" addfieldpath="/modules/mod_maximenuck/elements" >
 				<field
+					name="maximenuchecking"
+					type="ckmaximenuchecking"
+					label=""
+					description=""
+					/>
+				<field
+					name="maximenuwizard"
+					type="ckmaximenuwizard"
+					label="MOD_MAXIMENUCK_MAXIMENU_WIZARD_LABEL"
+					description="MOD_MAXIMENUCK_MAXIMENU_WIZARD__DESC"
+					icon="magic.png" />
+				<field
 					name="menutype"
 					type="ckmenu"
 					label="MOD_MAXIMENUCK_FIELD_MENUTYPE_LABEL"
@@ -48,12 +60,21 @@
 				<field
 					name="menuid"
 					type="cktext"
-					default="maximenuck"
+					default=""
 					label="MOD_MAXIMENUCK_ID_LABEL"
 					description="MOD_MAXIMENUCK_ID_DESC"
 					icon="textfield_key.png"
 					filter="string"
 				/>
+				<field
+					name="base"
+					type="ckmenuitem"
+					label="MOD_MAXIMENUCK_FIELD_ACTIVE_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_ACTIVE_DESC"
+					icon="house.png"
+					>
+					<option value="">JCURRENT</option>
+				</field>
 
 				<field
 					name="startLevel"
@@ -261,6 +282,15 @@
 					<option value="topfixed">MOD_MAXIMENUCK_TOPFIXED</option>
 					<option value="bottomfixed">MOD_MAXIMENUCK_BOTTOMFIXED</option>
 				</field>
+				<field
+					name="fixedpositionwidth"
+					type="cktext"
+					default=""
+					label="MOD_MAXIMENUCK_FIXED_MAXWIDTH_LABEL"
+					description="MOD_MAXIMENUCK_FIXED_MAXWIDTH_DESC"
+					icon="width.png"
+					showon="menuposition:topfixed,bottomfixed"
+					suffix="" />
 				<field
 					name="behavior"
 					type="cklist"
@@ -487,27 +517,13 @@
 			<fieldset name="styles" label="MOD_MAXIMENUCK_OPTIONS_STYLES">
 				<field
 					name="theme"
-					type="ckfolderlist"
+					type="ckthemeslist"
 					directory="modules/mod_maximenuck/themes"
-					hide_none="true"
 					hide_default="true"
 					default="css3megamenu"
 					label="MOD_MAXIMENUCK_THEME_LABEL"
 					description="MOD_MAXIMENUCK_THEME_DESC"
 					icon="palette.png" />
-				<field
-					name="usecss"
-					type="ckradio"
-					default="1"
-					label="MOD_MAXIMENUCK_USECSS_LABEL"
-					description="MOD_MAXIMENUCK_USECSS_DESC"
-					icon="css.png"
-					class="btn-group"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
-
 				<field
 					name="orientation"
 					type="ckradio"
@@ -542,11 +558,100 @@
 					stripext="false"
 					label="MOD_MAXIMENUCK_TEMPLATELAYER_LABEL"
 					description="MOD_MAXIMENUCK_TEMPLATELAYER_DESC"
-					default="beez3-position1"
+					default=""
 				/>
 
 			</fieldset>
 
+			<fieldset name="maximenu_menuparams" label="MOD_MAXIMENUCK_MENUPARAMS_FIELDSET_LABEL">
+				<field
+					name="styleswizard"
+					type="ckstyleswizard"
+					label="MOD_MAXIMENUCK_FIELD_STYLESWIZARD_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_STYLESWIZARD_DESC"
+				/>
+				<field
+					name="menustyles"
+					identifier="menustyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_MENUSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_MENUSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level1itemnormalstyles"
+					identifier="level1itemnormalstyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMNORMALSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMNORMALSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level1itemhoverstyles"
+					identifier="level1itemhoverstyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMHOVERSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMHOVERSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level1itemactivestyles"
+					identifier="level1itemactivestyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMACTIVESTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMACTIVESTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level2menustyles"
+					identifier="level2menustyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL2MENUSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL2MENUSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level2itemnormalstyles"
+					identifier="level2itemnormalstyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMNORMALSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMNORMALSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level2itemhoverstyles"
+					identifier="level2itemhoverstyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMHOVERSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMHOVERSTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="level2itemactivestyles"
+					identifier="level2itemactivestyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMACTIVESTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMACTIVESTYLES_DESC"
+					icon=""
+					filter="raw" 
+					default="[]" />
+				<field
+					name="headingstyles"
+					identifier="headingstyles"
+					type="hidden"
+					label="MOD_MAXIMENUCK_FIELD_HEADINGSTYLES_LABEL"
+					description="MOD_MAXIMENUCK_FIELD_HEADINGSTYLES_DESC"
+					icon=""
+					filter="raw"
+					default="[]" />
+			</fieldset>
 			<fieldset name="logooptions" label="MOD_MAXIMENUCK_OPTIONS_LOGO">
 				<field
 					name="logoimage"
@@ -630,16 +735,6 @@
 					suffix="px"
 				/>
 			</fieldset>
-
-			<fieldset name="maximenu_menuparams" label="MOD_MAXIMENUCK_MENUPARAMS_FIELDSET_LABEL">
-				<field
-					name="menuparamsinfo"
-					label="MOD_MAXIMENUCK_CHECKPLUGIN"
-					type="cktestmaximenuplugin"
-					style="link"
-					icon="information.png"
-				/>
-			</fieldset>
 			<fieldset name="maximenu_mobileparams" label="MOD_MAXIMENUCK_MOBILEPARAMS_FIELDSET_LABEL">
 				<field
 					name="menuparamsinfo"
@@ -648,6 +743,17 @@
 					style="link"
 					icon="information.png"
 				/>
+				<field
+					name="maximenumobile_enable"
+					type="ckradio"
+					class="btn-group"
+					default="1"
+					label="MOD_MAXIMENUCK_USEMOBILEBURGERICON_LABEL"
+					description="MOD_MAXIMENUCK_USEMOBILEBURGERICON_DESC"
+					icon="ipod.png">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
 			</fieldset>
 			<fieldset name="thirdparty" label="MOD_MAXIMENUCK_OPTIONS_THIRDPARTY">
 				<field
@@ -659,7 +765,28 @@
 					<option value="none">MOD_MAXIMENUCK_NONE</option>
 					<option value="hikashop">MOD_MAXIMENUCK_HIKASHOP</option>
 					<option value="k2">MOD_MAXIMENUCK_K2</option>
+					<option value="joomshopping">MOD_MAXIMENUCK_JOOMSHOPPING</option>
+					<option value="adsmanager">MOD_MAXIMENUCK_ADSMANAGER</option>
+					<option value="virtuemart">MOD_MAXIMENUCK_VIRTUEMART</option>
 				</field>
+				<field
+					name="thirdpartyckspaceradsmanager2"
+					type="ckspacer"
+					label="MOD_MAXIMENUCK_SPACER_ADSMANAGER_PATCH"
+					style="link"
+					icon="information.png"
+					testpatch="adsmanager" 
+					testprocess="plugin"
+					/>
+				<field
+					name="thirdpartyckspacervirtuemart2"
+					type="ckspacer"
+					label="MOD_MAXIMENUCK_SPACER_VM_PATCH"
+					style="link"
+					icon="information.png"
+					testpatch="virtuemart" 
+					testprocess="plugin"
+					/>
 				<field
 					name="thirdpartyckspacerhikashop1"
 					type="ckspacer"
@@ -827,6 +954,81 @@
 				>
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
+				</field>
+				<field
+					name="thirdpartyckspacerjoomshopping1"
+					type="ckspacer"
+					label="MOD_MAXIMENUCK_SPACER_JOOMSHOPPING"
+					style="title" />
+
+				<field
+					name="thirdpartyckspacerjoomshopping2"
+					type="ckspacer"
+					label="MOD_MAXIMENUCK_SPACER_JOOMSHOPPING_PATCH"
+					style="link"
+					icon="information.png"
+					testpatch="joomshopping" />
+				<field
+					name="joomshoppingitemid"
+					type="cktext"
+					label="MOD_MAXIMENUCK_JOOMSHOPPINGITEMID_LABEL"
+					default="0"
+					description="MOD_MAXIMENUCK_JOOMSHOPPINGITEMID_DESC"
+				/>
+				<field
+					name="usejoomshoppingimages"
+					type="ckradio"
+					default="0"
+					label="MOD_MAXIMENUCK_USEJOOMSHOPPINGIMAGES_LABEL"
+					description="MOD_MAXIMENUCK_USEJOOMSHOPPINGIMAGES_DESC"
+					class="btn-group"
+					icon="images.png">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="usejoomshoppingsuffix"
+					type="ckradio"
+					default="0"
+					label="MOD_MAXIMENUCK_USEJOOMSHOPPINGSUFFIX_LABEL"
+					description="MOD_MAXIMENUCK_USEJOOMSHOPPINGSUFFIX_DESC"
+					class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="joomshoppingimagesuffix"
+					type="cktext"
+					default="_mini"
+					label="MOD_MAXIMENUCK_JOOMSHOPPINGIMAGESUFFIX_LABEL"
+					description="MOD_MAXIMENUCK_JOOMSHOPPINGIMAGESUFFIX_DESC"
+					icon="image.png" />
+				<field
+					name="joomshoppingcategoryroot"
+					type="ckjoomshoppingcategory"
+					label="MOD_MAXIMENUCK_JOOMSHOPPINGCATEGORYROOT_LABEL"
+					default="0"
+					description="MOD_MAXIMENUCK_JOOMSHOPPINGCATEGORYROOT_DESC"
+				/>
+				<field
+					name="joomshoppingcategorydepth"
+					type="cklist"
+					label="MOD_MAXIMENUCK_JOOMSHOPPINGCATEGORYDEPTH_LABEL"
+					default="0"
+					description="MOD_MAXIMENUCK_JOOMSHOPPINGCATEGORYDEPTH_DESC"
+				>
+					<option value="0">JALL</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
 				</field>
 			</fieldset>
 		</fields>

@@ -117,15 +117,22 @@ opendir my $DIR, $root_directory or die "Error in opening dir '$root_directory' 
 
 closedir $DIR;
 
+
 my $opening_string = q?INSERT INTO `math_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `fulltext`, `state`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`) VALUES? ;
 
-print "$opening_string \n" ; 
 
 #Single or zero problems - no end of problem comma
 my $count = $end_problems - $start_problems ;
 #print "problem count = $count \n";
 
 if ($count <= 1) {$end_of_problem_comma = "";}
+
+#Delete the articles before adding the articles!
+my $delete_articles_string = q?delete from math_content where id >= ?. $sql_id .q? and id <= ?. ($sql_id + $count).q?;? ;
+print "$delete_articles_string \n" ;
+print "$opening_string \n" ;
+
+
 
 
 for (my $i = $start_problems; $i <= $end_problems; $i++)
