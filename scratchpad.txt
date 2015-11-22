@@ -1,4 +1,6 @@
 #To create the sql for the probems:
+#If a new category of problems: Create an article for each of registered, test-registered, public, customer: 
+#get the acccess, cat_id, etc. from that and use it to create a profile file.
 #Essentially you need a search terms file (see intcalc-search.csv ). Also a profile file 
 #(look at profiles/intfile-test-registered )
 perl create_all_articles.pl intcalc-search.csv profiles/intfile-test-registered > intfile-registered-withsolution.sql
