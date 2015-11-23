@@ -148,8 +148,9 @@ my $second_correct;
 my $third_correct;
 my $fourth_correct;
 
-my $random0thru3 = int(rand(4));
-#my $random0thru3  = 0
+#my $random0thru3 = int(rand(4));
+#No radomness -> always go with case 0
+my $random0thru3  = 0;
 
 #print " random number is $random0thru3 \n";
 switch($random0thru3){

@@ -82,6 +82,15 @@ git remote -v
 math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (fetch)
 math-bucket     https://mathproblemsolved@bitbucket.org/mathproblemsolved/mathproblemsolved.git (push)
 
+#To push to bucket
+git add -A
+git commit -m "Some comments"
+git push math-bucket master
+(password is greenpark)
+#
+https://bitbucket.org/
+(customerservice@mathproblemsolved.com,greenpark)
+
 
 # Create The quizzes
 
