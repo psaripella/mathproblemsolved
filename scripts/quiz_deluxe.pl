@@ -191,11 +191,12 @@ switch($random0thru3){
 } ;
 
 # Copy files to Options directory
-
-copy("$real_options_directory/option${i}_1.jpg","$real_options_directory_forQuiz/option${i}_$first.jpg");
-copy("$real_options_directory/option${i}_2.jpg","$real_options_directory_forQuiz/option${i}_$second.jpg");
-copy("$real_options_directory/option${i}_3.jpg","$real_options_directory_forQuiz/option${i}_$third.jpg");
-copy("$real_options_directory/option${i}_4.jpg","$real_options_directory_forQuiz/option${i}_$fourth.jpg");
+# So if RAND = 3, then fourth = 1, fourth_correct = true;
+# This means that options_1.jpg (correct answer) will be moved to forQuiz/option_4.jpg
+copy("$real_options_directory/option${i}_$first.jpg","$real_options_directory_forQuiz/option${i}_1.jpg");
+copy("$real_options_directory/option${i}_$second.jpg","$real_options_directory_forQuiz/option${i}_2.jpg");
+copy("$real_options_directory/option${i}_$third.jpg","$real_options_directory_forQuiz/option${i}_3.jpg");
+copy("$real_options_directory/option${i}_$fourth.jpg","$real_options_directory_forQuiz/option${i}_4.jpg");
 
 
 
