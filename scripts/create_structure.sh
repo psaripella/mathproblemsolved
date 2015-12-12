@@ -15,6 +15,16 @@ cd  /home/calculus/www/www/images/${category_dir}
 
 echo "$category_dir   $low_index  $high_index"
 
+if [ ! -d jpg_images ]; then
+echo "jpg_files directory does not exist. Creating ..."
+mkdir jpg_images
+fi
+
+if [ -d gif_images/JPEG ]; then
+echo "JPEG directory fies being copied to jpg_images directories..."
+cp gif_images/JPEG/* jpg_images
+fi
+
 if [ ! -d problems ]; then
 echo "problems directory does not exist. Creating ..."
 mkdir problems

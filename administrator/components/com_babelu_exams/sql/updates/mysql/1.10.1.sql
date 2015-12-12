@@ -1,2 +1,0 @@
-ALTER TABLE  `#__babelu_exams_exams` CHANGE  `access`  `access` INT( 10 ) UNSIGNED NOT NULL DEFAULT  '1';
-ALTER TABLE  `#__babelu_exams_exams` CHANGE  `results_access`  `results_access` INT( 10 ) UNSIGNED NOT NULL DEFAULT  '1';

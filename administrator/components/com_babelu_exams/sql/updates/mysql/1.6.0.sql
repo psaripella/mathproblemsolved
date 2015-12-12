@@ -1,2 +1,0 @@
-ALTER TABLE  `#__babelu_exams_exams` ADD  `can_take_from` DATETIME NOT NULL DEFAULT  '0000-00-00 00:00:00';
-ALTER TABLE  `#__babelu_exams_exams` ADD  `can_take_until` DATETIME NOT NULL DEFAULT  '0000-00-00 00:00:00';
