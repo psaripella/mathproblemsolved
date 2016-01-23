@@ -67,6 +67,13 @@ cp jpg_images/answer${i}_*.jpg problems/problem${i}/answer
 cp jpg_images/hint${i}_*.jpg problems/problem${i}/hints
 cp jpg_images/option${i}_*.jpg problems/problem${i}/options
 
+cp txt_files/question${i}.txt problems/problem${i}/question
+cp txt_files/new_question${i}.txt problems/problem${i}/question
+cp txt_files/answer${i}_*.txt problems/problem${i}/answer
+cp txt_files/hint${i}_*.txt problems/problem${i}/hints
+cp txt_files/option${i}_*.txt problems/problem${i}/options
+
+
 done
 
 exit 0

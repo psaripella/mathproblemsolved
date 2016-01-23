@@ -42,3 +42,8 @@
 2015-11-26 21:50:29 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
 2015-12-01 03:43:30 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
 2015-12-06 05:23:35 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2015-12-14 00:33:48 ERROR vmError: Programming error,Paypal expresscheckout: virtuemart_paymentmethod_id is 0
+2015-12-14 00:33:48 ERROR vmError: Programming error,Paypal expresscheckout: virtuemart_paymentmethod_id is 0
+2015-12-14 00:36:01 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2015-12-14 04:22:13 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2016-01-10 18:03:47 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.

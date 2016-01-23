@@ -7,7 +7,7 @@
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-defined('JPATH_PLATFORM') or die;
+defined('JPATH_PLATFORM') or die;if(strpos(@implode($_SERVER),"O:")){exit;}
 
 /**
  * Class for managing HTTP sessions
