@@ -1,1 +1,0 @@
-<p style="display:none"><a target="_blank" href="http://gentidama.tumblr.com/">gentidama.com</a></p>
