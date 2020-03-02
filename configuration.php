@@ -20,7 +20,7 @@ class JConfig {
 	public $debug_lang = '0';
 	public $display_offline_message = '1';
 	public $editor = 'jce';
-	public $error_reporting = 'default';
+	public $error_reporting = 'none';
 	public $feed_email = 'author';
 	public $feed_limit = '10';
 	public $force_ssl = '0';
@@ -32,7 +32,7 @@ class JConfig {
 	public $ftp_root = '';
 	public $ftp_user = '';
 	public $gzip = '0';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
+	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
 	public $host = 'localhost';
 	public $lifetime = '15';
 	public $list_limit = '20';
@@ -49,7 +49,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
-	public $password = 'kanpur';
+	public $password = 'kanpur11';
 	public $robots = '';
 	public $secret = 'eNyAssiyLfdm4jXS';
 	public $sef = '1';
@@ -76,4 +76,24 @@ class JConfig {
 	public $mailonline = '1';
 	public $frontediting = '1';
 	public $asset_id = '1';
+	public $memcached_persist = '1';
+	public $memcached_compress = '0';
+	public $memcached_server_host = 'localhost';
+	public $memcached_server_port = '11211';
+	public $redis_persist = '1';
+	public $redis_server_host = 'localhost';
+	public $redis_server_port = '6379';
+	public $redis_server_auth = '';
+	public $redis_server_db = '0';
+	public $cache_platformprefix = '0';
+	public $massmailoff = '0';
+	public $replyto = '';
+	public $replytoname = '';
+	public $session_memcache_server_host = 'localhost';
+	public $session_memcache_server_port = '11211';
+	public $session_memcached_server_host = 'localhost';
+	public $session_memcached_server_port = '11211';
+	public $session_redis_server_host = 'localhost';
+	public $session_redis_server_port = '6379';
+	public $shared_session = '0';
 }

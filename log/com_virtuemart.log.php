@@ -56,3 +56,12 @@
 2016-03-06 05:02:52 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
 2016-03-06 05:06:38 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
 2016-03-06 05:09:11 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-06 19:32:16 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-06 20:04:53 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-06 20:06:14 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-06 20:07:32 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-06 20:08:16 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-07 02:07:34 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2017-11-08 02:11:50 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2018-07-21 15:21:59 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.
+2019-01-07 03:13:14 ERROR vmError: Vendor image given image is not complete images/stories/virtuemart/vendor/.

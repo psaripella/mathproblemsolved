@@ -9,6 +9,8 @@ components/com_jcomments/
 modules/mod_maximenuck/
 
 *installation/
+problemsolved/
+newproblemsolved/
 tmp/
 language/
 layouts/

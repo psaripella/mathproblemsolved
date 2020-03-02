@@ -1,2 +1,2 @@
 # Use PHP 5.3
-AddHandler application/x-httpd-php53 .php
+#AddHandler application/x-httpd-php53 .php

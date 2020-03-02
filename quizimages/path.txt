@@ -1,0 +1,18 @@
+Image to be uploaded in  "root/images"
+
+banner1.jpg
+banner2.jpg
+banner3.jpg
+home_thumbnail1.jpg
+home_thumbnail3.jpg
+inner_thumb1.jpg
+inner_thumb3.jpg
+registration_banner.jpg
+
+
+Images to be uploaded in : "root/templates/hyper/images"
+
+inner_banner_algebra.jpg
+inner_banner_differential.jpg
+inner_banner_integral.jpg
+inner_banner_trig.jpg
